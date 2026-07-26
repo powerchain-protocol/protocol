@@ -55,7 +55,7 @@ Built on **Solana** using the **SPL Token-2022** standard, PWRC serves as the fo
 
 <p align="center">
 
-<img src="./assets/architecture/tokens-architecture.png" width="100%" alt="PowerChain Token Architecture">
+<img src="../assets/architecture/tokens-architecture.png" width="100%" alt="PowerChain Token Architecture">
 
 </p>
 
