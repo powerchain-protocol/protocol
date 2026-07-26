@@ -15,7 +15,6 @@ Renewable Infrastructure • Digital Assets • Enterprise Finance • AI
 <p align="center">
 
 Built on <b>Solana</b> • SPL Token-2022 • Fixed Supply
-
 </p>
 
 <p align="center">
