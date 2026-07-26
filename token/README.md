@@ -40,7 +40,7 @@ Built on **Solana** using the **SPL Token-2022** standard, PWRC is the foundatio
 
 ---
 
-# Ecosyste Tokens Architecture
+# Ecosystem Tokens Architecture
 
 <p align="center">
 
