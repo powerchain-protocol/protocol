@@ -2,7 +2,7 @@
 
 <p align="center">
 
-<img src="./assets/branding/pwrc-coin.png" width="180" alt="PowerChain Protocol">
+<img src="./assets/branding/pwrc-coin.png" width="180" alt="PowerChain">
 
 <br>
 
