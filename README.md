@@ -118,9 +118,9 @@ into one enterprise blockchain platform.
 
 <p align="center">
 
-<a href="./assets/architecture/powechain-token-architecture.png">
+<a href="./assets/architecture/token-architecture.png">
 
-<img src="./assets/architecture/powechain-token-architecture.png" width="100%">
+<img src="./assets/architecture/token-architecture.png" width="100%">
 
 </a>
 
