@@ -174,9 +174,9 @@ PWRC is used throughout the PowerChain ecosystem for:
 
 * Network settlement
 * Platform fees
-* PowerChain Swap™
+* PowerSwap™
 * PowerBridge™
-* PowerChain Pay™
+* PowerPay™
 * Treasury operations
 * Marketplace settlement
 * AI services
