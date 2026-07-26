@@ -2,7 +2,7 @@
 
 <p align="center">
 
-<img src="./assets/branding/5EF17201-4E8C-4573-AED9-593B9F33CB76.png" width="180" alt="PowerChain">
+<img src="./assets/branding/pwrc.png" width="180" alt="PowerChain">
 
 <br>
 
