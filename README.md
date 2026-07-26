@@ -1,23 +1,23 @@
-# PowerChain (PWRC)
+# PowerChain Tokens
 
 <p align="center">
-<img src="./public/assets/powerchain-logo.svg" width="160">
 
-# PowerChain Protocol
+<img src="../assets/powerchain-token.svg" width="160" alt="PowerChain Token">
 
-### Native Utility Token of the PowerChain Protocol
+# PowerChain Token Platform™
 
-**Renewable Energy • Tokenized Assets • Payments • DeFi • AI**
+### Enterprise Digital Assets for the PowerChain Financial Cloud™
 
-Built on **Solana** • Powered by **Proof of Generation (PoG)**
+**Renewable Energy • Digital Assets • Stablecoins • RWAs • Enterprise Payments**
 
-![Build](https://img.shields.io/badge/Build-Passing-0B7A53?style=for-the-badge)
-![Release](https://img.shields.io/badge/Release-v1.0-0B7A53?style=for-the-badge)
-![Protocol](https://img.shields.io/badge/Protocol-v1.0-success?style=for-the-badge)
-![Documentation](https://img.shields.io/badge/Documentation-Complete-success?style=for-the-badge)
+Built on **Solana** • Powered by **SPL Token-2022**
+
+![Version](https://img.shields.io/badge/Version-v1.0-0F5A46?style=for-the-badge)
+![Network](https://img.shields.io/badge/Network-Solana-9945FF?style=for-the-badge&logo=solana)
+![Standard](https://img.shields.io/badge/Standard-SPL%20Token--2022-14F195?style=for-the-badge)
+![SDK](https://img.shields.io/badge/SDK-TypeScript-3178C6?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-Apache--2.0-lightgrey?style=for-the-badge)
-![Security](https://img.shields.io/badge/Security-Audit%20Pending-orange?style=for-the-badge)
-![Solana](https://img.shields.io/badge/Solana-SPL%20Token--2022-9945FF?style=for-the-badge&logo=solana)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)
 
 </p>
 
@@ -25,354 +25,375 @@ Built on **Solana** • Powered by **Proof of Generation (PoG)**
 
 # Overview
 
-PowerChain (**PWRC**) is the native utility token of the **PowerChain Protocol**, a decentralized infrastructure for renewable energy markets, tokenized real-world assets (RWAs), carbon credits, enterprise payments, and AI-powered commerce.
+The **PowerChain Token Platform™** provides enterprise-grade digital asset infrastructure for the PowerChain ecosystem.
 
-Built on the Solana Virtual Machine (SVM), PowerChain combines high-performance blockchain infrastructure with Proof of Generation (PoG) to enable verifiable renewable energy settlement and sustainable digital finance.
+Built on **Solana** using **SPL Token-2022**, the platform enables organisations to issue, manage, transfer, and integrate programmable digital assets for renewable energy markets, enterprise finance, tokenised real-world assets (RWAs), AI-native commerce, and decentralised applications.
 
-PWRC powers every protocol within the ecosystem, including decentralized exchange, payments, governance, renewable energy settlement, staking, and tokenized environmental assets.
-
----
-
-# Table of Contents
-
-- Overview
-- Key Features
-- Protocol Architecture
-- Token Overview
-- Tokenomics
-- Distribution
-- Vesting
-- Deflationary Model
-- Utility
-- Ecosystem
-- Staking
-- Governance
-- Oracle Network
-- Technical Stack
-- Smart Contract
-- Repository Structure
-- Documentation
-- Roadmap
-- License
+PowerChain tokens are designed with enterprise security, compliance, scalability, and interoperability as core principles.
 
 ---
 
-# Key Features
-
-- Fixed supply of **18.44 Billion PWRC**
-- SPL Token-2022
-- Solana Virtual Machine (SVM)
-- Proof of Generation (PoG)
-- Renewable energy settlement
-- PET-20 asset standard
-- Carbon credit infrastructure
-- PowerDEX integration
-- PowerBridge interoperability
-- Enterprise payments
-- DAO governance
-- Quarterly burn mechanism
-- Validator staking
-- Oracle-secured telemetry
-
----
-
-# Protocol Architecture
+# Platform Architecture
 
 ```text
-                     PowerChain Protocol v1.0
+                      PowerChain Token Platform™
 
-                  Applications & Enterprise Layer
-──────────────────────────────────────────────────────────────
-
- PowerDEX  PowerPay  PowerGrid  PowerCarbon  PowerAI
-
- Enterprise APIs • Wallets • Treasury • Marketplace
-
-──────────────────────────────────────────────────────────────
-                       Protocol Services
-
-     Governance • Oracle • Registry • PET-20 • Staking
-
-──────────────────────────────────────────────────────────────
-                     Consensus & Settlement
-
-     Proof of Generation (PoG) • Solana SVM • Validators
-
-──────────────────────────────────────────────────────────────
-                      Renewable Infrastructure
-
- Solar • Wind • Hydro • Battery • Microgrids • IoT
+┌──────────────────────────────────────────────────────────────┐
+│                    Enterprise Applications                   │
+│                                                              │
+│ Payments • Treasury • Marketplace • Energy • AI • DeFi      │
+└──────────────────────────────────────────────────────────────┘
+                          │
+                          ▼
+┌──────────────────────────────────────────────────────────────┐
+│                    Token Services Layer                      │
+│                                                              │
+│ Mint • Burn • Transfer • Metadata • Registry • Compliance    │
+└──────────────────────────────────────────────────────────────┘
+                          │
+                          ▼
+┌──────────────────────────────────────────────────────────────┐
+│                SPL Token-2022 Infrastructure                 │
+│                                                              │
+│ Extensions • Metadata • Transfer Hooks • Confidential Assets │
+└──────────────────────────────────────────────────────────────┘
+                          │
+                          ▼
+┌──────────────────────────────────────────────────────────────┐
+│                     Solana Network                           │
+└──────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-# Token Overview
+# Supported Tokens
+
+| Token | Symbol | Type | Standard |
+|--------|--------|------|----------|
+| PowerChain | PWRC | Utility | SPL Token-2022 |
+| Wrapped PowerChain | wPWRC | Bridge Asset | SPL Token-2022 |
+| USD Coin | USDC | Stablecoin | SPL |
+| Euro Coin | EURC | Stablecoin | SPL |
+| Tether | USDT | Stablecoin | SPL |
+| Solana | SOL | Native Asset | Native |
+| Token-2022 Assets | Various | Custom Assets | SPL Token-2022 |
+
+---
+
+# Core Features
+
+## Enterprise Token Management
+
+- Token creation
+- Mint authority management
+- Burn controls
+- Metadata management
+- Treasury allocation
+- Supply analytics
+- Compliance controls
+
+---
+
+## Digital Asset Operations
+
+- Transfers
+- Batch transfers
+- Minting
+- Burning
+- Freezing
+- Thawing
+- Metadata updates
+- Account management
+
+---
+
+## Token-2022 Extensions
+
+Supported extensions include:
+
+- Metadata Pointer
+- Token Metadata
+- Permanent Delegate
+- Transfer Hooks
+- Transfer Fees
+- Interest Bearing Tokens
+- Confidential Transfers
+- Default Account State
+- Immutable Ownership
+- Memo Required
+
+---
+
+## Asset Classes
+
+### Utility Tokens
+
+Protocol utility assets used for:
+
+- Governance
+- Payments
+- Network fees
+- Staking
+- Rewards
+
+---
+
+### Stablecoins
+
+Enterprise settlement assets
+
+- USDC
+- EURC
+- USDT
+
+---
+
+### Renewable Energy Assets
+
+Programmable environmental assets
+
+- Renewable Energy Certificates (RECs)
+- Guarantees of Origin (GO)
+- Carbon Credits
+- Energy Attribute Certificates
+- Renewable Production Tokens
+
+---
+
+### Tokenised RWAs
+
+Enterprise real-world assets
+
+- Infrastructure
+- Renewable projects
+- Green bonds
+- Carbon portfolios
+- Treasury assets
+
+---
+
+# PWRC
+
+PowerChain (PWRC) is the native utility token of the PowerChain ecosystem.
+
+## Specifications
 
 | Property | Value |
 |----------|-------|
-| Token | PowerChain |
 | Symbol | PWRC |
-| Version | v1.0 |
 | Network | Solana |
 | Standard | SPL Token-2022 |
 | Decimals | 9 |
-| Total Supply | 18,440,000,000 |
-| Inflation | None |
-| Consensus | Solana + PoG |
+| Supply | Fixed |
 | Governance | PowerGov DAO |
 
 ---
 
-# Tokenomics
-
-## Fixed Supply
-
-```
-Maximum Supply
-
-18.44 Billion PWRC
-
-No Inflation
-
-No Additional Minting
-```
-
----
-
-# Distribution
-
-| Allocation | Share |
-|------------|------:|
-| Community & Ecosystem | 35% |
-| Treasury Reserve | 20% |
-| Staking Rewards | 15% |
-| Team & Advisors | 12% |
-| Strategic Partners | 8% |
-| Liquidity | 5% |
-| Public Distribution | 3% |
-| Marketing | 2% |
-
----
-
-# Vesting
-
-| Category | Cliff | Vesting |
-|----------|------|---------|
-| Team | 12 Months | 36 Months |
-| Advisors | 6 Months | 24 Months |
-| Strategic Partners | 6 Months | 24 Months |
-| Treasury | DAO Controlled | Long-Term |
-
----
-
-# Deflationary Model
-
-## Quarterly Burn
-
-Every quarter, **2% of the eligible circulating supply** may be permanently burned according to governance-approved policies.
-
-## Fee Burn Engine
-
-```text
-100% Service Fee
-
-        │
-
- ┌──────┼──────────────┐
-
- ▼      ▼              ▼
-
-50%    30%            20%
-
-Burn Validators    DAO Treasury
-```
-
-PowerChain protocol services may apply a **2% service fee**, while standard Solana network transaction fees remain separate.
-
----
-
-# Utility
+## Utility
 
 PWRC powers:
 
-- PowerDEX
-- PowerBridge
-- PowerPay
-- PowerGrid
-- PowerCarbon
-- PowerGov
-- PowerAI
-- PET-20 Assets
-- Energy Attribute Certificates
+- PowerChain Exchange™
+- PowerChain Pay™
+- Treasury Cloud™
+- Financial Cloud™
+- Renewable Energy Cloud™
+- AI Platform™
+- Marketplace™
+- Governance™
 - Staking
-- Enterprise Treasury
-- Crowdfunding
-- Renewable Energy Markets
+- Rewards
 
 ---
 
-# Ecosystem
+# Developer SDK
 
-```text
-                    PowerChain Protocol
+```ts
+import { PowerChainClient } from "@powerchain/sdk";
 
-                          PWRC
-                            │
+const client = new PowerChainClient({
+  apiKey: process.env.POWERCHAIN_API_KEY,
+});
 
-      ┌────────────┬────────────┬────────────┬────────────┐
+const balance = await client.tokens.getBalance({
+  wallet: "<wallet-address>",
+  token: "PWRC",
+});
 
-      ▼            ▼            ▼            ▼
-
-  PowerDEX     PowerPay    PowerGrid   PowerCarbon
-
-      │            │            │            │
-
- Liquidity   Payments   Renewables   Carbon Credits
-
-      └────────────┴────────────┴────────────┘
-
-             PowerGov • PowerAI • PowerBridge
+console.log(balance);
 ```
 
 ---
 
-# Staking
+# Token API
 
-PWRC holders may stake tokens to:
+## Retrieve Token
 
-- Secure validators
-- Earn protocol rewards
-- Participate in governance
-- Support network decentralization
-
-Reward sources include:
-
-- Network fees
-- Service fees
-- Inflation allocation (if enabled by governance in future protocol versions)
-- Validator incentives
+```http
+GET /api/v1/tokens/{symbol}
+```
 
 ---
 
-# Governance
+## Portfolio
 
-PowerGov DAO governs:
-
-- Treasury allocation
-- Protocol upgrades
-- Validator admission
-- Registry policies
-- Burn parameters
-- Ecosystem grants
-- Community proposals
+```http
+GET /api/v1/portfolio
+```
 
 ---
 
-# Oracle Network
+## Transfer
 
-Supported verification sources include:
-
-- Smart Energy Meters
-- SCADA Systems
-- Grid Operators
-- NOAA Weather Services
-- Pyth Network
-- Renewable Registries
+```http
+POST /api/v1/tokens/transfer
+```
 
 ---
 
-# Technical Stack
+## Mint
 
-| Layer | Technology |
-|--------|------------|
-| Blockchain | Solana |
-| Runtime | Solana SVM |
-| Consensus | Proof of Generation |
-| Token Standard | SPL Token-2022 |
-| Smart Contracts | Rust |
-| API | REST v1 |
-| SDK | TypeScript |
-| Governance | PowerGov DAO |
+```http
+POST /api/v1/tokens/mint
+```
 
 ---
 
-# Smart Contract
+## Burn
 
-| Property | Value |
-|----------|-------|
-| Network | Solana Mainnet |
-| Standard | SPL Token-2022 |
-| Mint Address | `PWRCRXXZxbg6FdQZfK3PMD7KP8xfxs9acvifJiG46wc` |
+```http
+POST /api/v1/tokens/burn
+```
+
+---
+
+## Metadata
+
+```http
+GET /api/v1/tokens/metadata
+```
 
 ---
 
 # Repository Structure
 
 ```text
-.
+tokens/
+
 ├── README.md
-├── LICENSE
-├── docs/
-│   ├── Architecture.md
-│   ├── Tokenomics.md
-│   ├── Staking.md
-│   ├── Governance.md
-│   ├── API.md
-│   └── SDK.md
 ├── sdk/
-├── contracts/
-├── assets/
-└── examples/
+├── examples/
+├── metadata/
+├── registry/
+├── extensions/
+├── policies/
+├── schemas/
+├── docs/
+│   ├── PWRC.md
+│   ├── Token-2022.md
+│   ├── Stablecoins.md
+│   ├── Metadata.md
+│   ├── Transfer-Hooks.md
+│   ├── Compliance.md
+│   ├── Registry.md
+│   └── API.md
+└── assets/
 ```
 
 ---
 
 # Documentation
 
-- Whitepaper
-- Developer Documentation
+- Token Standards
+- PWRC Specification
+- Token-2022 Guide
+- Stablecoin Integration
+- Metadata Standard
+- Compliance Policies
 - API Reference
-- SDK Guide
-- Governance Portal
-- Brand Guidelines
+- SDK Documentation
+- Examples
+- Migration Guides
+
+---
+
+# Security
+
+PowerChain token infrastructure incorporates enterprise security practices including:
+
+- Multi-signature treasury controls
+- Role-based access control (RBAC)
+- Transfer policy enforcement
+- Transaction simulation
+- Risk scoring
+- Audit logging
+- Hardware wallet support
+- Token authority management
+
+---
+
+# Ecosystem Integration
+
+PowerChain tokens integrate seamlessly with:
+
+- PowerChain Financial Cloud™
+- PowerChain Exchange™
+- PowerChain Pay™
+- Treasury Cloud™
+- Marketplace™
+- Renewable Energy Cloud™
+- AI Platform™
+- Developer SDK™
+- REST API
+- GraphQL API
+- WebSocket API
 
 ---
 
 # Roadmap
 
-```text
-✓ PowerChain Launch
-✓ PWRC Token
-✓ PowerBridge
-□ PowerDEX
-□ PowerGrid
-□ PowerCarbon
-□ PowerAI
-□ Mobile Wallet
-□ Enterprise APIs
-□ Multi-Chain Expansion
-```
+| Status | Feature |
+|---------|---------|
+| ✅ | PWRC Token |
+| ✅ | SPL Token-2022 Support |
+| ✅ | Metadata Management |
+| ✅ | Stablecoin Integration |
+| 🚧 | Confidential Transfers |
+| 🚧 | Advanced Transfer Hooks |
+| 🚧 | Token Registry |
+| 🚧 | Enterprise Compliance Engine |
+| 🔜 | Cross-Chain Assets |
+| 🔜 | Institutional Custody |
+
+---
+
+# Related Packages
+
+| Package | Description |
+|---------|-------------|
+| `@powerchain/sdk` | Official SDK |
+| `@powerchain/web3.js` | Solana utilities |
+| `@powerchain/sdk/ui` | React UI components |
+| `@powerchain/sdk/client` | API client |
+| `@powerchain/swap-sdk` | DEX & routing |
+| `@powerchain/bridge-sdk` | Cross-chain bridge |
 
 ---
 
 # License
 
-Apache License 2.0 (Planned)
+Apache License 2.0
 
 ---
 
 <p align="center">
 
-## PowerChain Protocol v1.0
+# PowerChain Token Platform™
 
-### Tokenizing Renewable Energy • Powering Sustainable Finance
+### Enterprise Digital Assets for Renewable Finance
 
-**One Protocol. One Ecosystem. One Token.**
+**Secure • Programmable • Compliant • Scalable**
 
-Built on **Solana** • Powered by **Proof of Generation**
+Built on **Solana** • Powered by **SPL Token-2022**
 
----
-
-# Disclaimer
-
-PWRC is designed as a utility and governance token within the PowerChain ecosystem. Participation in the ecosystem may involve technical, operational, regulatory, and market risks. This document is provided for informational purposes only and does not constitute financial, legal, investment, or tax advice. Token allocations, governance parameters, roadmap items, and technical features are subject to change through approved governance processes or as required to support the long-term development of the protocol.
+</p>
