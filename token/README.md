@@ -13,7 +13,7 @@ Enterprise Settlement • Renewable Infrastructure • AI Economy • Digital As
 </p>
 
 <p align="center">
-Built on <strong>Solana</strong> using <strong>SPL Token-2022</strong>
+Built on <strong>Solana</strong> using <strong>SPL • Token-2022</strong>
 </p>
 
 <p align="center">
@@ -67,7 +67,7 @@ Built on **Solana** using the **SPL Token-2022** standard, PWRC serves as the fo
 
 - Fixed maximum supply
 - No inflation
-- SPL Token-2022
+- SPL • Token-2022
 - Solana-native
 - Proof of Generation (PoG)
 
@@ -114,7 +114,7 @@ Built on **Solana** using the **SPL Token-2022** standard, PWRC serves as the fo
 | Token Name | PowerChain |
 | Symbol | PWRC |
 | Blockchain | Solana |
-| Standard | SPL Token-2022 |
+| Standard | SPL • Token-2022 |
 | Decimals | 9 |
 | Maximum Supply | **18,440,000,000 PWRC** |
 | Inflation | None |
