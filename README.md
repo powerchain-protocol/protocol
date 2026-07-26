@@ -1,225 +1,350 @@
-# PowerChain (PWRC)
+PowerChain Protocol™ (PWRC)
 
 <p align="center">
+<img src="./assets/branding/pwrc-coin.png" width="180" alt="PowerChain Protocol Logo">
 
-<img src="./assets/branding/pwrc-coin.png" width="160" alt="PowerChain Logo">
+PowerChain Protocol™
 
-# PowerChain Protocol™
+Renewable Infrastructure • Digital Assets • Enterprise Finance • AI
 
-### Renewable Infrastructure • Digital Assets • Enterprise Finance • AI
+The Enterprise Financial & Renewable Infrastructure Protocol
 
-**The Native Utility Token of the PowerChain Protocol**
-
-Built on **Solana** • Powered by **Proof of Generation (PoG)**
+Built on Solana • Powered by Proof of Generation (PoG)
 
 <p>
-
 <a href="https://github.com/powerchain-protocol/tokens/actions">
 <img src="https://img.shields.io/github/actions/workflow/status/powerchain-protocol/tokens/ci.yml?style=for-the-badge">
 </a>
-
 <img src="https://img.shields.io/badge/Protocol-v1.0-0B7A53?style=for-the-badge">
 <img src="https://img.shields.io/badge/SPL-Token--2022-9945FF?style=for-the-badge&logo=solana">
 <img src="https://img.shields.io/badge/Supply-18.44B%20PWRC-0B7A53?style=for-the-badge">
 <img src="https://img.shields.io/badge/License-Apache--2.0-lightgrey?style=for-the-badge">
-
 </p>
 
----
+⸻
 
-### Official Links (under construction)
+Official Resources (Under Construction)
 
-Website • https://powerchain.energy
+Resource	URL
+Website	https://powerchain.energy
+Developer Portal	https://developer.powerchain.energy
+Documentation	https://github.com/powerchain-protocol
+SDK	Coming Soon
+API Reference	Coming Soon
 
-Documentation • https://github.com/powerchain-protocol
+⸻
 
-Developer Portal • https://developer.powerchain.energy
+Overview
 
----
+PowerChain Protocol™ is an enterprise-grade blockchain ecosystem designed for renewable infrastructure, programmable finance, tokenized real-world assets (RWAs), AI-native financial services, and cross-chain interoperability.
 
-</p>
+Built on the Solana Virtual Machine (SVM), PowerChain provides a unified financial infrastructure that enables enterprises, energy producers, developers, governments, and financial institutions to build and operate next-generation digital economies.
 
-# Overview
+The protocol is powered by PWRC, the native utility, governance, staking, and settlement asset of the PowerChain ecosystem.
 
-PowerChain Protocol™ is an enterprise-grade blockchain ecosystem that combines renewable energy infrastructure, programmable payments, tokenized real-world assets (RWAs), AI-native financial services, and cross-chain interoperability into a unified digital economy.
+For interoperability beyond Solana, wPWRC provides a fully backed wrapped representation on the Sui Network, secured through PowerBridge™.
 
-The protocol is powered by **PWRC**, the native utility and governance token on **Solana**, while **wPWRC** provides one-to-one wrapped interoperability on the **Sui Network** through PowerBridge™.
+⸻
 
----
+Vision
 
-# Protocol Architecture
+PowerChain aims to become the financial operating system for renewable infrastructure by combining:
 
-PowerChain follows a layered architecture designed for scalability, security, and enterprise adoption.
+* Renewable energy settlement
+* Enterprise payments
+* Digital asset infrastructure
+* Tokenized RWAs
+* AI-powered financial automation
+* Cross-chain liquidity
+* Institutional treasury management
+* Decentralized governance
+
+⸻
+
+Core Products
+
+Product	Description
+PWRC	Native utility, governance, staking and settlement asset
+PowerPay™	Enterprise payments, checkout and programmable finance
+PowerSwap™	Cross-chain token exchange and liquidity protocol
+PowerBridge™	Secure Solana ↔ Sui interoperability
+PowerWallet™	Self-custody wallet for digital assets
+PowerTreasury™	Treasury, liquidity and cash management
+PowerAI™	AI-powered financial automation
+GridOS™	Renewable infrastructure operating platform
+PowerGov™	Governance and on-chain voting
+Marketplace™	Renewable energy and digital asset marketplace
+
+⸻
+
+PWRC Token
+
+PWRC is the economic foundation of the PowerChain Protocol.
+
+It enables:
+
+* Transaction settlement
+* Network fees
+* Validator incentives
+* Renewable energy settlement
+* Staking rewards
+* Governance voting
+* AI service payments
+* Treasury operations
+* Marketplace transactions
+* Cross-chain liquidity
+
+⸻
+
+Protocol Architecture
 
 <p align="center">
-
-<a href="https://github.com/powerchain-protocol/tokens/blob/d1d923fc49d1baa3f6e3f0526d86949a300ad3ab/assets/architecture/powechain-token-architecture.png">
-
-<img
-src="https://raw.githubusercontent.com/powerchain-protocol/tokens/d1d923fc49d1baa3f6e3f0526d86949a300ad3ab/assets/architecture/powechain-token-architecture.png"
-alt="PowerChain Protocol Architecture"
-width="100%">
-
-</a>
-
 </p>
-
 <p align="center">
 
-<b>Figure 1.</b>
+Figure 1. PowerChain Protocol Architecture
 
-PowerChain Protocol Architecture
-
-Renewable Infrastructure • Digital Assets • AI • Enterprise Finance • Cross-Chain Interoperability
+Renewable Infrastructure • Enterprise Finance • AI • Digital Assets • Cross-Chain
 
 </p>
 
----
+⸻
 
-## Architecture Highlights
+Architecture Overview
 
-The architecture illustrates the complete PowerChain ecosystem, including:
+Application Layer
 
-- PowerPay™
-- PowerSwap™
-- PowerBridge™
-- GridOS™
-- PowerTreasury™
-- PowerAI™
-- PowerGov™
-- Marketplace™
+* PowerPay™
+* PowerSwap™
+* PowerBridge™
+* PowerWallet™
+* PowerTreasury™
+* PowerAI™
+* GridOS™
+* Marketplace™
+* PowerGov™
 
-Core infrastructure includes:
+⸻
 
-- PowerChain Financial Cloud™
-- Renewable Energy Settlement
-- Enterprise Treasury
-- Marketplace Services
-- Digital Payments
-- AI Agents
-- Governance
-- Oracle Network
-- Registry
-- Staking
-- Solana SVM
-- Proof of Generation (PoG)
-- Renewable Infrastructure
-- Cross-chain interoperability between Solana and Sui
+Financial Services Layer
 
----
+* PowerChain Financial Cloud™
+* Enterprise Treasury
+* Payment Processing
+* Settlement Engine
+* Liquidity Management
+* Tokenization Services
+* Asset Registry
 
-## Repository Structure
+⸻
 
-```text
+Intelligence Layer
+
+* AI Financial Agents
+* Risk Analysis
+* Fraud Detection
+* Treasury Automation
+* Predictive Analytics
+* Portfolio Intelligence
+
+⸻
+
+Infrastructure Layer
+
+* Oracle Network
+* Renewable Registry
+* Staking
+* Validator Network
+* Identity Services
+* Compliance Framework
+
+⸻
+
+Blockchain Layer
+
+* Solana SVM
+* SPL Token-2022
+* Proof of Generation (PoG)
+* Smart Contracts
+* On-chain Governance
+* Cross-chain Messaging
+
+⸻
+
+Repository Structure
+
 assets/
 ├── architecture/
-│   ├── powechain-token-architecture.png
-│   ├── bridge-architecture.png
-│   ├── swap-architecture.png
-│   ├── ecosystem-overview.png
-│   └── protocol-stack.png
-│
 ├── branding/
-│   ├── powerchain-logo.svg
-│   ├── pwrc-icon.svg
-│   ├── wpwrc-icon.svg
-│   └── wordmark.svg
-│
 ├── diagrams/
-│   ├── powerpay.png
-│   ├── powerswap.png
-│   ├── powerbridge.png
-│   ├── developer-portal.png
-│   └── financial-cloud.png
-│
+├── screenshots/
 docs/
-sdk/
-contracts/
+├── architecture/
+├── tokenomics/
+├── governance/
+├── staking/
+├── powerpay/
+├── powerswap/
+├── powerbridge/
+├── powerwallet/
+├── powerai/
+├── treasury/
+└── api/
 programs/
+contracts/
+sdk/
+apis/
 examples/
-```
+packages/
+├── powerpay/
+├── powerswap/
+├── powerbridge/
+├── powerwallet/
+├── treasury/
+├── governance/
+└── shared/
+apps/
+├── portal/
+├── dashboard/
+├── developer/
+└── docs/
+infrastructure/
 
----
+⸻
 
-## Related Documentation
+Documentation
 
-- Architecture
-- Tokenomics
-- Staking
-- Governance
-- PowerBridge™
-- PowerSwap™
-- PowerPay™
-- PowerAI™
-- GridOS™
-- Financial Cloud™
-- Developer Portal™
-- SDK Reference
-- REST API
-- GraphQL API
-- WebSocket API
+Protocol
 
----
+* Architecture
+* Tokenomics
+* Economics
+* Governance
+* Security
+* Consensus
 
-## Ecosystem
+Products
 
-| Product | Description |
-|----------|-------------|
-| PowerPay™ | Enterprise payments and checkout |
-| PowerSwap™ | Cross-chain token exchange |
-| PowerBridge™ | Solana ↔ Sui interoperability |
-| GridOS™ | Renewable energy operating platform |
-| PowerTreasury™ | Enterprise treasury management |
-| PowerAI™ | AI-native financial automation |
-| PowerGov™ | Governance and voting |
-| Marketplace™ | Digital assets and renewable marketplace |
+* PowerPay™
+* PowerSwap™
+* PowerBridge™
+* PowerWallet™
+* PowerAI™
+* PowerTreasury™
+* GridOS™
+* Marketplace™
 
----
+Developers
 
-## Network
+* SDK Reference
+* REST API
+* GraphQL API
+* WebSocket API
+* Smart Contracts
+* CLI
+* Examples
 
-### PWRC
+⸻
 
-Network
+Network Specifications
 
-Solana
+PWRC
 
-Standard
+Property	Value
+Network	Solana
+Standard	SPL Token-2022
+Symbol	PWRC
+Maximum Supply	18,440,000,000 PWRC
+Primary Functions	Utility • Governance • Staking • Settlement
 
-SPL Token-2022
+⸻
 
-Maximum Supply
+wPWRC
 
-**18,440,000,000 PWRC**
+Property	Value
+Network	Sui
+Type	Wrapped PowerChain Token
+Backing	1 PWRC = 1 wPWRC
+Bridge	PowerBridge™
 
----
+⸻
 
-### wPWRC
+Enterprise Use Cases
 
-Network
+PowerChain is designed for:
 
-Sui
+* Renewable energy companies
+* Utilities
+* Financial institutions
+* Payment providers
+* Governments
+* Carbon credit marketplaces
+* Digital asset exchanges
+* Infrastructure operators
+* Enterprise software vendors
+* AI-native financial applications
 
-Type
+⸻
 
-Wrapped PowerChain
+Technology Stack
 
-Backing
+* Solana SVM
+* SPL Token-2022
+* Rust
+* TypeScript
+* Node.js
+* GraphQL
+* REST APIs
+* WebSockets
+* Kubernetes
+* Enterprise AI Services
 
-1 PWRC = 1 wPWRC
+⸻
 
-Bridge
+Roadmap
 
-PowerBridge™
+Phase 1
 
----
+* PWRC Token
+* Developer SDK
+* PowerWallet™
+* Documentation
+
+Phase 2
+
+* PowerPay™
+* PowerSwap™
+* PowerBridge™
+* Governance
+
+Phase 3
+
+* PowerTreasury™
+* Marketplace™
+* AI Financial Agents
+
+Phase 4
+
+* Institutional Infrastructure
+* Global Renewable Settlement
+* Enterprise Financial Cloud™
+
+⸻
+
+Mission
+
+PowerChain Protocol™ is building the financial infrastructure that connects renewable energy, digital assets, enterprise finance, and artificial intelligence into a unified, programmable ecosystem.
+
+⸻
 
 <p align="center">
 
-**PowerChain Protocol™**
+PowerChain Protocol™
 
-Powering Renewable Infrastructure for the Digital Economy
+Renewable Infrastructure • Digital Assets • Enterprise Finance • AI
 
-Built on Solana • Powered by Proof of Generation
+Powered by PWRC
+
+Built on Solana • Secured by Proof of Generation (PoG)
 
 </p>
