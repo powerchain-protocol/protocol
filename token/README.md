@@ -2,7 +2,7 @@
 
 <p align="center">
 
-<img src="./assets/branding/pwrc-coin.png" width="180" alt="PWRC">
+<img src="./assets/tokenomics/token-architecture.png" width="180" alt="PWRC">
 
 # PWRC
 
