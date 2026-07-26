@@ -48,10 +48,6 @@ Built on **Solana** using the **SPL Token-2022** standard, PWRC is the foundatio
 
 </p>
 
-> High-resolution architecture diagram:
->
-> https://github.com/powerchain-protocol/tokens/blob/main/assets/architecture/powerchain-token-architecture.png
-
 ---
 
 # Table of Contents
