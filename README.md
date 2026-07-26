@@ -70,8 +70,8 @@ PowerChain tokens are designed with enterprise security, compliance, scalability
 
 | Token | Symbol | Type | Standard |
 |--------|--------|------|----------|
-| PowerChain | PWRC | Utility | SPL Token-2022 |
-| Wrapped PowerChain | wPWRC | Bridge Asset | SPL Token-2022 |
+| PowerChain | PWRC | Utility | SPL / Token-2022 |
+| Wrapped PowerChain | wPWRC | Bridge Asset | Sui network |
 | USD Coin | USDC | Stablecoin | SPL |
 | Euro Coin | EURC | Stablecoin | SPL |
 | Tether | USDT | Stablecoin | SPL |
@@ -185,7 +185,7 @@ PowerChain (PWRC) is the native utility token of the PowerChain ecosystem.
 | Standard | SPL Token-2022 |
 | Decimals | 9 |
 | Supply | Fixed |
-| Governance | PowerGov DAO |
+| Governance | PowerChain DAO |
 
 ---
 
