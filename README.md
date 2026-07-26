@@ -2,7 +2,7 @@
 
 <p align="center">
 
-<img src="./assets/branding/pwrc.png" width="180" alt="PowerChain">
+<img src="./public/assets/branding/pwrc.png" width="180" alt="PowerChain">
 
 <br>
 
