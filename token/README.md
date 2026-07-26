@@ -116,11 +116,12 @@ PWRC powers every layer of the PowerChain ecosystem.
 | Network | Solana |
 | Token Standard | SPL Token-2022 |
 | Decimals | 9 |
-| Maximum Supply | **18,440,000,000 PWRC** |
+| Fixed Supply | **18,440,000,000 PWRC** |
+| Burn | 2% Quartely |
 | Inflation | None |
 | Mint Authority | Disabled |
 | Additional Minting | Never |
-| Status | Fixed Supply |
+| Contract | TBA |
 
 ---
 
