@@ -27,4 +27,4 @@
 * Your uploaded coin artwork centred in three premium cards
 * Flow arrows showing the relationship between PWRC → PowerBridge™ → wPWRC and PWRC ↔ CCT Marketplace
 * Modern Apple/Stripe/Solana Foundation documentation style
-* Vector-style icons and typography suitable for your README.md, whitepaper, and documentation site.
+* Vector-style icons and typography suitable for README.md, whitepaper, and documentation site.
