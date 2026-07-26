@@ -1,16 +1,26 @@
 # PWRC
 
 <p align="center">
+  <img src="./assets/branding/pwrc-coin.png" width="180" alt="PWRC Coin">
+</p>
 
-<img src="./assets/tokenomics/token-architecture.png" width="180" alt="PWRC">
+<h1 align="center">PWRC</h1>
 
-# PWRC
+<p align="center">
+<b>Native Utility Token of the PowerChain Protocol™</b>
+</p>
 
-### Native Utility Token of the PowerChain Network™
+<p align="center">
+Renewable Infrastructure • Digital Assets • Enterprise Finance • AI
+</p>
 
-**Renewable Infrastructure • Digital Assets • Enterprise Finance • AI**
+<p align="center">
 
-Built on **Solana** • SPL Token-2022
+Built on <b>Solana</b> • SPL Token-2022 • Fixed Supply
+
+</p>
+
+<p align="center">
 
 ![Version](https://img.shields.io/badge/version-v1.0-0F5A46?style=for-the-badge)
 ![Network](https://img.shields.io/badge/network-Solana-9945FF?style=for-the-badge&logo=solana)
@@ -24,18 +34,35 @@ Built on **Solana** • SPL Token-2022
 
 # Overview
 
-PWRC is the native utility, settlement, staking, and governance token of the **PowerChain Protocol™**, an enterprise blockchain platform for renewable infrastructure, AI-native financial services, programmable payments, digital assets, and tokenized real-world assets (RWAs).
+PWRC is the native utility, settlement, staking, and governance token of the **PowerChain Protocol™**.
 
-Built on **Solana** using the **SPL Token-2022** standard, PWRC powers every protocol, application, and cloud service across the PowerChain ecosystem.
+Designed for enterprise-scale financial infrastructure, PWRC powers programmable payments, renewable energy markets, AI-native financial services, tokenized real-world assets (RWAs), and cross-chain liquidity.
+
+Built on **Solana** using the **SPL Token-2022** standard, PWRC is the foundational asset securing every PowerChain application, protocol, and cloud service.
+
+---
+
+# Architecture
+
+<p align="center">
+
+<img src="./assets/architecture/powerchain-token-architecture.png" width="100%">
+
+</p>
+
+> High-resolution architecture diagram:
+>
+> https://github.com/powerchain-protocol/tokens/blob/main/assets/architecture/powerchain-token-architecture.png
 
 ---
 
 # Table of Contents
 
 - Overview
-- Key Features
+- Architecture
+- Core Features
 - Token Utility
-- Token Information
+- Token Specifications
 - Tokenomics
 - Distribution
 - Vesting
@@ -43,7 +70,6 @@ Built on **Solana** using the **SPL Token-2022** standard, PWRC powers every pro
 - Governance
 - PowerBridge™
 - wPWRC
-- Smart Contract
 - Technology
 - Repository Structure
 - Documentation
@@ -53,17 +79,18 @@ Built on **Solana** using the **SPL Token-2022** standard, PWRC powers every pro
 
 ---
 
-# Key Features
+# Core Features
 
-- Fixed supply of **18.44 Billion PWRC**
+- Fixed maximum supply of **18.44 Billion PWRC**
 - Built on Solana
 - SPL Token-2022
-- Enterprise-grade digital asset
+- Native settlement asset
+- Enterprise payment token
 - Governance-enabled
 - Validator staking
-- Renewable energy settlement
+- Renewable infrastructure settlement
 - AI service payments
-- Enterprise treasury asset
+- Treasury reserve asset
 - Marketplace settlement
 - Cross-chain interoperability
 - Proof of Generation (PoG)
@@ -72,39 +99,37 @@ Built on **Solana** using the **SPL Token-2022** standard, PWRC powers every pro
 
 # Token Utility
 
-PWRC powers the entire PowerChain ecosystem.
+PWRC powers every layer of the PowerChain ecosystem.
 
-Primary utilities include:
-
-- Network settlement
-- Transaction fees
-- Validator incentives
-- Governance voting
-- Treasury operations
-- AI service consumption
-- Marketplace settlement
-- Enterprise payments
-- Renewable energy settlement
-- Carbon market settlement
-- Cross-chain liquidity
-- Ecosystem incentives
+| Utility | Description |
+|----------|-------------|
+| Payments | Enterprise and protocol settlement |
+| Treasury | Treasury reserve asset |
+| Staking | Validator and protocol staking |
+| Governance | DAO voting |
+| AI Services | AI compute and automation payments |
+| Marketplace | Digital asset settlement |
+| Renewable Energy | Energy settlement and incentives |
+| Carbon Markets | Carbon asset settlement |
+| Cross-chain Liquidity | Bridge collateral |
+| Ecosystem Rewards | Community incentives |
 
 ---
 
-# Token Information
+# Token Specifications
 
 | Property | Value |
 |-----------|-------|
 | Name | PowerChain |
 | Symbol | PWRC |
-| Version | v1.0 |
 | Network | Solana |
-| Standard | SPL Token-2022 |
+| Token Standard | SPL Token-2022 |
 | Decimals | 9 |
 | Maximum Supply | **18,440,000,000 PWRC** |
 | Inflation | None |
 | Mint Authority | Disabled |
-| Additional Minting | No |
+| Additional Minting | Never |
+| Status | Fixed Supply |
 
 ---
 
@@ -112,22 +137,24 @@ Primary utilities include:
 
 ## Maximum Supply
 
-```text
+```
 18,440,000,000 PWRC
 
-Fixed Supply
+✓ Fixed Supply
 
-No Inflation
+✓ No Inflation
 
-No Additional Minting
+✓ Mint Disabled
+
+✓ No Additional Issuance
 ```
 
 ---
 
 # Distribution
 
-| Allocation | Share |
-|------------|------:|
+| Allocation | Percentage |
+|------------|-----------:|
 | Community & Ecosystem | 35% |
 | Treasury Reserve | 20% |
 | Staking Rewards | 15% |
@@ -141,24 +168,24 @@ No Additional Minting
 
 # Vesting
 
-| Category | Cliff | Vesting |
-|----------|-------|----------|
+| Allocation | Cliff | Vesting |
+|------------|-------|----------|
 | Core Team | 12 Months | 36 Months |
 | Strategic Partners | 6 Months | 24 Months |
-| Treasury | DAO Controlled | Long-Term |
-| Community | According to programme | Ongoing |
+| Treasury | DAO Managed | Long-Term |
+| Community | Programme Based | Ongoing |
 
 ---
 
 # Staking
 
-PWRC holders may participate in protocol staking to:
+PWRC holders may stake tokens to:
 
-- Support validators
-- Secure the network
+- Secure validators
+- Support protocol decentralisation
 - Earn staking rewards
 - Participate in governance
-- Support protocol decentralisation
+- Support renewable infrastructure
 
 Reward sources may include:
 
@@ -171,38 +198,41 @@ Reward sources may include:
 
 # Governance
 
-PWRC enables participation in PowerGov™ governance.
+PWRC provides governance rights within **PowerGov™**.
 
-Potential governance areas include:
+Governance proposals may include:
 
 - Treasury allocation
 - Protocol upgrades
 - Validator policies
 - Ecosystem grants
-- Community proposals
 - Fee parameters
-- Staking policies
+- Staking configuration
+- Community proposals
 
 ---
 
 # PowerBridge™
 
-PowerBridge™ enables secure interoperability between Solana and the Sui Network.
+PowerBridge™ provides secure interoperability between Solana and the Sui Network.
 
-Supported assets:
+| Network | Asset |
+|----------|-------|
+| Solana | PWRC |
+| Sui | wPWRC |
 
-| Asset | Network |
-|--------|----------|
-| PWRC | Solana |
-| wPWRC | Sui |
+Bridge operations include:
+
+- Lock native PWRC
+- Mint wPWRC
+- Burn wPWRC
+- Unlock PWRC
 
 ---
 
 # wPWRC
 
-**wPWRC** is the wrapped representation of PWRC on the **Sui Network**.
-
-## Properties
+wPWRC is the official wrapped representation of PWRC on the **Sui Network**.
 
 | Property | Value |
 |-----------|-------|
@@ -210,23 +240,12 @@ Supported assets:
 | Symbol | wPWRC |
 | Network | Sui |
 | Decimals | 9 |
-| Supply | Dynamic (1:1 backed) |
+| Supply | Dynamic |
+| Backing | 1:1 Native PWRC |
 
-Each wPWRC is backed by one native PWRC locked through PowerBridge™.
+Every wPWRC is fully collateralised by native PWRC locked through **PowerBridge™**.
 
-Native PWRC maintains the fixed maximum supply of **18.44 billion tokens**.
-
----
-
-# Smart Contract
-
-| Property | Value |
-|----------|-------|
-| Network | Solana |
-| Standard | SPL Token-2022 |
-| Decimals | 9 |
-| Maximum Supply | 18,440,000,000 PWRC |
-| Mint | *To be announced* |
+> **Native PWRC always maintains the fixed maximum supply of 18.44 billion tokens.**
 
 ---
 
@@ -245,10 +264,10 @@ Native PWRC maintains the fixed maximum supply of **18.44 billion tokens**.
 
 ## Infrastructure
 
-- PowerChain Financial Cloud™
 - PowerBridge™
 - Oracle Network
 - Registry Services
+- PowerChain Financial Cloud™
 
 ---
 
@@ -258,6 +277,13 @@ Native PWRC maintains the fixed maximum supply of **18.44 billion tokens**.
 .
 ├── README.md
 ├── LICENSE
+│
+├── assets/
+│   ├── branding/
+│   ├── architecture/
+│   ├── tokenomics/
+│   └── diagrams/
+│
 ├── docs/
 │   ├── tokenomics.md
 │   ├── staking.md
@@ -267,31 +293,26 @@ Native PWRC maintains the fixed maximum supply of **18.44 billion tokens**.
 │   ├── security.md
 │   └── faq.md
 │
-├── assets/
-│   ├── branding/
-│   ├── architecture/
-│   ├── tokenomics/
-│   └── diagrams/
-│
 ├── metadata/
 ├── bridge/
+├── scripts/
 ├── examples/
-└── scripts/
+└── contracts/
 ```
 
 ---
 
 # Documentation
 
-## Token
+### Token
 
 - Token Overview
 - Tokenomics
-- Supply
+- Supply Model
 - Distribution
 - Vesting
 
-## Network
+### Network
 
 - Staking
 - Governance
@@ -299,34 +320,35 @@ Native PWRC maintains the fixed maximum supply of **18.44 billion tokens**.
 - wPWRC
 - Security
 
-## Developers
+### Developers
 
-- Smart Contracts
-- Token Metadata
 - SPL Token-2022
-- Examples
+- Metadata
+- Smart Contracts
+- SDK Examples
 - API Reference
 
 ---
 
 # Roadmap
 
-| Phase | Status |
-|---------|---------|
-| PWRC Token | ✅ |
-| Token Metadata | ✅ |
-| Staking | 🚧 |
-| Governance | 🚧 |
-| PowerBridge™ | 🚧 |
-| wPWRC | 🚧 |
-| Exchange Listings | 🔜 |
-| Institutional Custody | 🔜 |
+| Feature | Status |
+|----------|--------|
+| PWRC Token | ✅ Complete |
+| Metadata | ✅ Complete |
+| Documentation | ✅ Complete |
+| Staking | 🚧 In Progress |
+| Governance | 🚧 In Progress |
+| PowerBridge™ | 🚧 In Progress |
+| wPWRC | 🚧 In Progress |
+| Exchange Integrations | 🔜 Planned |
+| Institutional Custody | 🔜 Planned |
 
 ---
 
 # Disclaimer
 
-PWRC is designed as a utility and governance token within the PowerChain ecosystem.
+PWRC is designed as a utility, settlement, staking, and governance token within the PowerChain ecosystem.
 
 This repository is provided for informational and development purposes only and does not constitute financial, investment, legal, or tax advice.
 
@@ -346,10 +368,12 @@ Licensed under the **Apache License 2.0**.
 
 ### Native Utility Token of the PowerChain Protocol™
 
-**Fixed Supply: 18.44 Billion PWRC**
+**Fixed Maximum Supply**
+
+**18,440,000,000 PWRC**
 
 Built on **Solana** • SPL Token-2022
 
-**wPWRC** is the official wrapped representation of PWRC on the **Sui Network**, backed 1:1 through **PowerBridge™**.
+wPWRC is the official wrapped representation of PWRC on the **Sui Network**, backed **1:1** through **PowerBridge™**.
 
 </p>
