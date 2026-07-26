@@ -17,6 +17,7 @@ Built on <b>Solana</b> • SPL Token-2022 • Fixed Supply
 </p>
 
 <p align="center">
+  
 ![Version](https://img.shields.io/badge/version-v1.0-0F5A46?style=for-the-badge)
 ![Network](https://img.shields.io/badge/network-Solana-9945FF?style=for-the-badge&logo=solana)
 ![Standard](https://img.shields.io/badge/standard-SPL--Token--2022-14F195?style=for-the-badge)
