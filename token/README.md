@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/branding/pwrc-coin.png" width="180" alt="PWRC Coin">
+  <img src="../assets/branding/pwrc-coin.png" width="180" alt="PWRC Coin">
 </p>
 
 <h1 align="center">PWRC</h1>
@@ -44,7 +44,7 @@ Built on **Solana** using the **SPL Token-2022** standard, PWRC is the foundatio
 
 <p align="center">
 
-<img src="./assets/architecture/token-architecture.png" width="100%">
+<img src="../assets/architecture/tokens-architecture.png" width="100%">
 
 </p>
 
