@@ -128,8 +128,6 @@ into one enterprise blockchain platform.
 
 <p align="center">
 
-<b>PowerChain Protocol Architecture</b>
-
 </p>
 
 ---
