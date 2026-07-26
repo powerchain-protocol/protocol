@@ -13,7 +13,7 @@ Renewable Infrastructure • Digital Assets • Enterprise Finance • AI
 </p>
 
 <p align="center">
-Built on <b>Solana</b> • SPL Token-2022 • Fixed Supply
+Built on <b>Solana</b> • SPL • Token-2022 • Fixed Supply
 </p>
 
 <p align="center">
@@ -114,7 +114,7 @@ PWRC powers every layer of the PowerChain ecosystem.
 | Name | PowerChain |
 | Symbol | PWRC |
 | Network | Solana |
-| Token Standard | SPL Token-2022 |
+| Token Standard | SPL • Token-2022 |
 | Decimals | 9 |
 | Fixed Supply | **18,440,000,000 PWRC** |
 | Burn | 2% Quartely |
