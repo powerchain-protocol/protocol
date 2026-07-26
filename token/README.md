@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../assets/branding/pwrc-coin.png" width="180" alt="PWRC Coin">
+  <img src="../public/assets/pwrc.png" width="180" alt="PowerChain"> alt="PWRC Coin">
 </p>
 
 <h1 align="center">PWRC</h1>
