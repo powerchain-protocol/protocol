@@ -27,7 +27,7 @@ Built on **Solana** • Powered by **Proof of Generation (PoG)**
 
 ---
 
-### Official Links
+### Official Links (under construction)
 
 Website • https://powerchain.energy
 
