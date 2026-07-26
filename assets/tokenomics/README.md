@@ -7,7 +7,7 @@
     * Staking
     * Payments
     * Settlement
-    * Gas Fees
+    * Lamports (Gas) Fees
     * Treasury
 * wPWRC (Wrapped Token)
     * Solana ↔ Sui
