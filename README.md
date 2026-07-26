@@ -2,7 +2,7 @@
 
 <p align="center">
 
-<img src="./assets/branding/powerchain-logo.svg" width="160" alt="PowerChain Logo">
+<img src="./assets/branding/pwrc-coin.png" width="160" alt="PowerChain Logo">
 
 # PowerChain Protocol™
 
