@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/branding/pwrc-coin.svg" width="140" alt="PWRC">
+<img src="./assets/branding/pwrc-coin.png" width="140" alt="PWRC">
 
 # PowerChain Token (PWRC)
 
@@ -35,7 +35,7 @@ Built on **Solana** using the **SPL Token-2022** standard, PWRC is designed for 
 
 <p align="center">
 
-<img src="./assets/architecture/powerchain-token-architecture.svg" width="100%">
+<img src="./assets/architecture/powerchain-token-architecture.png" width="100%">
 
 </p>
 
