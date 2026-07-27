@@ -1,15 +1,17 @@
-# PowerChain (PWRC)™
+# PowerChain Protocol™
+
+<p align="center">
+  <img src="./public/assets/pwrc.png" width="180" alt="PowerChain Protocol">
+</p>
 
 <p align="center">
 
-<img src="./public/assets/pwrc.png" width="180" alt="PowerChain">
-
-<br>
-
-![Version](https://img.shields.io/badge/version-v1.0-0F5A46?style=for-the-badge)
-![Protocol](https://img.shields.io/badge/Protocol-PowerChain-success?style=for-the-badge)
-![Network](https://img.shields.io/badge/Network-Solana-9945FF?style=for-the-badge&logo=solana)
-![Token](https://img.shields.io/badge/Token-SPL--2022-14F195?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-v1.0.0--beta-0F5A46?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-Beta-success?style=for-the-badge)
+![Protocol](https://img.shields.io/badge/Protocol-PowerChain-0F5A46?style=for-the-badge)
+![Blockchain](https://img.shields.io/badge/Blockchain-Solana-9945FF?style=for-the-badge&logo=solana)
+![Standard](https://img.shields.io/badge/Standard-SPL--Token--2022-14F195?style=for-the-badge)
+![Language](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust)
 ![License](https://img.shields.io/badge/License-Apache--2.0-lightgrey?style=for-the-badge)
 
 </p>
@@ -20,80 +22,108 @@ PowerChain Protocol™
 
 <p align="center">
 
-### Enterprise Blockchain for Renewable Infrastructure, AI & Digital Finance
+### Enterprise AI-Native Renewable Energy & Financial Infrastructure
 
-**Renewable Infrastructure • Digital Assets • Enterprise Finance • AI**
+Renewable Infrastructure • Digital Finance • AI • Digital Assets • Enterprise Payments
 
-The enterprise blockchain platform powering programmable finance, renewable infrastructure, AI-native financial services, tokenized real-world assets, and cross-chain interoperability.
-
-Built on **Solana** • Powered by **Proof of Generation (PoG)**
+**Built on Solana** • **Powered by Proof of Generation (PoG)**
 
 </p>
 
 ---
 
-# Table of Contents
-
-- Overview
-- Vision
-- Why PowerChain?
-- Product Ecosystem
-- Protocol Architecture
-- PWRC Token
-- Cross-Chain Assets
-- Technology Stack
-- Repository Structure
-- Getting Started
-- Documentation
-- Roadmap
-- Contributing
-- License
-
----
-
 # Overview
 
-PowerChain Protocol™ is an enterprise blockchain ecosystem built on **Solana**, enabling programmable finance, renewable infrastructure, AI-native financial services, tokenized real-world assets (RWAs), enterprise payments, and cross-chain interoperability.
+PowerChain Protocol™ is an enterprise blockchain protocol designed to connect renewable infrastructure, programmable finance, artificial intelligence and digital assets through a unified, developer-first ecosystem.
 
-PowerChain combines blockchain infrastructure, enterprise finance, artificial intelligence, digital payments, treasury management, and renewable infrastructure into a unified programmable platform powered by **PWRC**, the native protocol asset.
+Built on the Solana Virtual Machine (SVM), the protocol enables secure, scalable and high-performance applications for financial institutions, utilities, enterprises, governments and ecosystem developers.
 
-Designed for enterprises, developers, utilities, financial institutions, governments, and infrastructure operators, PowerChain provides the foundation for building secure, scalable, and sustainable digital economies.
+PowerChain provides the foundation for programmable payments, tokenised infrastructure, treasury management, carbon markets, renewable energy settlement, AI-native financial services and cross-chain interoperability.
 
 ---
 
-# Vision
+# Protocol Vision
 
-PowerChain is building the financial operating system for renewable infrastructure.
+PowerChain aims to become the financial operating system for renewable infrastructure.
 
-The protocol connects:
+The protocol combines:
 
-- Renewable Energy
+- Renewable Energy Infrastructure
 - Enterprise Payments
 - Treasury Management
-- Digital Assets
-- AI Agents
+- Artificial Intelligence
+- Tokenised Real-World Assets
 - Carbon Markets
-- Tokenized Infrastructure
 - Cross-Chain Liquidity
+- Enterprise Identity
+- Digital Asset Infrastructure
 
-into one enterprise blockchain platform.
+into one programmable blockchain platform.
 
 ---
 
-# Why PowerChain?
+# Core Capabilities
 
-- Enterprise-grade blockchain platform
-- Solana SVM performance
-- SPL Token-2022 assets
-- AI-native financial infrastructure
-- Renewable energy settlement
-- Tokenized infrastructure & RWAs
-- Institutional treasury platform
-- Cross-chain interoperability
-- Enterprise APIs & SDKs
-- Open architecture
-- Cloud-native infrastructure
-- Developer-first ecosystem
+PowerChain provides enterprise infrastructure for:
+
+- Enterprise Payments
+- Treasury Management
+- Renewable Energy Markets
+- Carbon Credit Settlement
+- AI Financial Services
+- Digital Asset Issuance
+- Tokenised Infrastructure
+- Governance & Staking
+- Cross-Chain Assets
+- Wallet Infrastructure
+- Identity & Organisations
+- Developer APIs & SDKs
+
+---
+
+# Protocol Stack
+
+```text
+┌──────────────────────────────────────────────┐
+│                Applications                  │
+│ PowerPay • PowerSwap • Wallet • Marketplace  │
+│ Treasury • AI • GridOS • Governance          │
+└──────────────────────────────────────────────┘
+                     │
+                     ▼
+┌──────────────────────────────────────────────┐
+│             Developer Platform               │
+│ SDKs • REST • GraphQL • WebSocket • CLI      │
+└──────────────────────────────────────────────┘
+                     │
+                     ▼
+┌──────────────────────────────────────────────┐
+│              PowerChain Protocol             │
+│ PWRC • Treasury • Identity • Exchange        │
+│ Governance • Bridge • Smart Contracts        │
+└──────────────────────────────────────────────┘
+                     │
+                     ▼
+┌──────────────────────────────────────────────┐
+│              Blockchain Layer                │
+│ Solana • SPL Token-2022 • Programs • RPC     │
+└──────────────────────────────────────────────┘
+                     │
+                     ▼
+┌──────────────────────────────────────────────┐
+│            Cloud Infrastructure              │
+│ Kubernetes • Docker • OpenTelemetry          │
+│ GitHub Actions • Monitoring                  │
+└──────────────────────────────────────────────┘
+```
+
+---
+
+# Protocol Architecture
+
+<p align="center">
+<img src="./assets/architecture/token-architecture.png" width="100%" alt="PowerChain Protocol Architecture">
+</p>
 
 ---
 
@@ -101,34 +131,16 @@ into one enterprise blockchain platform.
 
 | Product | Description |
 |----------|-------------|
-| 🪙 **PWRC** | Native utility, governance, staking and settlement token |
-| 💳 **PowerPay™** | Enterprise payments & programmable finance |
-| 🔄 **PowerSwap™** | Digital asset exchange & liquidity |
-| 🌉 **PowerBridge™** | Solana ↔ Sui interoperability |
-| 👛 **PowerWallet™** | Secure self-custody wallet |
-| 🏦 **PowerTreasury™** | Enterprise treasury management |
-| 🤖 **PowerAI™** | AI-powered financial automation |
-| ⚡ **GridOS™** | Renewable infrastructure operating platform |
-| 🗳 **PowerGov™** | Governance & staking |
-| 🛒 **Marketplace™** | Renewable energy & digital asset marketplace |
-
----
-
-# Protocol Architecture
-
-<p align="center">
-
-<a href="./assets/architecture/token-architecture.png">
-
-<img src="./assets/architecture/token-architecture.png" width="100%">
-
-</a>
-
-</p>
-
-<p align="center">
-
-</p>
+| **PWRC** | Native utility, governance and settlement token |
+| **PowerPay™** | Enterprise payment infrastructure |
+| **PowerSwap™** | Digital asset exchange |
+| **PowerBridge™** | Cross-chain interoperability |
+| **PowerWallet™** | Secure wallet infrastructure |
+| **PowerTreasury™** | Enterprise treasury platform |
+| **PowerAI™** | AI-native financial automation |
+| **GridOS™** | Renewable infrastructure platform |
+| **PowerGov™** | Governance and staking |
+| **Marketplace™** | Renewable energy & digital asset marketplace |
 
 ---
 
@@ -136,17 +148,18 @@ into one enterprise blockchain platform.
 
 PWRC is the native protocol asset securing every application within the PowerChain ecosystem.
 
-### Utilities
+## Utilities
 
 - Network settlement
+- Transaction fees
 - Governance voting
 - Validator incentives
 - Staking
-- Enterprise payments
 - Treasury operations
+- Enterprise payments
 - Marketplace settlement
 - AI service payments
-- Renewable infrastructure settlement
+- Renewable energy settlement
 - Cross-chain liquidity
 
 ---
@@ -154,12 +167,12 @@ PWRC is the native protocol asset securing every application within the PowerCha
 # Network Specifications
 
 | Property | Value |
-|----------|-------|
+|-----------|-------|
 | Network | Solana |
-| Standard | SPL Token-2022 |
+| Standard | SPL • Token-2022 |
 | Symbol | PWRC |
 | Decimals | 9 |
-| Maximum Supply | **18,440,000,000 PWRC** |
+| Maximum Supply | 18,440,000,000 PWRC |
 | Consensus | Proof of Generation (PoG) |
 
 ---
@@ -167,11 +180,58 @@ PWRC is the native protocol asset securing every application within the PowerCha
 # Cross-Chain Assets
 
 | Asset | Network | Supply |
-|---------|----------|-------------------------|
-| **PWRC** | Solana | **18.44 Billion Fixed Supply** |
-| **wPWRC** | Sui | 1:1 Wrapped Representation |
+|--------|----------|----------------------------|
+| PWRC | Solana | Fixed Supply |
+| wPWRC | Sui | 1:1 Wrapped Asset |
 
-PowerBridge™ securely locks native **PWRC** on Solana and mints **wPWRC** on the Sui Network. Every wrapped token is backed 1:1 by locked PWRC and can be redeemed through the bridge.
+PowerBridge™ locks native PWRC on Solana and issues an equivalent wrapped representation on supported networks.
+
+---
+
+# Enterprise Features
+
+- Organisation Management
+- Role-Based Access Control (RBAC)
+- Multi-Signature Treasury
+- Policy Engine
+- Enterprise Wallets
+- Transaction Simulation
+- Event Streaming
+- AI Agents
+- Audit Logging
+- Webhooks
+- High Availability
+- OpenTelemetry Integration
+
+---
+
+# Security & Compliance
+
+## Authentication
+
+- OAuth 2.1
+- OpenID Connect (OIDC)
+- API Keys
+- JWT
+- WebAuthn Passkeys
+
+## Security
+
+- TLS 1.3
+- Signed Transactions
+- Package Provenance
+- Code Signing
+- Dependency Scanning
+- Secret Scanning
+- CodeQL Analysis
+- Supply-Chain Security
+
+## Compliance
+
+- Audit Logging
+- Security Reviews
+- Versioned Releases
+- Enterprise Governance
 
 ---
 
@@ -179,8 +239,8 @@ PowerBridge™ securely locks native **PWRC** on Solana and mints **wPWRC** on t
 
 ## Frontend
 
-- Next.js
-- React
+- React 19
+- Next.js 16
 - TypeScript
 - Tailwind CSS
 
@@ -195,13 +255,14 @@ PowerBridge™ securely locks native **PWRC** on Solana and mints **wPWRC** on t
 - Solana
 - Rust
 - Anchor
-- SPL Token-2022
+- SPL / Token-2022
 
 ## APIs
 
-- REST API
+- REST
 - GraphQL
-- WebSockets
+- JSON-RPC
+- WebSocket
 
 ## Infrastructure
 
@@ -212,40 +273,59 @@ PowerBridge™ securely locks native **PWRC** on Solana and mints **wPWRC** on t
 
 ---
 
+# Performance Targets
+
+| Metric | Target |
+|----------|---------:|
+| SDK Initialisation | < 50 ms |
+| Transaction Build | < 20 ms |
+| Wallet Creation | < 100 ms |
+| Bundle Size | < 150 kB (gzip) |
+| Memory Footprint | < 20 MB |
+
+---
+
+# Compatibility
+
+## Supported Runtimes
+
+| Runtime | Supported |
+|----------|-----------|
+| Node.js 20+ | ✅ |
+| Browser | ✅ |
+| Bun | ✅ |
+| Deno | ✅ |
+| React Native | ✅ |
+| Electron | ✅ |
+| Cloudflare Workers | ✅ |
+| Vercel Edge Runtime | ✅ |
+
+## Supported Networks
+
+| Network | Status |
+|----------|--------|
+| Solana Mainnet | ✅ |
+| Solana Devnet | ✅ |
+| Solana Testnet | ✅ |
+| Local Validator | ✅ |
+| Sui Bridge | 🚧 |
+
+---
+
 # Repository Structure
 
 ```text
-.
-├── apps/
-│   ├── portal/
-│   ├── dashboard/
-│   ├── developer/
-│   └── docs/
-│
-├── packages/
-│   ├── powerpay/
-│   ├── powerswap/
-│   ├── powerbridge/
-│   ├── powerwallet/
-│   ├── powertreasury/
-│   ├── powergov/
-│   ├── powerai/
-│   └── shared/
-│
-├── programs/
-├── contracts/
-├── sdk/
-├── apis/
-├── docs/
-├── examples/
-├── assets/
-│   ├── architecture/
-│   ├── branding/
-│   ├── diagrams/
-│   ├── icons/
-│   └── screenshots/
-│
-└── README.md
+apps/
+packages/
+programs/
+contracts/
+sdk/
+apis/
+docs/
+examples/
+assets/
+scripts/
+.github/
 ```
 
 ---
@@ -253,15 +333,15 @@ PowerBridge™ securely locks native **PWRC** on Solana and mints **wPWRC** on t
 # Getting Started
 
 ```bash
-git clone https://github.com/powerchain-protocol/tokens.git
+git clone https://github.com/powerchain-protocol/powerchain.git
 
-cd tokens
+cd powerchain
 
-npm install
+pnpm install
 
-npm run build
+pnpm build
 
-npm test
+pnpm test
 ```
 
 ---
@@ -271,57 +351,63 @@ npm test
 ## Protocol
 
 - Architecture
-- Tokenomics
-- Governance
-- Staking
-- Security
 - Whitepaper
-
-## Products
-
-- PowerPay™
-- PowerSwap™
-- PowerBridge™
-- PowerWallet™
-- PowerTreasury™
-- PowerAI™
-- Marketplace™
+- Governance
+- Tokenomics
+- Security
+- Consensus
 
 ## Developers
 
-- SDK
+- SDKs
 - REST API
 - GraphQL API
+- JSON-RPC
 - WebSocket API
-- CLI
 - Smart Contracts
 - Examples
-- Developer Portal™
+- Tutorials
+
+## Enterprise
+
+- Treasury
+- Payments
+- Identity
+- AI Platform
+- Renewable Energy
+- Marketplace
 
 ---
 
 # Roadmap
 
 | Phase | Status |
-|---------|---------|
-| PWRC Protocol | ✅ Complete |
-| SDK & APIs | ✅ Complete |
-| Developer Portal™ | ✅ Complete |
-| PowerWallet™ | 🚧 In Progress |
-| PowerPay™ | 🚧 In Progress |
-| PowerSwap™ | 🚧 In Progress |
-| PowerBridge™ | 🚧 In Progress |
-| Marketplace™ | 🔜 Planned |
-| PowerTreasury™ | 🔜 Planned |
-| AI Financial Agents | 🔜 Planned |
+|---------|--------|
+| Protocol Specification | ✅ |
+| PWRC Token | ✅ |
+| SDK | 🚧 |
+| APIs | 🚧 |
+| Developer Portal | 🚧 |
+| Wallet | 🚧 |
+| Payments | 🚧 |
+| Exchange | 🚧 |
+| Marketplace | 🔜 |
+| AI Platform | 🔜 |
 
 ---
 
 # Contributing
 
-We welcome contributions from developers, enterprises, researchers, and the open-source community.
+We welcome contributions from developers, researchers, enterprises and the open-source community.
 
-Please review **CONTRIBUTING.md** before submitting pull requests or issues.
+Please read:
+
+- CONTRIBUTING.md
+- GOVERNANCE.md
+- SECURITY.md
+- CODE_OF_CONDUCT.md
+
+before opening issues or submitting pull requests.
 
 ---
 
@@ -329,24 +415,18 @@ Please review **CONTRIBUTING.md** before submitting pull requests or issues.
 
 Licensed under the **Apache License 2.0**.
 
+See the **LICENSE** file for details.
+
 ---
 
 <p align="center">
 
 ## PowerChain Protocol™
 
-### Renewable Infrastructure • Digital Assets • Enterprise Finance • AI
+### Enterprise AI-Native Renewable Energy & Financial Infrastructure
 
-**Powered by PWRC • Built on Solana • Secured by Proof of Generation (PoG)**
+**Version:** **v1.0.0-beta**
 
----
-
-**Official Resources**
-
-🌐 Website: https://powerchain.energy
-
-📚 Documentation: https://docs.powerchain.energy
-
-💻 GitHub: https://github.com/powerchain-protocol
+Built on **Solana** • Powered by **Proof of Generation (PoG)**
 
 </p>
