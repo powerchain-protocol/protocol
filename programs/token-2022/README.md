@@ -1,7 +1,7 @@
-# PowerChain PWRC (Token-2022) Protocol™
+# PowerChain PWRC Token-2022 Protocol™
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/powerchain-protocol/protocol/4fe5e30c0c1689bdb79d7f50fae1411857ce1e7a/public/assets/pwrc.png" width="180" alt="PWRC Token">
+  <img src="https://raw.githubusercontent.com/powerchain-protocol/protocol/4fe5e30c0c1689bdb79d7f50fae1411857ce1e7a/public/assets/pwrc.png" width="160" alt="PWRC Token">
 </p>
 
 <h1 align="center">
@@ -9,90 +9,111 @@ PWRC
 </h1>
 
 <p align="center">
-<b>Native Utility Token of the PowerChain Network™</b><br>
-Renewable Infrastructure • Digital Assets • Energy Finance • Carbon Markets
+<b>Native Utility & Governance Asset of the PowerChain Network™</b>
+<br>
+Energy Infrastructure • Real-World Assets • Digital Markets
 </p>
+
 
 <p align="center">
 
 ![Solana](https://img.shields.io/badge/Solana-Token--2022-9945FF?style=for-the-badge&logo=solana)
-![Anchor](https://img.shields.io/badge/Anchor-Framework-111111?style=for-the-badge)
-![Rust](https://img.shields.io/badge/Rust-Smart%20Contract-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-Production%20Architecture-green?style=for-the-badge)
+![Anchor](https://img.shields.io/badge/Anchor-Framework-black?style=for-the-badge)
+![Rust](https://img.shields.io/badge/Rust-Protocol-orange?style=for-the-badge)
+![Security](https://img.shields.io/badge/Security-Multisig%20%7C%20Timelock-green?style=for-the-badge)
 
 </p>
 
 
+---
+
 # Overview
 
-**PWRC** is the native utility and governance asset of **PowerChain Network™**, a blockchain infrastructure protocol designed for:
+**PWRC** is the native protocol asset powering the **PowerChain Network™**, a blockchain infrastructure layer designed to support digital ownership, settlement, and financial coordination across energy-related markets.
 
-- Renewable energy markets
-- Digital energy assets
-- Carbon credit infrastructure
-- Enterprise settlement
-- Real-world asset tokenisation
-- Decentralised energy finance
+The protocol combines:
 
-PWRC is implemented using **Solana Token-2022**, enabling advanced token functionality:
-
-- Transfer fee configuration
-- Treasury funding
-- Staking incentives
-- Governance-controlled parameters
+- Solana high-performance execution
+- Token-2022 programmable asset capabilities
 - Cross-chain interoperability
-- Deflationary supply mechanics
+- Governance-controlled economic parameters
+- Real-world asset infrastructure
+
+PWRC provides the foundation for:
+
+- Network governance
+- Treasury coordination
+- Ecosystem incentives
+- Digital energy asset settlement
+- Carbon market infrastructure
+
+
+---
+
+# Protocol Design Principles
+
+PowerChain is built around five core principles:
+
+| Principle | Description |
+|---|---|
+| Security First | Multisig-controlled critical operations |
+| Transparency | Public on-chain accounting |
+| Interoperability | Cross-chain asset compatibility |
+| Sustainability | Treasury and incentive mechanisms |
+| Governance | Community-controlled evolution |
 
 
 ---
 
 # Token Specification
 
-| Parameter | Value |
-|---|---:|
+
+| Parameter | Specification |
+|---|---|
 | Token Name | PowerChain |
 | Symbol | PWRC |
-| Network | Solana |
-| Standard | SPL Token-2022 |
+| Blockchain | Solana |
+| Token Standard | SPL Token-2022 |
 | Decimals | 9 |
 | Maximum Supply | 18,446,000,000 PWRC |
-| Base Units | 18,446,000,000 × 10⁹ |
+| Supply Model | Fixed Supply |
 | Initial Reference Price | $0.000001 |
-| Supply Model | Fixed |
-| Governance | DAO Controlled |
+| Governance | Protocol DAO |
 
 
 ---
 
 # Token Architecture
 
-```
 
 ```
-             PowerChain Network™
 
-                     |
-                     |
+```
+                PowerChain Protocol
 
-                PWRC Token
 
-                     |
+                        |
 
-    ---------------------------------
+                     PWRC
 
-    |              |                |
 
-Governance     Treasury        Staking
+    -----------------------------------------
 
-    |              |                |
+    |                    |                  |
 
-    ---------------------------------
+Governance          Treasury          Incentives
 
-                     |
 
-          Energy Economy Layer
+    |                    |                  |
 
- Renewable Assets • Carbon Credits • RWA
+    -----------------------------------------
+
+
+                        |
+
+          Energy & Asset Infrastructure Layer
+
+    Renewable Assets • Carbon Credits • RWA Markets
 ```
 
 ```
@@ -100,9 +121,12 @@ Governance     Treasury        Staking
 
 ---
 
-# Token-2022 Extensions
+# Token-2022 Implementation
 
-PWRC uses Solana Token-2022 extensions.
+
+PWRC uses the Solana Token-2022 standard to enable programmable token functionality.
+
+Implemented extensions:
 
 
 ## Transfer Fee Configuration
@@ -112,44 +136,47 @@ Protocol transfer fee:
 ```
 
 2%
-
 200 basis points
 
 ```
 
+
 Fee allocation:
 
-```
-
-```
-             Transfer Fees
-
-                  |
-
-      ----------------------------
-
-      |                          |
-
-  Treasury                 Staking Rewards
-
-      70%                       30%
-```
 
 ```
 
+```
+                Transfer Fees
 
-Benefits:
+                     |
 
-- Sustainable protocol funding
-- Treasury growth
-- Long-term ecosystem incentives
+      --------------------------------
+
+      |                              |
+
+  Treasury                     Staking Pool
+
+     70%                            30%
+```
+
+```
+
+
+Purpose:
+
+- Sustainable protocol operations
+- Ecosystem development
+- Long-term participant incentives
 
 
 ---
 
-# On-chain Metadata
+## On-Chain Metadata
 
-PWRC metadata uses:
+
+PWRC metadata is maintained using:
+
 
 ```
 
@@ -158,7 +185,8 @@ TokenMetadata
 
 ```
 
-Stored on-chain:
+
+Stored metadata:
 
 ```
 
@@ -169,53 +197,87 @@ Symbol:
 PWRC
 
 URI:
-Official metadata endpoint
+Protocol Metadata Endpoint
 
 ```
 
 
 ---
 
-# Deflationary Burn Mechanism
+# Supply Management
 
-PWRC includes a quarterly burn mechanism.
 
-## Burn Process
+## Fixed Supply
+
 
 ```
 
-Quarter End
+Maximum Supply:
 
-↓
+18,446,000,000 PWRC
 
-Calculate circulating supply
+```
 
-↓
 
-Calculate burn amount
+No additional minting is permitted after initial issuance.
 
-↓
 
-Governance approval
+---
 
-↓
+# Quarterly Burn Mechanism
 
-Multisig execution
 
-↓
+PWRC incorporates a governance-controlled deflationary mechanism.
 
-Burn event published
+
+Process:
+
+
+```
+
+Quarter Completion
+
+```
+    |
+```
+
+Circulating Supply Calculation
+
+```
+    |
+```
+
+Burn Amount Determination
+
+```
+    |
+```
+
+Governance Authorization
+
+```
+    |
+```
+
+Multisig Execution
+
+```
+    |
+```
+
+On-chain Burn Event
 
 ```
 
 
 Parameters:
 
-| Feature | Value |
-|-|-:|
+
+| Parameter | Value |
+|---|---:|
 | Frequency | Quarterly |
 | Burn Rate | 2% of circulating supply |
-| Authority | Governance controlled |
+| Authority | Governance Controlled |
 | Execution | Multisig + Timelock |
 
 
@@ -223,103 +285,134 @@ Parameters:
 
 # Cross-Chain Architecture
 
-PWRC supports cross-chain interoperability through wrapped assets.
 
-## Wrapped PowerChain (wPWRC)
+PWRC supports interoperability with Sui through the wrapped asset:
+
+```
+
+wPWRC
 
 ```
 
+Conversion model:
+
+
 ```
-             Solana
 
-               |
+1 PWRC
 
-              PWRC
+=
 
-               |
-
-          Bridge Lock
-
-               |
-
-               ↓
-
-              Sui
-
-               |
-
-             wPWRC
-```
+1 wPWRC
 
 ```
 
 
-Conversion:
+Bridge flow:
+
 
 ```
 
-1 PWRC = 1 wPWRC
+Solana
+
+PWRC Lock
+
+```
+  |
+```
+
+Bridge Verification
+
+```
+  |
+```
+
+Sui
+
+wPWRC Mint
 
 ```
 
 
-Bridge guarantees:
+Reverse flow:
 
-- 1:1 collateralisation
-- Escrow accounting
-- Message verification
-- Replay protection
-- Validator security
+
+```
+
+Sui
+
+wPWRC Burn
+
+```
+  |
+```
+
+Bridge Verification
+
+```
+  |
+```
+
+Solana
+
+PWRC Release
+
+```
 
 
 ---
 
-# Bridge Security Model
+# Bridge Security Architecture
+
 
 ```
 
 ```
-             Governance Layer
+             Governance Authority
 
-                   |
 
-             3-of-5 Multisig
+                     |
 
-                   |
+                3-of-5 Multisig
 
-            Bridge Authority
 
-                   |
+                     |
 
-    --------------------------------
+             Bridge Controller
 
-    |                              |
-```
+
+                     |
+
+      -------------------------------
+
+      |                             |
 
 Solana Escrow                 Sui Gateway
 
-```
-    |                              |
+      |                             |
 
-   PWRC                          wPWRC
-```
-
+     PWRC                         wPWRC
 ```
 
+```
 
-Security features:
 
-✅ PDA controlled escrow  
-✅ Nonce verification  
-✅ Replay protection  
-✅ Emergency pause  
-✅ Multisig authority  
-✅ Escrow invariant checks  
+Security mechanisms:
+
+
+- PDA-controlled escrow
+- Message verification
+- Nonce protection
+- Replay prevention
+- Emergency pause
+- Multisig authorization
+- Escrow accounting invariant
 
 
 ---
 
 # Smart Contract Architecture
+
 
 ```
 
@@ -330,11 +423,11 @@ pwrc_token/
 ├── src/
 
 │   ├── lib.rs
+│   ├── state.rs
 │   ├── bridge.rs
 │   ├── burn.rs
 │   ├── fees.rs
 │   ├── governance.rs
-│   ├── state.rs
 │   └── errors.rs
 
 ├── tests/
@@ -348,9 +441,10 @@ pwrc_token/
 
 ---
 
-# Development Stack
+# Technology Stack
 
-## Blockchain
+
+## Blockchain Layer
 
 - Solana
 - SPL Token-2022
@@ -358,185 +452,147 @@ pwrc_token/
 - Rust
 
 
-## Security
+## Security Layer
 
-- Multisig governance
-- Timelocked execution
-- PDA-controlled accounts
+- Program Derived Addresses (PDA)
+- Multisig authorities
+- Timelock execution
 - Event monitoring
+- On-chain accounting
 
 
-## Cross-Chain
+## Interoperability Layer
 
-- Sui Move Contract
-- Bridge Relay Network
-- Wrapped Token Standard
+- Sui Move contracts
+- Bridge relay infrastructure
+- Wrapped token standard
 
 
 ---
 
-# Protocol Features
+# Protocol Capabilities
 
 
-## Token Management
+## Asset Management
 
 - Fixed supply enforcement
-- Token metadata
-- Transfer fee configuration
-- Quarterly burn execution
+- Token metadata management
+- Transfer fee collection
 - Treasury accounting
+- Burn execution
 
 
-## Governance
+## Governance Controls
 
-Future governance modules:
+Governance may manage:
 
-- Fee parameters
-- Burn parameters
+- Transfer fee parameters
 - Treasury allocation
+- Burn policy
 - Bridge configuration
 - Protocol upgrades
 
 
 ## Bridge Operations
 
+
+Supported operations:
+
+
 ```
 
-Lock PWRC
+LOCK
+
+PWRC
 
 ↓
 
-Verify bridge message
+Bridge Verification
 
 ↓
 
-Mint wPWRC
+wPWRC Mint
 
----
+================
 
-Burn wPWRC
+BURN
 
-↓
-
-Verify bridge message
+wPWRC
 
 ↓
 
-Release PWRC
+Bridge Verification
 
-````
+↓
+
+PWRC Release
+
+```
 
 
 ---
 
-# Deployment
+# Security Framework
 
-## Requirements
 
-Install:
+## Authority Model
 
-```bash
-rustup
-solana-cli
-anchor-cli
-node.js
-yarn
-````
-
-## Build
-
-```bash
-anchor build
-```
-
-## Test
-
-```bash
-anchor test
-```
-
-## Deploy
-
-```bash
-anchor deploy
-```
-
----
-
-# Token Creation
-
-PWRC Token-2022 mint configuration:
-
-```bash
-spl-token create-token \
---program-id TokenzQdBNbLqP5VE \
---decimals 9
-```
-
-Enabled extensions:
 
 ```
-✓ TransferFeeConfig
-
-✓ MetadataPointer
-
-✓ TokenMetadata
-
-✓ PermanentDelegate
-
-✓ MintCloseAuthority
-```
-
----
-
-# Security Model
-
-## Authority Separation
 
 ```
-                      DAO
+                Protocol DAO
 
-                       |
 
-              Security Council
+                     |
 
-                       |
+             Security Council
 
-        --------------------------------
 
-        |                              |
+                     |
 
-    Token Authority              Bridge Authority
+    ---------------------------------
 
-        |                              |
-
-       PWRC                       Bridge PDA
+    |                               |
 ```
+
+Token Authority              Bridge Authority
+
+```
+
 
 ---
 
 # Emergency Controls
 
-Supported emergency actions:
 
-* Protocol pause
-* Bridge shutdown
-* Authority rotation
-* Governance recovery
+The protocol supports:
 
-Execution requires:
+
+- Emergency pause
+- Bridge suspension
+- Authority rotation
+- Governance recovery
+
+
+Critical actions require:
+
 
 ```
-Multisig approval
 
-+
+Multisig Approval
 
-Timelock delay
-```
+*
+
+Timelock Delay
+
+````
+
 
 ---
 
 # Events
+
 
 ## BurnEvent
 
@@ -544,7 +600,7 @@ Timelock delay
 BurnEvent {
     amount
 }
-```
+````
 
 ## BridgeLockEvent
 
@@ -566,45 +622,77 @@ BridgeReleaseEvent {
 
 ---
 
-# Error Protection
+# Error Handling & Safety
 
-| Protection          | Implementation         |
-| ------------------- | ---------------------- |
-| Unauthorized access | Authority verification |
-| Double release      | Replay protection      |
-| Arithmetic overflow | Checked math           |
-| Invalid burns       | Supply validation      |
-| Bridge abuse        | Escrow invariant       |
-| Emergency events    | Pause mechanism        |
+| Risk                      | Protection           |
+| ------------------------- | -------------------- |
+| Unauthorized execution    | Authority validation |
+| Duplicate bridge messages | Replay protection    |
+| Arithmetic errors         | Checked operations   |
+| Invalid burns             | Supply verification  |
+| Bridge imbalance          | Escrow invariant     |
+| Emergency incidents       | Pause mechanism      |
+
+---
+
+# Development
+
+## Requirements
+
+```bash
+rustup
+solana-cli
+anchor-cli
+node.js
+yarn
+```
+
+## Build
+
+```bash
+anchor build
+```
+
+## Test
+
+```bash
+anchor test
+```
+
+## Deploy
+
+```bash
+anchor deploy
+```
 
 ---
 
 # Roadmap
 
-## Phase 1 — Foundation
+## Phase 1 — Protocol Foundation
 
 ✅ Token-2022 architecture
-✅ Metadata integration
-✅ Treasury model
+✅ Metadata implementation
+✅ Treasury framework
 ✅ Transfer fee system
 
 ## Phase 2 — Interoperability
 
 ✅ Sui wPWRC architecture
-✅ Bridge security model
+✅ Bridge framework
 ✅ Cross-chain accounting
 
 ## Phase 3 — Governance
 
-⬜ DAO voting
+⬜ DAO governance
 ⬜ PowerChain Improvement Proposal (PIP) system
 ⬜ Timelock execution
 
-## Phase 4 — Energy Economy
+## Phase 4 — Energy Infrastructure
 
+⬜ Digital energy assets
 ⬜ Carbon credit marketplace
-⬜ Renewable asset tokenisation
-⬜ Energy settlement network
+⬜ Enterprise settlement infrastructure
 
 ---
 
@@ -616,7 +704,7 @@ All rights reserved.
 
 ---
 
-# Links
+# Resources
 
 Website:
 
@@ -634,8 +722,10 @@ Repository:
 
 <p align="center">
 
-<b>PowerChain™</b><br>
+<b>PowerChain™</b>
 
-Building the financial infrastructure layer for the global energy transition.
+<br>
+
+Protocol infrastructure for the digital energy economy.
 
 </p>
