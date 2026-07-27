@@ -8,7 +8,8 @@
 ![Status](https://img.shields.io/badge/status-Beta-success?style=for-the-badge)
 ![Protocol](https://img.shields.io/badge/Protocol-PowerChain-0F5A46?style=for-the-badge)
 ![Blockchain](https://img.shields.io/badge/Blockchain-Solana-9945FF?style=for-the-badge&logo=solana)
-![Standard](https://img.shields.io/badge/Standard-SPL--Token--2022-14F195?style=for-the-badge)
+![Standard](https://img.shields.io/badge/Standard-SPL--Token-14F195?style=for-the-badge)
+![Standard](https://img.shields.io/badge/Standard-Token--2022-14F195?style=for-the-badge)
 ![Language](https://img.shields.io/badge/Language-Rust%20%7C%20TypeScript-black?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-Apache--2.0-lightgrey?style=for-the-badge)
 
