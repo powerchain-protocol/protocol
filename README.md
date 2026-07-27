@@ -20,8 +20,8 @@ PowerChain Protocol™
 
 <p align="center">
 Enterprise AI-Native Renewable Energy & Financial Infrastructure
-**Renewable Infrastructure • Enterprise Finance • Digital Assets • Artificial Intelligence**
-Built on **Solana** • Powered by **Proof of Generation (PoG)**
+Renewable Infrastructure • Enterprise Finance • Digital Assets • Artificial Intelligence
+Built on Solana • Powered by Proof of Generation (PoG)
 
 </p>
 
