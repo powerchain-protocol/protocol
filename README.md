@@ -19,7 +19,6 @@ PowerChain Protocol™
 </h1>
 
 <p align="center">
-
 ### Enterprise AI-Native Renewable Energy & Financial Infrastructure
 
 **Renewable Infrastructure • Enterprise Finance • Digital Assets • Artificial Intelligence**
