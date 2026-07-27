@@ -1,5 +1,3 @@
-# PowerChain Protocol™
-
 <p align="center">
   <img src="./public/assets/pwrc.png" width="180" alt="PowerChain Protocol">
 </p>
