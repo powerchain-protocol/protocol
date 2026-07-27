@@ -770,6 +770,3 @@ All Rights Reserved.
 The programmable blockchain infrastructure layer for the global energy transition.
 
 </p>
-```
-
-This version is structured as the **main protocol repository README** for GitHub and documentation portals.
