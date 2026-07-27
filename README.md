@@ -1,4 +1,4 @@
-# PowerChain Protocol™ v1.0.0 Beta
+# PowerChain Protocol™ - v1.0.0 Beta
 
 <p align="center">
   <img src="./public/assets/pwrc.png" width="180" alt="PowerChain Protocol">
