@@ -1,378 +1,775 @@
+# PowerChain Protocol™ v1.0.0 Beta
+
 <p align="center">
   <img src="./public/assets/pwrc.png" width="180" alt="PowerChain Protocol">
-</p>
-
 <h1 align="center">
 PowerChain Protocol™
 </h1>
 
 <p align="center">
-
-### Enterprise AI-Native Renewable Energy & Digital Infrastructure
-
-Renewable Infrastructure • Enterprise Finance • Digital Assets • Artificial Intelligence
-
-**Powered by the PowerChain Virtual Machine (PVM)**  
-**Built on the Solana Virtual Machine (SVM)**  
-**Verified by Proof of Generation (PoG) • Secured by Proof of Stake (PoS)**
-
+<b>Infrastructure Layer for the Global Energy Economy</b><br>
+Renewable Assets • Digital Infrastructure • Energy Finance • Carbon Markets
 </p>
+
 
 <p align="center">
 
-![Version](https://img.shields.io/badge/version-v1.0.0--beta-0F5A46?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-Beta-success?style=for-the-badge)
-![Blockchain](https://img.shields.io/badge/Blockchain-PowerChain-0F5A46?style=for-the-badge)
-![Runtime](https://img.shields.io/badge/Runtime-PVM-0F5A46?style=for-the-badge)
-![Powered by](https://img.shields.io/badge/Powered%20by-Solana%20SVM-9945FF?style=for-the-badge)
-![Consensus](https://img.shields.io/badge/Consensus-PoG%20%2B%20PoS-2E8B57?style=for-the-badge)
-![Cross-Chain](https://img.shields.io/badge/Cross--Chain-Solana%20%7C%20Sui-6FBCF0?style=for-the-badge)
-![Language](https://img.shields.io/badge/Language-Rust%20%7C%20TypeScript-black?style=for-the-badge)
-![License](https://img.shields.io/badge/License-Apache--2.0-lightgrey?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-v1.0.0--beta-blue?style=for-the-badge)
+![Network](https://img.shields.io/badge/network-Solana%20Token--2022-9945FF?style=for-the-badge&logo=solana)
+![Framework](https://img.shields.io/badge/framework-Anchor-black?style=for-the-badge)
+![Language](https://img.shields.io/badge/language-Rust-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-Beta-green?style=for-the-badge)
 
 </p>
 
----
-
-# Overview
-
-**PowerChain Protocol™** is a high-performance Layer 1 blockchain ecosystem designed for renewable energy, enterprise finance, artificial intelligence and tokenised real-world assets.
-
-At the core of the platform is the **PowerChain Virtual Machine (PVM)**—PowerChain's native execution environment built on the proven **Solana Virtual Machine (SVM)**. PVM combines Solana's massively parallel execution model with PowerChain's native protocols for renewable infrastructure, environmental assets, enterprise finance and AI-powered automation.
-
-PowerChain is designed to bridge physical infrastructure with digital economies, enabling trusted markets for renewable energy, carbon credits, real-world assets and intelligent financial applications.
 
 ---
 
-# Vision
+# 1. Introduction
 
-PowerChain is building the programmable infrastructure for the global sustainable economy.
+**PowerChain Protocol™** is a blockchain infrastructure protocol designed to digitize and connect the global energy economy.
 
-By combining blockchain, renewable energy, artificial intelligence and enterprise-grade infrastructure into a unified platform, PowerChain enables governments, utilities, enterprises and developers to build transparent, scalable and interoperable digital services.
+The protocol provides a programmable settlement layer for:
 
-Our vision is to create a future where renewable energy generation, environmental assets and financial systems are verifiable, programmable and globally accessible.
+- Renewable energy assets
+- Carbon credit markets
+- Environmental commodities
+- Infrastructure-backed digital assets
+- Enterprise energy transactions
+- Real-world asset tokenization (RWA)
 
----
 
-# Why PowerChain?
+PowerChain combines:
 
-PowerChain extends the Solana execution model with sustainability-focused protocols and enterprise capabilities.
-
-## Core Technologies
-
-- ⚡ PowerChain Virtual Machine (PVM)
-- ⚙ Solana Virtual Machine (SVM)
-- 🌱 Proof of Generation (PoG)
-- 🔒 Proof of Stake (PoS)
-- 📡 Distributed Oracle Network
-- 🤖 AI-Native Infrastructure
-- 🔗 Solana & Sui Interoperability
-
-## Platform Features
-
-- Parallel transaction execution
-- Renewable energy verification
-- Carbon asset infrastructure
-- Enterprise payments
-- Treasury management
-- AI agents and automation
-- Digital identity
-- Real-world asset tokenisation
+- Solana high-performance settlement
+- Token-2022 programmable assets
 - Cross-chain interoperability
-- Production-grade security
+- Governance-controlled infrastructure
+- Energy-focused financial primitives
+
 
 ---
 
-# Product Ecosystem
+# 2. Vision
 
-| Product | Description |
-|----------|-------------|
-| **PowerChain Virtual Machine (PVM)** | Native execution runtime |
-| **PWRC** | Native utility, governance and settlement token |
-| **PowerPay™** | Enterprise payment infrastructure |
-| **PowerSwap™** | Decentralised exchange |
-| **PowerBridge™** | Cross-chain asset transfers |
-| **PowerWallet™** | Wallet and digital identity |
-| **PowerTreasury™** | Treasury and liquidity management |
-| **PowerChain AI™** | AI agents, assistants and automation |
-| **GridOS™** | Renewable energy operating platform |
-| **PowerDAO™** | Governance and staking |
-| **Energy Protocol™** | Renewable energy infrastructure |
-| **Carbon Protocol™** | Carbon markets and environmental assets |
-| **Oracle Protocol™** | Trusted real-world data network |
-| **Marketplace™** | Renewable infrastructure and enterprise applications |
+The global energy transition requires a new financial infrastructure layer.
 
----
+PowerChain enables:
 
-# Architecture
-
-```text
-Applications
-        │
-        ▼
-Developer SDKs
-        │
-        ▼
-REST • GraphQL • RPC • WebSocket APIs
-        │
-        ▼
-PowerChain Runtime
-        │
-        ▼
-PowerChain Virtual Machine (PVM)
-        │
-        ▼
-Solana Virtual Machine (SVM)
-        │
-        ▼
-Proof of Generation (PoG)
-        │
-        ▼
-Proof of Stake (PoS)
-        │
-        ▼
-Validator Network
-        │
-        ▼
-PowerChain Blockchain
 ```
 
-See **ARCHITECTURE.md** for the complete technical architecture.
+Physical Energy Assets
+
+```
+    ↓
+```
+
+Digital Representation
+
+```
+    ↓
+```
+
+Blockchain Settlement
+
+```
+    ↓
+```
+
+Global Energy Economy
+
+```
+
+The protocol is designed to support:
+
+- Renewable ownership models
+- Transparent asset accounting
+- Digital commodity markets
+- Institutional settlement infrastructure
+
 
 ---
 
-# Native Protocol Suite
+# 3. Protocol Overview
 
-| Protocol | Purpose |
-|----------|---------|
-| **PVM™** | High-performance execution environment |
-| **Energy Protocol™** | Renewable energy infrastructure |
-| **Carbon Protocol™** | Carbon credits and environmental assets |
-| **Asset Protocol™** | Real-world asset tokenisation |
-| **Oracle Protocol™** | Trusted off-chain data |
-| **Treasury Protocol™** | Treasury and liquidity |
-| **Identity Protocol™** | Enterprise identity and compliance |
-| **AI Protocol™** | AI-powered automation |
-| **Governance Protocol™** | On-chain governance |
-| **Cross-Chain Protocol™** | Solana and Sui interoperability |
 
----
+| Component | Description |
+|-|-|
+| Protocol | PowerChain Protocol™ |
+| Version | v1.0.0 Beta |
+| Primary Chain | Solana |
+| Token Standard | Token-2022 |
+| Native Asset | PWRC |
+| Cross-chain Asset | wPWRC |
+| Smart Contracts | Rust + Anchor |
+| Secondary Chain | Sui |
+| Status | Beta Infrastructure |
 
-# Core Capabilities
-
-### Renewable Infrastructure
-
-- Renewable energy verification
-- Smart metering
-- Battery storage
-- Virtual power plants
-- Energy settlement
-
-### Financial Infrastructure
-
-- Enterprise payments
-- Treasury management
-- Stable settlement
-- Digital assets
-- Institutional custody
-
-### Environmental Markets
-
-- Carbon credits
-- Renewable Energy Certificates (RECs)
-- Guarantees of Origin (GOs)
-- ESG reporting
-- Environmental asset management
-
-### Artificial Intelligence
-
-- AI assistants
-- Autonomous agents
-- Workflow automation
-- Grid optimisation
-- Energy forecasting
-- Predictive analytics
-
-### Enterprise Platform
-
-- Identity
-- Governance
-- Compliance
-- Audit trails
-- APIs
-- SDKs
 
 ---
 
-# Technology Stack
+# 4. Architecture
 
-## Runtime
 
-- PowerChain Virtual Machine (PVM)
-- Solana Virtual Machine (SVM)
+```
 
-## Smart Contracts
+```
+                     PowerChain Protocol™
 
-- Rust
-- Anchor Framework
-- Solana Program SDK
 
-## SDKs
+                              │
 
-- TypeScript
-- JavaScript
-- Rust
-- Go
-- Python
 
-## APIs
+                     Application Layer
 
-- REST
-- GraphQL
-- JSON-RPC
-- WebSockets
 
-## Infrastructure
+                              │
 
-- Docker
-- Kubernetes
-- OpenTelemetry
-- GitHub Actions
+
+                Energy Economy Services
+
+
+                              │
+
+
+                Protocol Infrastructure
+
+
+                              │
+
+
+                     PWRC Token Layer
+
+
+                              │
+
+
+                     Solana Settlement
+```
+
+```
+
 
 ---
 
-# Network Specifications
+# 5. Core Protocol Modules
 
-| Property | Value |
-|-----------|-------|
-| Blockchain | PowerChain |
-| Runtime | PowerChain Virtual Machine (PVM) |
-| Execution Engine | Solana Virtual Machine (SVM) |
-| Consensus | Proof of Generation + Proof of Stake |
-| Token Standard | SPL Token-2022 |
-| Native Token | PWRC |
+
+## PWRC Token Infrastructure
+
+The foundation asset layer.
+
+
+Features:
+
+- Token-2022 implementation
+- Fixed supply
+- Metadata support
+- Transfer fee system
+- Burn mechanism
+- Governance integration
+
+
+---
+
+## Treasury System
+
+
+Manages:
+
+- Protocol revenue
+- Ecosystem funding
+- Development allocation
+- Staking incentives
+
+
+Architecture:
+
+
+```
+
+Protocol Fees
+
+```
+  │
+
+  ▼
+```
+
+Treasury Vault
+
+```
+  │
+
+  ├── Ecosystem
+
+  ├── Development
+
+  └── Rewards
+```
+
+```
+
+
+---
+
+## Staking Layer
+
+
+Provides:
+
+- Network participation
+- User incentives
+- Long-term ecosystem alignment
+
+
+---
+
+## Governance Layer
+
+
+PowerChain Improvement Proposal System (PIP)
+
+
+Controls:
+
+- Protocol upgrades
+- Treasury parameters
+- Fee configuration
+- Bridge parameters
+- Security policies
+
+
+---
+
+## Bridge Layer
+
+
+Cross-chain interoperability:
+
+```
+
+```
+             Solana
+
+
+                │
+
+          Lock PWRC
+
+
+                │
+
+         Bridge Network
+
+
+                │
+
+         Mint wPWRC
+
+
+                │
+
+               Sui
+```
+
+```
+
+
+Guarantees:
+
+- 1:1 collateralization
+- Escrow accounting
+- Validator verification
+- Replay protection
+
+
+---
+
+# 6. PWRC Token Specification
+
+
+| Parameter | Value |
+|-|-|
+| Name | PowerChain |
+| Symbol | PWRC |
+| Network | Solana |
+| Standard | Token-2022 |
 | Decimals | 9 |
-| Maximum Supply | 18,440,000,000 PWRC |
-| Smart Contracts | Rust |
-| Cross-chain | Solana · Sui |
-| Version | v1.0.0-beta |
+| Maximum Supply | 18,446,000,000 PWRC |
+| Supply Model | Fixed |
+| Initial Price | $0.000001 |
+
 
 ---
 
-# Repository Structure
+# 7. Token-2022 Extensions
 
-```text
-apps/
-├── web/
-├── explorer/
-├── wallet/
-├── marketplace/
 
-programs/
-runtime/
-validator/
-sdk/
-apis/
-docs/
-examples/
-assets/
-benchmarks/
-tools/
-.github/
+PWRC uses:
+
+
 ```
+
+TransferFeeConfig
+
+MetadataPointer
+
+TokenMetadata
+
+PermanentDelegate
+
+MintCloseAuthority
+
+```
+
+
+Capabilities:
+
+
+| Extension | Purpose |
+|-|-|
+| Transfer Fee | Protocol sustainability |
+| Metadata Pointer | On-chain identity |
+| Token Metadata | Asset information |
+| Permanent Delegate | Controlled operations |
+| Mint Close | Lifecycle management |
+
+
+---
+
+# 8. Fee Architecture
+
+
+PWRC transfer fee:
+
+```
+
+Transfer
+
+│
+
+▼
+
+2% Protocol Fee
+
+│
+
+├───────────────┐
+
+▼               ▼
+
+Treasury       Staking
+
+70%             30%
+
+```
+
+
+---
+
+# 9. Deflationary Mechanism
+
+
+Quarterly burn:
+
+
+```
+
+Quarter End
+
+```
+ │
+
+ ▼
+```
+
+Supply Analysis
+
+```
+ │
+
+ ▼
+```
+
+2% Burn Execution
+
+```
+ │
+
+ ▼
+```
+
+Blockchain Event
+
+```
+
+
+Security:
+
+- Governance approval
+- Multisig execution
+- Transparent reporting
+
+
+---
+
+# 10. Governance Framework
+
+
+PowerChain governance follows PIP.
+
+
+Lifecycle:
+
+
+```
+
+Proposal
+
+↓
+
+Technical Review
+
+↓
+
+Community Discussion
+
+↓
+
+PWRC Voting
+
+↓
+
+Quorum Validation
+
+↓
+
+Timelock
+
+↓
+
+Execution
+
+```
+
+
+---
+
+# 11. Security Architecture
+
+
+Security principles:
+
+
+```
+
+DAO Governance
+
+```
+    │
+
+    ▼
+```
+
+Security Council
+
+```
+    │
+```
+
+┌──────┴──────┐
+
+▼             ▼
+
+Protocol Admin   Emergency Admin
+
+```
+
+
+Protection:
+
+
+✅ Multisig authorization  
+✅ Timelocked upgrades  
+✅ Emergency pause  
+✅ PDA security  
+✅ Supply validation  
+✅ Event monitoring  
+✅ Access control  
+
+
+---
+
+# 12. Environment Architecture
+
+
+PowerChain uses three deployment environments.
+
+
+## Development
+
+
+```
+
+Local Validator
+
+```
+  ↓
+```
+
+Developer Testing
+
+```
+  ↓
+```
+
+Feature Validation
+
+```
+
+
+---
+
+## Devnet Beta
+
+
+```
+
+Solana Devnet
+
+```
+  ↓
+```
+
+Test PWRC
+
+```
+  ↓
+```
+
+Public Testing
+
+```
+
+
+---
+
+## Mainnet Beta
+
+
+```
+
+Solana Mainnet
+
+```
+  ↓
+```
+
+Production PWRC
+
+```
+  ↓
+```
+
+Governance Controlled
+
+```
+
+
+---
+
+# 13. Repository Structure
+
+
+```
+
+protocol/
+
+├── programs/
+
+│   └── token-2022/
+
+├── contracts/
+
+│   └── sui/
+
+├── environments/
+
+│
+├── development/
+
+├── devnet/
+
+└── mainnet/
+
+├── metadata/
+
+├── scripts/
+
+├── sdk/
+
+├── services/
+
+├── tests/
+
+└── target/
+
+````
+
+
+---
+
+# 14. Development
+
+
+Requirements:
+
+
+```bash
+rustup
+solana-cli
+anchor-cli
+node.js
+npm
+````
+
+Install:
+
+```bash
+npm install
+```
+
+Build:
+
+```bash
+anchor build
+```
+
+Test:
+
+```bash
+anchor test
+```
+
+Deploy Devnet:
+
+```bash
+npm run deploy:devnet
+```
+
+Deploy Mainnet:
+
+```bash
+npm run deploy:mainnet
+```
+
+---
+
+# 15. Release Lifecycle
+
+```
+v1.0.0 Beta
+
+
+      │
+
+
+Development
+
+
+      │
+
+
+Devnet Testing
+
+
+      │
+
+
+Security Review
+
+
+      │
+
+
+Mainnet Beta
+
+
+      │
+
+
+Production Release
+
+```
+
+---
+
+# 16. Roadmap
+
+## Phase 1 — Foundation
+
+✅ Protocol architecture
+✅ PWRC Token-2022
+✅ Treasury framework
+✅ Security architecture
+
+## Phase 2 — Beta Network
+
+⬜ Devnet expansion
+⬜ Validator onboarding
+⬜ SDK release
+⬜ Bridge testing
+
+## Phase 3 — Mainnet
+
+⬜ Mainnet activation
+⬜ Governance launch
+⬜ Staking activation
+⬜ Explorer infrastructure
+
+## Phase 4 — Energy Economy
+
+⬜ Renewable asset marketplace
+⬜ Carbon credit infrastructure
+⬜ Enterprise settlement
+⬜ Global energy network
 
 ---
 
 # Documentation
 
-- Getting Started
-- Vision
-- Architecture
-- PowerChain Virtual Machine (PVM)
-- Proof of Generation (PoG)
-- Energy Protocol
-- Carbon Protocol
-- Oracle Network
-- Treasury
-- Governance
-- AI Platform
-- Cross-Chain
-- SDKs
-- APIs
-- Security
-- Deployment
-- Examples
+Documentation:
 
----
+[https://docs.powerchain.energy](https://docs.powerchain.energy)
 
-# Quick Start
+Website:
 
-```bash
-git clone https://github.com/powerchain-protocol/powerchain.git
+[https://powerchain.energy](https://powerchain.energy)
 
-cd powerchain
+Repository:
 
-pnpm install
-
-pnpm build
-
-pnpm test
-```
-
----
-
-# Documentation Structure
-
-```text
-README.md
-VISION.md
-ARCHITECTURE.md
-PVM.md
-POG.md
-ENERGY.md
-CARBON.md
-ORACLE.md
-AI.md
-TREASURY.md
-GOVERNANCE.md
-SECURITY.md
-ROADMAP.md
-API.md
-```
-
----
-
-# Contributing
-
-Before contributing, please review:
-
-- CONTRIBUTING.md
-- GOVERNANCE.md
-- SECURITY.md
-- CODE_OF_CONDUCT.md
+[https://github.com/powerchain](https://github.com/powerchain)
 
 ---
 
 # License
 
-Licensed under the **Apache License 2.0**.
+Copyright © PowerChain Network™
 
-See **LICENSE** for complete licensing information.
+All Rights Reserved.
 
 ---
 
 <p align="center">
 
-## Build Sustainable Infrastructure.
+<b>PowerChain Protocol™ v1.0.0 Beta</b>
 
-### **PowerChain Protocol™**
+<br>
 
-*Powered by the PowerChain Virtual Machine (PVM)*
-
-*Built on the Solana Virtual Machine (SVM)*
-
-*Verified by Proof of Generation (PoG) • Secured by Proof of Stake (PoS)*
-
-**Enterprise AI-Native Renewable Energy & Digital Infrastructure**
+The programmable blockchain infrastructure layer for the global energy transition.
 
 </p>
+```
+
+This version is structured as the **main protocol repository README** for GitHub and documentation portals.
