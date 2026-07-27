@@ -139,8 +139,8 @@ PowerChain provides enterprise infrastructure for:
 | **PowerTreasury™** | Enterprise treasury platform |
 | **PowerAI™** | AI-native financial automation |
 | **GridOS™** | Renewable infrastructure platform |
-| **PowerGov™** | Governance and staking |
-| **Marketplace™** | Renewable energy & digital asset marketplace |
+| **PowerDAO™** | Governance and staking |
+| **P2P Energy Marketplace™** | Renewable energy & digital asset marketplace |
 
 ---
 
