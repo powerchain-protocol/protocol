@@ -140,8 +140,8 @@ PowerChain provides enterprise infrastructure for:
 | **PowerAI™** | AI-native financial automation |
 | **GridOS™** | Renewable infrastructure platform |
 | **PowerDAO™** | Governance and staking |
-| **P2P Energy Marketplace™** | Renewable energy & digital asset marketplace |
-
+| **P2P Energy Marketplace™** | Decentralised marketplace for peer-to-peer renewable energy trading, RECs, carbon credits and tokenised energy assets. |
+| **Marketplace™** | Reference storefront and demo commerce platform for third-party products, Smart Metering, IoT devices and renewable energy solutions, demonstrating PowerPay™, PowerWallet™, PowerSwap™ and PowerChain payment integrations. |
 ---
 
 # PWRC Token
