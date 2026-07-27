@@ -1,7 +1,7 @@
 # PowerChain PWRC (Token-2022) Protocol™
 
 <p align="center">
-  <img src="[.../public/assets/pwrc.png](https://github.com/powerchain-protocol/protocol/blob/4fe5e30c0c1689bdb79d7f50fae1411857ce1e7a/public/assets/pwrc.png)" width="180" alt="PWRC Token">
+  <img src="(https://github.com/powerchain-protocol/protocol/blob/4fe5e30c0c1689bdb79d7f50fae1411857ce1e7a/public/assets/pwrc.png)" width="180" alt="PWRC Token">
 </p>
 
 <h1 align="center">
