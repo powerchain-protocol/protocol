@@ -1,0 +1,2 @@
+export interface HeliusFungibleToken { id:string; interface:string; content?:{metadata?:{name?:string;symbol?:string;decimals?:number};links?:{image?:string}}; token_info?:{symbol?:string;balance?:number;decimals?:number;price_info?:{price_per_token?:number;currency?:string;total_price?:number}}; ownership?:{owner:string}; }
+export interface HeliusTokenBalance { mint:string; owner:string; amount:bigint; decimals:number; uiAmount:number; symbol?:string; name?:string; image?:string; priceUsd?:number; valueUsd?:number; }

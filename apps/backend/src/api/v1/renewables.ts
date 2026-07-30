@@ -1,0 +1,2 @@
+
+import type{FastifyInstance}from"fastify";export async function renewableRoutes(app:FastifyInstance){app.get("/renewables/assets",async()=>({data:[{id:"solar_001",name:"Oulu Solar",type:"solar",capacityKw:8900,status:"active"},{id:"wind_001",name:"Baltic Wind",type:"wind",capacityKw:12400,status:"active"}]}));app.get("/renewables/production",async()=>({data:{energyKwh:18640000,verified:true,carbonAvoidedKg:4343120}}))}

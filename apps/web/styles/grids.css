@@ -1,0 +1,6 @@
+
+.map-scrollbar::-webkit-scrollbar { width: 8px; }
+.map-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 999px; }
+@media (max-width: 1279px) {
+  .grid-explorer-layout { grid-template-columns: 1fr; }
+}

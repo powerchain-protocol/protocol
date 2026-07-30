@@ -1,772 +1,216 @@
-# PowerChain Protocol™ - v1.0.0 Beta
+# PowerChain™
+
+> **Programmable infrastructure for renewable energy, digital assets, and enterprise applications.**
 
 <p align="center">
-  <img src="./public/assets/pwrc.png" width="180" alt="PowerChain Protocol">
-<h1 align="center">
-PowerChain Protocol™
-</h1>
-
-<p align="center">
-<b>Infrastructure Layer for the Global Energy Economy</b><br>
-Renewable Assets • Digital Infrastructure • Energy Finance • Carbon Markets
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./docs/assets/logos/powerchain-logo-white.png">
+    <img src="./docs/assets/logos/powerchain-logo-dark.png" width="220" alt="PowerChain">
+  </picture>
 </p>
 
-
 <p align="center">
-
-![Version](https://img.shields.io/badge/version-v1.0.0--beta-blue?style=for-the-badge)
-![Network](https://img.shields.io/badge/network-Solana%20Token--2022-9945FF?style=for-the-badge&logo=solana)
-![Framework](https://img.shields.io/badge/framework-Anchor-black?style=for-the-badge)
-![Language](https://img.shields.io/badge/language-Rust-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-Beta-green?style=for-the-badge)
-
+  <a href="./VERSION"><img alt="Version" src="https://img.shields.io/badge/version-1.0.0--beta.1-0F5A46?style=for-the-badge"></a>
+  <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-lightgrey?style=for-the-badge"></a>
+  <a href="./docs/architecture/README.md"><img alt="Runtime" src="https://img.shields.io/badge/runtime-PVM-0F5A46?style=for-the-badge"></a>
+  <a href="./programs"><img alt="Execution" src="https://img.shields.io/badge/execution-Solana%20SVM-9945FF?style=for-the-badge"></a>
+  <a href="./SECURITY.md"><img alt="Security" src="https://img.shields.io/badge/security-policy-2E8B57?style=for-the-badge"></a>
 </p>
 
-
----
-
-# 1. Introduction
-
-**PowerChain Protocol™** is a blockchain infrastructure protocol designed to digitize and connect the global energy economy.
-
-The protocol provides a programmable settlement layer for:
-
-- Renewable energy assets
-- Carbon credit markets
-- Environmental commodities
-- Infrastructure-backed digital assets
-- Enterprise energy transactions
-- Real-world asset tokenization (RWA)
-
-
-PowerChain combines:
-
-- Solana high-performance settlement
-- Token-2022 programmable assets
-- Cross-chain interoperability
-- Governance-controlled infrastructure
-- Energy-focused financial primitives
-
-
----
-
-# 2. Vision
-
-The global energy transition requires a new financial infrastructure layer.
-
-PowerChain enables:
-
-```
-
-Physical Energy Assets
-
-```
-    ↓
-```
-
-Digital Representation
-
-```
-    ↓
-```
-
-Blockchain Settlement
-
-```
-    ↓
-```
-
-Global Energy Economy
-
-```
-
-The protocol is designed to support:
-
-- Renewable ownership models
-- Transparent asset accounting
-- Digital commodity markets
-- Institutional settlement infrastructure
-
-
----
-
-# 3. Protocol Overview
-
-
-| Component | Description |
-|-|-|
-| Protocol | PowerChain Protocol™ |
-| Version | v1.0.0 Beta |
-| Primary Chain | Solana |
-| Token Standard | Token-2022 |
-| Native Asset | PWRC |
-| Cross-chain Asset | wPWRC |
-| Smart Contracts | Rust + Anchor |
-| Secondary Chain | Sui |
-| Status | Beta Infrastructure |
-
-
----
-
-# 4. Architecture
-
-
-```
-
-```
-                     PowerChain Protocol™
-
-
-                              │
-
-
-                     Application Layer
-
-
-                              │
-
-
-                Energy Economy Services
-
-
-                              │
-
-
-                Protocol Infrastructure
-
-
-                              │
-
-
-                     PWRC Token Layer
-
-
-                              │
-
-
-                     Solana Settlement
-```
-
-```
-
-
----
-
-# 5. Core Protocol Modules
-
-
-## PWRC Token Infrastructure
-
-The foundation asset layer.
-
-
-Features:
-
-- Token-2022 implementation
-- Fixed supply
-- Metadata support
-- Transfer fee system
-- Burn mechanism
-- Governance integration
-
-
----
-
-## Treasury System
-
-
-Manages:
-
-- Protocol revenue
-- Ecosystem funding
-- Development allocation
-- Staking incentives
-
-
-Architecture:
-
-
-```
-
-Protocol Fees
-
-```
-  │
-
-  ▼
-```
-
-Treasury Vault
-
-```
-  │
-
-  ├── Ecosystem
-
-  ├── Development
-
-  └── Rewards
-```
-
-```
-
-
----
-
-## Staking Layer
-
-
-Provides:
-
-- Network participation
-- User incentives
-- Long-term ecosystem alignment
-
-
----
-
-## Governance Layer
-
-
-PowerChain Improvement Proposal System (PIP)
-
-
-Controls:
-
-- Protocol upgrades
-- Treasury parameters
-- Fee configuration
-- Bridge parameters
-- Security policies
-
-
----
-
-## Bridge Layer
-
-
-Cross-chain interoperability:
-
-```
-
-```
-             Solana
-
-
-                │
-
-          Lock PWRC
-
-
-                │
-
-         Bridge Network
-
-
-                │
-
-         Mint wPWRC
-
-
-                │
-
-               Sui
-```
-
-```
-
-
-Guarantees:
-
-- 1:1 collateralization
-- Escrow accounting
-- Validator verification
-- Replay protection
-
-
----
-
-# 6. PWRC Token Specification
-
-
-| Parameter | Value |
-|-|-|
-| Name | PowerChain |
-| Symbol | PWRC |
-| Network | Solana |
-| Standard | Token-2022 |
-| Decimals | 9 |
-| Maximum Supply | 18,446,000,000 PWRC |
-| Supply Model | Fixed |
-| Initial Price | $0.000001 |
-
-
----
-
-# 7. Token-2022 Extensions
-
-
-PWRC uses:
-
-
-```
-
-TransferFeeConfig
-
-MetadataPointer
-
-TokenMetadata
-
-PermanentDelegate
-
-MintCloseAuthority
-
-```
-
-
-Capabilities:
-
-
-| Extension | Purpose |
-|-|-|
-| Transfer Fee | Protocol sustainability |
-| Metadata Pointer | On-chain identity |
-| Token Metadata | Asset information |
-| Permanent Delegate | Controlled operations |
-| Mint Close | Lifecycle management |
-
-
----
-
-# 8. Fee Architecture
-
-
-PWRC transfer fee:
-
-```
-
-Transfer
-
-│
-
-▼
-
-2% Protocol Fee
-
-│
-
-├───────────────┐
-
-▼               ▼
-
-Treasury       Staking
-
-70%             30%
-
-```
-
-
----
-
-# 9. Deflationary Mechanism
-
-
-Quarterly burn:
-
-
-```
-
-Quarter End
-
-```
- │
-
- ▼
-```
-
-Supply Analysis
-
-```
- │
-
- ▼
-```
-
-2% Burn Execution
-
-```
- │
-
- ▼
-```
-
-Blockchain Event
-
-```
-
-
-Security:
-
-- Governance approval
-- Multisig execution
-- Transparent reporting
-
-
----
-
-# 10. Governance Framework
-
-
-PowerChain governance follows PIP.
-
-
-Lifecycle:
-
-
-```
-
-Proposal
-
-↓
-
-Technical Review
-
-↓
-
-Community Discussion
-
-↓
-
-PWRC Voting
-
-↓
-
-Quorum Validation
-
-↓
-
-Timelock
-
-↓
-
-Execution
-
-```
-
-
----
-
-# 11. Security Architecture
-
-
-Security principles:
-
-
-```
-
-DAO Governance
-
-```
-    │
-
-    ▼
-```
-
-Security Council
-
-```
-    │
-```
-
-┌──────┴──────┐
-
-▼             ▼
-
-Protocol Admin   Emergency Admin
-
-```
-
-
-Protection:
-
-
-✅ Multisig authorization  
-✅ Timelocked upgrades  
-✅ Emergency pause  
-✅ PDA security  
-✅ Supply validation  
-✅ Event monitoring  
-✅ Access control  
-
-
----
-
-# 12. Environment Architecture
-
-
-PowerChain uses three deployment environments.
-
-
-## Development
-
-
-```
-
-Local Validator
-
-```
-  ↓
-```
-
-Developer Testing
-
-```
-  ↓
-```
-
-Feature Validation
-
-```
-
-
----
-
-## Devnet Beta
-
-
-```
-
-Solana Devnet
-
-```
-  ↓
-```
-
-Test PWRC
-
-```
-  ↓
-```
-
-Public Testing
-
-```
-
-
----
-
-## Mainnet Beta
-
-
-```
-
-Solana Mainnet
-
-```
-  ↓
-```
-
-Production PWRC
-
-```
-  ↓
-```
-
-Governance Controlled
-
-```
-
-
----
-
-# 13. Repository Structure
-
-
-```
-
-protocol/
-
-├── programs/
-
-│   └── token-2022/
-
-├── contracts/
-
-│   └── sui/
-
-├── environments/
-
-│
-├── development/
-
-├── devnet/
-
-└── mainnet/
-
-├── metadata/
-
-├── scripts/
-
-├── sdk/
-
-├── services/
-
-├── tests/
-
-└── target/
-
-````
-
-
----
-
-# 14. Development
-
-
-Requirements:
-
-
-```bash
-rustup
-solana-cli
-anchor-cli
-node.js
-npm
-````
-
-Install:
-
-```bash
-npm install
-```
-
-Build:
-
-```bash
-anchor build
-```
-
-Test:
-
-```bash
-anchor test
-```
-
-Deploy Devnet:
-
-```bash
-npm run deploy:devnet
-```
-
-Deploy Mainnet:
-
-```bash
-npm run deploy:mainnet
-```
-
----
-
-# 15. Release Lifecycle
-
-```
-v1.0.0 Beta
-
-
-      │
-
-
-Development
-
-
-      │
-
-
-Devnet Testing
-
-
-      │
-
-
-Security Review
-
-
-      │
-
-
-Mainnet Beta
-
-
-      │
-
-
-Production Release
-
-```
-
----
-
-# 16. Roadmap
-
-## Phase 1 — Foundation
-
-✅ Protocol architecture
-✅ PWRC Token-2022
-✅ Treasury framework
-✅ Security architecture
-
-## Phase 2 — Beta Network
-
-⬜ Devnet expansion
-⬜ Validator onboarding
-⬜ SDK release
-⬜ Bridge testing
-
-## Phase 3 — Mainnet
-
-⬜ Mainnet activation
-⬜ Governance launch
-⬜ Staking activation
-⬜ Explorer infrastructure
-
-## Phase 4 — Energy Economy
-
-⬜ Renewable asset marketplace
-⬜ Carbon credit infrastructure
-⬜ Enterprise settlement
-⬜ Global energy network
-
----
-
-# Documentation
-
-Documentation:
-
-[https://docs.powerchain.energy](https://docs.powerchain.energy)
-
-Website:
-
-[https://powerchain.energy](https://powerchain.energy)
-
-Repository:
-
-[https://github.com/powerchain](https://github.com/powerchain)
-
----
-
-# License
-
-Copyright © PowerChain Network™
-
-All Rights Reserved.
-
----
-
 <p align="center">
-
-<b>PowerChain Protocol™ v1.0.0 Beta</b>
-
-<br>
-
-The programmable blockchain infrastructure layer for the global energy transition.
-
+  <a href="#quick-start">Quick start</a> ·
+  <a href="./docs/README.md">Documentation</a> ·
+  <a href="./docs/protocols/ENERGY.md">Energy Protocol</a> ·
+  <a href="./docs/governance/GOVERNANCE.md">Governance</a> ·
+  <a href="./CONTRIBUTING.md">Contributing</a>
 </p>
+
+---
+
+## Overview
+
+PowerChain is an open-source, multi-service platform for building renewable-energy infrastructure, enterprise software, programmable digital assets, and blockchain-integrated applications.
+
+This monorepo brings together the PowerChain web platform, backend services, shared schemas, SDKs, Solana programs, Anza Pinocchio/SVM implementations, Sui contracts, developer tools, AI skills, and protocol documentation.
+
+PowerChain is currently a **beta platform**. Some components are production-oriented foundations, while others remain experimental or roadmap work. Documentation identifies implementation status where practical; performance figures are targets unless backed by published benchmarks.
+
+## Platform capabilities
+
+| Domain | Capabilities |
+|---|---|
+| Renewable energy | Energy assets, telemetry, Proof of Generation concepts, certificates, settlement, trading, funding, carbon workflows |
+| Blockchain | Solana SVM, Anchor, Pinocchio, SPL Token, Token-2022, Sui Move, cross-chain architecture |
+| Enterprise | SaaS workspaces, identity, RBAC, audit-ready services, CRM/ERP foundations, billing and administration |
+| Financial infrastructure | Wallets, payments, checkout, treasury, escrow, exchange, portfolio and marketplace primitives |
+| Developer platform | TypeScript SDKs, Rust programs, REST APIs, schemas, examples, validation scripts and local tooling |
+| Applications | Next.js dashboard, documentation portal, merchant energy platform, faucet portal and operational interfaces |
+
+## Architecture
+
+```text
+Users, operators, developers, and enterprises
+                     │
+                     ▼
+       Web applications and developer portals
+                     │
+                     ▼
+        SDKs • REST APIs • RPC • WebSocket
+                     │
+                     ▼
+ Energy • Identity • Treasury • Carbon • SaaS
+                     │
+                     ▼
+     PVM architecture • Solana SVM • Sui Move
+                     │
+                     ▼
+ Programs • Oracles • Validators • Data services
+```
+
+See the [architecture documentation](./docs/architecture/README.md) for detailed diagrams and subsystem boundaries.
+
+## Repository structure
+
+```text
+apps/       Web, backend, dashboard, docs, checkout and portal applications
+contracts/  Sui and chain-specific smart-contract sources
+packages/   SDKs, shared libraries, integrations, schemas and UI modules
+programs/   Anchor, Solana SVM, Pinocchio and token program workspaces
+skills/     Versioned PowerChain AI and operational skills
+scripts/    Build, validation, release, migration and workspace automation
+docs/       Architecture, protocols, governance, API and developer documentation
+config/     Shared version and platform configuration
+```
+
+## Quick start
+
+### Prerequisites
+
+- Node.js 22 or newer
+- Corepack
+- pnpm 11
+- Rust and Cargo for Rust programs
+- Solana CLI and Anchor CLI for Anchor workflows
+
+### Install
+
+```bash
+corepack enable
+corepack prepare pnpm@11.0.0 --activate
+pnpm install:workspace
+pnpm install:check
+```
+
+Copy environment defaults before starting local services:
+
+```bash
+cp .env.example .env
+pnpm env:check
+```
+
+### Run the web platform
+
+```bash
+pnpm dev:web
+```
+
+### Run the backend
+
+```bash
+pnpm db:generate
+pnpm dev:backend
+```
+
+### Build and verify
+
+```bash
+pnpm typecheck
+pnpm lint
+pnpm test
+pnpm docs:check
+pnpm platform:verify
+pnpm build
+```
+
+### Solana and SVM programs
+
+```bash
+pnpm programs:doctor
+pnpm anchor:build
+pnpm anchor:test
+pnpm svm:build
+pnpm svm:test
+```
+
+Program IDs and network configuration must be reviewed before deployment. Placeholder IDs are for local compilation only.
+
+## Core workspaces
+
+| Workspace | Purpose |
+|---|---|
+| `apps/web` | Primary Next.js platform and dashboard |
+| `apps/backend` | Fastify API, Prisma data access and backend services |
+| `packages/schemas` | Shared runtime validation and API contracts |
+| `packages/energy-iot` | Energy, telemetry, marketplace and RWA utilities |
+| `packages/saas` | SaaS plans, roles, limits and subscription logic |
+| `packages/solana` | Solana and Token-2022 integration utilities |
+| `packages/sui` | Sui client and contract integration |
+| `programs/powerchain` | Anchor-based PowerChain program |
+| `programs/svm` | Native SVM and Pinocchio implementations |
+| `skills` | Versioned domain skills for PowerChain workflows |
+
+## Documentation
+
+| Topic | Document |
+|---|---|
+| Documentation index | [docs/README.md](./docs/README.md) |
+| Introduction | [docs/INTRODUCTION.md](./docs/INTRODUCTION.md) |
+| Architecture | [docs/architecture/README.md](./docs/architecture/README.md) |
+| Energy Protocol | [docs/protocols/ENERGY.md](./docs/protocols/ENERGY.md) |
+| Governance | [docs/governance/GOVERNANCE.md](./docs/governance/GOVERNANCE.md) |
+| Improvement proposals | [docs/governance/pips/README.md](./docs/governance/pips/README.md) |
+| API | [docs/API.md](./docs/API.md) |
+| Developer guides | [docs/developers/README.md](./docs/developers/README.md) |
+| Roadmap | [docs/ROADMAP.md](./docs/ROADMAP.md) |
+| Work tracking | [docs/TODO.md](./docs/TODO.md) |
+| Glossary | [docs/GLOSSARY.md](./docs/GLOSSARY.md) |
+
+## Development standards
+
+PowerChain uses:
+
+- Semantic Versioning and Changesets
+- Conventional Commits
+- TypeScript strictness and shared schema validation
+- Rust formatting and Clippy guidance
+- Pull-request review and CODEOWNERS
+- Security review for protocol, authentication and asset-handling changes
+- Documentation updates for public API and protocol changes
+
+Read [CONTRIBUTING.md](./CONTRIBUTING.md), [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md), and [SECURITY.md](./SECURITY.md) before contributing.
+
+## Security
+
+Do not report vulnerabilities in public issues. Follow the private disclosure process in [SECURITY.md](./SECURITY.md).
+
+Never commit seed phrases, private keys, validator identities, API tokens, database credentials, or production secrets. Faucet signing and wallet authentication must remain server-side and non-custodial.
+
+## Governance
+
+Significant protocol changes should follow the PowerChain Improvement Proposal process. Start with the [PIP guide](./docs/governance/pips/README.md) and [proposal template](./docs/governance/pips/TEMPLATE.md).
+
+## Release status
+
+Current workspace version: **1.0.0-beta.1**
+
+Beta releases may contain breaking changes. Review [CHANGELOG.md](./CHANGELOG.md), Changesets, migration files, and deployment notes before upgrading.
+
+## Support
+
+For usage questions and responsible support channels, see [SUPPORT.md](./SUPPORT.md). For implementation work, include the affected package, reproduction steps, runtime versions, and relevant logs without secrets.
+
+## License
+
+Licensed under the [Apache License 2.0](./LICENSE).
+
+Copyright © 2026 PowerChain Foundation. All rights reserved.

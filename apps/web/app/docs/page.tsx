@@ -1,0 +1,1 @@
+<h1 className="text-5xl font-semibold">Powerchain developer documentation</h1><p className="mt-5 max-w-3xl text-lg text-slate-600">Build checkout, energy, asset, and settlement experiences with typed SDKs and hosted APIs.</p>

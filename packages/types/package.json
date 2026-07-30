@@ -1,0 +1,19 @@
+{
+  "name": "@powerchain/types",
+  "version": "1.0.0-beta.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "description": "Shared TypeScript contracts for Powerchain applications and APIs.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerchain-protocol/powerchain.git",
+    "directory": "packages/types"
+  },
+  "homepage": "https://github.com/powerchain-protocol/powerchain/tree/main/packages/types#readme",
+  "bugs": {
+    "url": "https://github.com/powerchain-protocol/powerchain/issues"
+  }
+}

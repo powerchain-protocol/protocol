@@ -1,0 +1,259 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  OWNER
+  EXECUTIVE
+  FINANCE_ADMIN
+  ENERGY_MANAGER
+  GRID_OPERATOR
+  ASSET_MANAGER
+  SUSTAINABILITY_MANAGER
+  DEVELOPER
+  ANALYST
+  AUDITOR
+  VIEWER
+}
+
+model User {
+  id            String       @id @default(cuid())
+  email         String       @unique
+  name          String?
+  avatarUrl     String?
+  locale        String       @default("fi-FI")
+  timezone      String       @default("Europe/Helsinki")
+  status        String       @default("ACTIVE")
+  walletAddress String?      @unique
+  memberships   Membership[]
+  sessions      UserSession[]
+  wallets       Wallet[]
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+}
+
+model Organization {
+  id            String         @id @default(cuid())
+  name          String
+  slug          String         @unique
+  memberships   Membership[]
+  assets        Asset[]
+  subscriptions Subscription[]
+  crmAccounts   CrmAccount[]
+  erpEntries    ErpEntry[]
+  webhookSubscriptions WebhookSubscription[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+}
+
+model Membership {
+  id             String       @id @default(cuid())
+  userId         String
+  organizationId String
+  role           Role         @default(VIEWER)
+  zkVerifiedAt   DateTime?
+  user           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  @@unique([userId, organizationId])
+  @@index([organizationId, role])
+}
+
+model Subscription {
+  id               String       @id @default(cuid())
+  organizationId   String
+  provider         String
+  providerRef      String?      @unique
+  tier             String
+  interval         String
+  status           String       @default("TRIALING")
+  seats            Int          @default(1)
+  currentPeriodEnd DateTime?
+  organization     Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  createdAt        DateTime     @default(now())
+  updatedAt        DateTime     @updatedAt
+}
+
+model UserSession {
+  id           String   @id @default(cuid())
+  userId       String
+  tokenHash    String   @unique
+  ipAddress    String?
+  userAgent    String?
+  lastActiveAt DateTime @default(now())
+  expiresAt    DateTime
+  revokedAt    DateTime?
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt    DateTime @default(now())
+  @@index([userId, expiresAt])
+  @@index([tokenHash, expiresAt])
+  @@index([revokedAt, expiresAt])
+}
+
+model CrmAccount {
+  id             String       @id @default(cuid())
+  organizationId String
+  externalId     String?
+  provider       String
+  name           String
+  stage          String
+  annualValueEur Decimal?     @db.Decimal(18, 2)
+  metadata       Json?
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+}
+
+model ErpEntry {
+  id             String       @id @default(cuid())
+  organizationId String
+  externalId     String?
+  provider       String
+  entryType      String
+  reference      String
+  amountEur      Decimal      @db.Decimal(18, 2)
+  status         String
+  metadata       Json?
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+}
+
+model Asset {
+  id             String       @id @default(cuid())
+  organizationId String
+  name           String
+  type           String
+  network        String
+  tokenAddress   String?
+  status         String       @default("ACTIVE")
+  metadata       Json?
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+}
+
+model AuditLog {
+  id             String   @id @default(cuid())
+  actorId        String?
+  organizationId String?
+  action         String
+  resource       String
+  resourceId     String?
+  metadata       Json?
+  createdAt      DateTime @default(now())
+}
+
+model AiConversation {
+  id             String      @id @default(cuid())
+  userId         String
+  organizationId String
+  title          String
+  messages       AiMessage[]
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+}
+
+model AiMessage {
+  id             String         @id @default(cuid())
+  conversationId String
+  role           String
+  content        String
+  metadata       Json?
+  conversation   AiConversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  createdAt      DateTime       @default(now())
+}
+
+
+model Wallet {
+  id         String   @id @default(cuid())
+  userId     String
+  network    String
+  address    String
+  label      String?
+  verifiedAt DateTime?
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  @@unique([network, address])
+  @@index([userId])
+  @@index([userId, network])
+}
+
+model WebhookSubscription {
+  id             String            @id @default(cuid())
+  organizationId String
+  url            String
+  secretHash     String
+  events         Json
+  status         String            @default("ACTIVE")
+  organization   Organization      @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  deliveries     WebhookDelivery[]
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+  @@index([organizationId, status])
+}
+
+model WebhookDelivery {
+  id             String              @id @default(cuid())
+  subscriptionId String
+  eventId        String
+  eventType      String
+  attempt        Int                 @default(1)
+  status         String              @default("PENDING")
+  responseCode   Int?
+  nextAttemptAt  DateTime?
+  subscription   WebhookSubscription @relation(fields: [subscriptionId], references: [id], onDelete: Cascade)
+  createdAt      DateTime            @default(now())
+  @@unique([subscriptionId, eventId, attempt])
+  @@index([status, nextAttemptAt])
+}
+
+model SignatureChallenge {
+  id          String    @id @default(cuid())
+  network     String
+  address     String
+  messageHash String
+  expiresAt   DateTime
+  usedAt      DateTime?
+  createdAt   DateTime  @default(now())
+  @@index([address, network, expiresAt])
+}
+
+model EnergyOffer {
+  id                       String   @id @default(cuid())
+  sellerId                 String
+  meterId                  String?
+  source                   String
+  region                   String
+  latitude                 Float
+  longitude                Float
+  availableKwh             Decimal  @db.Decimal(20, 6)
+  pricePerKwh              Decimal  @db.Decimal(20, 8)
+  currency                 String   @default("EUR")
+  carbonIntensityGco2Kwh   Decimal  @db.Decimal(12, 4)
+  status                   String   @default("OPEN")
+  expiresAt                DateTime?
+  createdAt                DateTime @default(now())
+  updatedAt                DateTime @updatedAt
+  @@index([region, source, status])
+}
+
+model FundingContribution {
+  id            String   @id @default(cuid())
+  projectId     String
+  contributorId String?
+  kind          String
+  amountEur     Decimal  @db.Decimal(18, 2)
+  paymentMethod String
+  status        String   @default("PENDING")
+  anonymous     Boolean  @default(false)
+  message       String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  @@index([projectId, kind, status])
+}

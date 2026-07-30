@@ -1,0 +1,28 @@
+[package]
+name = "powerchain-svm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Low-compute PowerChain SVM primitives implemented with Anza Pinocchio."
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "powerchain_svm"
+
+[features]
+default = []
+no-entrypoint = []
+
+[dependencies]
+pinocchio = { workspace = true }
+pinocchio-log = { workspace = true }
+pinocchio-pubkey = { workspace = true }
+pinocchio-system = { workspace = true }
+pinocchio-token = { workspace = true }
+pinocchio-token-2022 = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }

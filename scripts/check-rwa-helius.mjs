@@ -1,0 +1,3 @@
+import {existsSync} from "node:fs";
+const required=["apps/web/types/rwa.ts","apps/web/types/helius/non-fungible-tokens.ts","apps/web/types/helius/fungible-tokens.ts","apps/web/lib/helius/rpc.ts","apps/web/lib/helius/assets.ts","apps/web/lib/solana/metaplex.ts","apps/web/hooks/use-rwa-portfolio.ts","apps/web/components/assets/rwa/portfolio.tsx","packages/energy-iot/src/energy-certificates.ts","programs/powerchain/src/rwa.rs","docs/rwa-helius.md"];
+const missing=required.filter(x=>!existsSync(x)); if(missing.length){console.error("Missing RWA files:",missing);process.exit(1)} console.log("RWA/Helius structure check passed");

@@ -1,0 +1,2 @@
+
+export function MarketDataDisclaimer(){return <aside className="rounded-2xl border border-amber-200 bg-amber-50/70 p-5 text-sm leading-6 text-amber-900"><b>Market data disclaimer.</b> Prices, quotes, rates, yields, and estimates are informational and may be delayed, incomplete, unavailable, or provider-derived. Mock and devnet values are not mainnet market prices. Powerchain does not provide investment, financial, legal, or tax advice.</aside>}

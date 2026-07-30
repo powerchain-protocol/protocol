@@ -1,0 +1,4 @@
+
+import {AccessGuard} from "@/components/access/access-guard";
+const rows=[["Nordic Grid Labs","Enterprise","Active","1,428"],["Oulu Solar Community","Professional","Active","628"],["Baltic Energy Cooperative","Professional","Onboarding","184"]];
+export default function Page(){return <AccessGuard permission="clients.read"><div><p className="text-xs font-black uppercase tracking-wider text-emerald-700">Client services</p><h1 className="mt-2 text-4xl font-semibold">Clients</h1><div className="mt-8 overflow-hidden rounded-3xl border bg-white"><table className="w-full min-w-[760px] text-left"><thead className="bg-slate-50"><tr>{["Client","Plan","Status","Managed assets"].map(x=><th className="px-5 py-3 text-xs uppercase text-slate-500" key={x}>{x}</th>)}</tr></thead><tbody>{rows.map(r=><tr className="border-t" key={r[0]}>{r.map(c=><td className="px-5 py-4" key={c}>{c}</td>)}</tr>)}</tbody></table></div></div></AccessGuard>}

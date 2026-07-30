@@ -1,0 +1,10 @@
+
+/dashboard https://dashboard.powerchain.energy 302
+/portal https://dashboard.powerchain.energy 302
+/checkout https://checkout.powerchain.energy 302
+/docs https://docs.powerchain.energy 302
+/documentation https://docs.powerchain.energy 301
+/swagger https://api.powerchain.energy/api-docs 302
+/openapi.json https://api.powerchain.energy/openapi.json 200
+/swagger.yaml https://api.powerchain.energy/swagger.yaml 200
+/api/v1/* https://api.powerchain.energy/api/v1/:splat 200

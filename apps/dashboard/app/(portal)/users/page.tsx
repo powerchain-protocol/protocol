@@ -1,0 +1,4 @@
+
+import {AccessGuard} from "@/components/access/access-guard";
+const users=[["Alex Kim","SUPER ADMIN","Powerchain"],["Mia Virtanen","COMPANY ADMIN","Nordic Grid Labs"],["Olli Saarinen","PROSUMER","Oulu Solar Community"],["Sara Lind","AUDITOR","Baltic Energy Cooperative"]];
+export default function Page(){return <AccessGuard permission="users.read"><div><p className="text-xs font-black uppercase tracking-wider text-emerald-700">Identity and access</p><h1 className="mt-2 text-4xl font-semibold">Users and roles</h1><div className="mt-8 grid gap-4">{users.map(([name,role,company])=><article className="flex items-center justify-between rounded-2xl border bg-white p-5" key={name}><div><b>{name}</b><p className="text-sm text-slate-500">{company}</p></div><span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">{role}</span></article>)}</div></div></AccessGuard>}

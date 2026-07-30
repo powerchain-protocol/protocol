@@ -1,0 +1,2 @@
+
+import type{FastifyInstance}from"fastify";export async function marketplacePlatformRoutes(app:FastifyInstance){app.get("/marketplace/listings",async()=>({data:[{id:"mkt_solar",symbol:"OSY",name:"Oulu Solar Yield",priceUsd:12.48,network:"solana"},{id:"mkt_cct",symbol:"CCT",name:"Carbon Credit Token",priceUsd:8.42,network:"solana"}]}));app.post("/marketplace/orders",async(req,reply)=>reply.code(201).send({data:{id:`ord_${crypto.randomUUID().slice(0,8)}`,...req.body as object,status:"open"}}))}

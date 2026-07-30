@@ -1,0 +1,42 @@
+{
+  "name": "@powerchain/solana",
+  "version": "1.0.0-beta.1",
+  "description": "Powerchain Solana token SDK for SPL Token and Token-2022 extensions.",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./tokens/spl": "./src/tokens/spl/index.ts",
+    "./token-2022": "./src/token-2022/solana/index.ts",
+    "./token-2022/extensions": "./src/token-2022/solana/extensions/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "manifest.json"
+  ],
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@solana/spl-token": "latest",
+    "@solana/web3.js": "1.98.4"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "tsx": "latest",
+    "typescript": "7.0.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "beta"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerchain-protocol/powerchain.git",
+    "directory": "packages/solana"
+  }
+}

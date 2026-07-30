@@ -1,0 +1,28 @@
+
+[package]
+name = "powerchain"
+version = "1.0.0-beta.1"
+description = "Powerchain renewable infrastructure, settlement, carbon, and treasury program."
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/powerchain-protocol/powerchain"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "powerchain"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+[dependencies]
+anchor-lang = { workspace = true }
+anchor-spl = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true }
+serde_json = { workspace = true }

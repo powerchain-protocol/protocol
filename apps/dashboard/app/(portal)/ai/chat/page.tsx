@@ -1,0 +1,1 @@
+import {ChatInterface} from "@/components/ai/chat/chat-interface";export default function Page(){return <ChatInterface/>}

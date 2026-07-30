@@ -1,0 +1,59 @@
+{
+  "name": "powerchain-solar-rental",
+  "version": "1.0.0-beta.25",
+  "instructions": [
+    {
+      "name": "create_inventory",
+      "accounts": [
+        "operator",
+        "asset",
+        "inventory"
+      ],
+      "args": [
+        "panel_count",
+        "monthly_price"
+      ]
+    },
+    {
+      "name": "reserve_panels",
+      "accounts": [
+        "renter",
+        "inventory",
+        "rental",
+        "payment_vault"
+      ],
+      "args": [
+        "panel_count",
+        "months"
+      ]
+    },
+    {
+      "name": "activate_rental",
+      "accounts": [
+        "operator",
+        "rental"
+      ],
+      "args": []
+    },
+    {
+      "name": "settle_generation_share",
+      "accounts": [
+        "operator",
+        "rental",
+        "renter"
+      ],
+      "args": [
+        "amount"
+      ]
+    },
+    {
+      "name": "cancel_rental",
+      "accounts": [
+        "operator",
+        "renter",
+        "rental"
+      ],
+      "args": []
+    }
+  ]
+}

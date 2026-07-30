@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "@powerchain/solana",
+  "version": "1.0.0-beta.32",
+  "networks": ["solana-mainnet-beta", "solana-devnet", "solana-testnet", "localnet"],
+  "standards": ["SPL Token", "Token-2022"],
+  "token2022Extensions": ["TransferFeeConfig", "MetadataPointer", "TokenMetadata", "PermanentDelegate", "MintCloseAuthority"],
+  "productionAddressesVerified": false
+}

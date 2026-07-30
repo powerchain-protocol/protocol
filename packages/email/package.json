@@ -1,0 +1,29 @@
+{
+  "name": "@powerchain/email",
+  "version": "1.0.0-beta.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "description": "Powerchain email templates and notification rendering utilities.",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "zod": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerchain-protocol/powerchain.git",
+    "directory": "packages/email"
+  },
+  "homepage": "https://github.com/powerchain-protocol/powerchain/tree/main/packages/email#readme",
+  "bugs": {
+    "url": "https://github.com/powerchain-protocol/powerchain/issues"
+  }
+}

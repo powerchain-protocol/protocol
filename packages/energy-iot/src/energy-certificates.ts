@@ -1,0 +1,4 @@
+export interface CertificateReading{meterId:string;startKwh:number;endKwh:number;periodStart:string;periodEnd:string;source:"solar"|"wind"|"hydro"|"geothermal"|"biomass"}
+export interface CertificateDraft extends CertificateReading{energyMwh:number;serial:string;metadata:Record<string,string|number>}
+export function createEnergyCertificate(reading:CertificateReading):CertificateDraft{if(reading.endKwh<=reading.startKwh)throw new Error("endKwh must exceed startKwh"); const energyMwh=(reading.endKwh-reading.startKwh)/1000; return{...reading,energyMwh,serial:`PWRC-${reading.meterId}-${Date.parse(reading.periodEnd)}`,metadata:{standard:"PowerChain Energy Certificate v1",energyMwh,source:reading.source,meterId:reading.meterId}}}
+export function retireEnergyCertificate(certificate:CertificateDraft,beneficiary:string,reason:string){return{certificateSerial:certificate.serial,beneficiary,reason,retiredAt:new Date().toISOString(),energyMwh:certificate.energyMwh}}

@@ -1,0 +1,2 @@
+const modules=["Swap","PWRC ↔ wPWRC Bridge","Checkout","Payments","Escrow","Crowdfunding"];
+export default function ProtocolDashboard(){return <main><h1>Protocol operations</h1><p>Review configured networks, program IDs, fees, and recent operation status.</p><div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:16}}>{modules.map((name)=><section key={name} style={{border:"1px solid var(--border, #ddd)",borderRadius:12,padding:18}}><h2>{name}</h2><p>Configuration-driven. Devnet must be verified before signing.</p></section>)}</div></main>}

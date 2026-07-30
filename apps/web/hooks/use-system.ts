@@ -1,0 +1,1 @@
+"use client";import{useEffect,useState}from"react";import type{SystemOverview}from"@/types/system";export function useSystem(){const[data,setData]=useState<SystemOverview>();const[loading,setLoading]=useState(true);useEffect(()=>{fetch("/api/system").then(r=>r.json()).then(b=>setData(b.data)).finally(()=>setLoading(false))},[]);return{data,loading}}

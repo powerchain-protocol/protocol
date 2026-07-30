@@ -1,0 +1,3 @@
+
+import type {FastifyInstance} from "fastify";import {requirePermission} from "../../security/rbac.js";import {buildMintTokenOperation} from "../../programs/token-program.js";import {buildStakeOperation} from "../../programs/staking-program.js";
+export async function solanaRoutes(app:FastifyInstance){app.post<{Body:{authority:string;name:string;symbol:string;uri:string;supply:string}}>("/solana/tokenize",{preHandler:requirePermission("assets:write")},async req=>({data:await buildMintTokenOperation({...req.body,supply:BigInt(req.body.supply)})}));app.post<{Body:{wallet:string;amount:string;validator:string}}>("/solana/stake",{preHandler:requirePermission("assets:write")},async req=>({data:await buildStakeOperation({...req.body,amount:BigInt(req.body.amount)})}))}

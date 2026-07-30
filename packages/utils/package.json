@@ -1,0 +1,19 @@
+{
+  "name": "@powerchain/utils",
+  "version": "1.0.0-beta.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "description": "Shared formatting, request, error, and platform utility functions.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerchain-protocol/powerchain.git",
+    "directory": "packages/utils"
+  },
+  "homepage": "https://github.com/powerchain-protocol/powerchain/tree/main/packages/utils#readme",
+  "bugs": {
+    "url": "https://github.com/powerchain-protocol/powerchain/issues"
+  }
+}

@@ -1,0 +1,1 @@
+import{z}from"zod";const s=z.object({to:z.string().min(16),amount:z.number().positive(),asset:z.string()});export async function POST(request:Request){const input=s.parse(await request.json());return Response.json({data:{...input,signature:`sim_${crypto.randomUUID().replaceAll("-","")}`,status:"submitted"}},{status:202})}

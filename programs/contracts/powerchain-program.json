@@ -1,0 +1,14 @@
+
+{
+  "name": "powerchain",
+  "version": "1.0.0-beta.7",
+  "programId": "PwrChn11111111111111111111111111111111111",
+  "network": "solana",
+  "framework": "anchor",
+  "instructions": [
+    "initialize",
+    "set_paused",
+    "register_asset",
+    "record_settlement"
+  ]
+}

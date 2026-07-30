@@ -1,0 +1,8 @@
+* @powerchain-foundation/core
+/apps/web/ @powerchain-foundation/web
+/apps/backend/ @powerchain-foundation/backend
+/programs/ @powerchain-foundation/protocol
+/contracts/ @powerchain-foundation/protocol
+/packages/schemas/ @powerchain-foundation/backend @powerchain-foundation/web
+/docs/ @powerchain-foundation/docs
+/.github/ @powerchain-foundation/core

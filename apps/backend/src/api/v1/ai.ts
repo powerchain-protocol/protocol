@@ -1,0 +1,3 @@
+
+import type {FastifyInstance} from "fastify";import {requirePermission} from "../../security/rbac.js";
+export async function aiRoutes(app:FastifyInstance){app.post<{Body:{prompt?:string}}>("/ai/chat",{preHandler:requirePermission("ai:use")},async(req,reply)=>{const prompt=req.body?.prompt?.trim();if(!prompt)return reply.code(400).send({error:{code:"PROMPT_REQUIRED",message:"Enter a prompt"}});return{data:{answer:"Energy production is up 12.5% across the selected portfolio.",citations:["powerchain://analytics/monthly"]}}});app.get("/ai/suggestions",{preHandler:requirePermission("ai:use")},async()=>({data:["Show today's energy production summary","Analyze carbon emissions trend","Forecast renewable production"]}))}

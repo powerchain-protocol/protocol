@@ -1,0 +1,2 @@
+import { cookies } from "next/headers";
+export async function POST(){ const jar=await cookies(); const token=jar.get("powerchain_session")?.value; if(token){ const base=process.env.APP_API_URL ?? "http://localhost:4000"; await fetch(`${base}/api/v1/auth/logout`,{method:"POST",headers:{authorization:`Bearer ${token}`}}).catch(()=>null); } jar.delete("powerchain_session"); return Response.json({data:{signedOut:true}}); }

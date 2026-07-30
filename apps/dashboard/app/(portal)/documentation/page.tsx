@@ -1,0 +1,2 @@
+
+export default function Page(){return <div><h1 className="text-3xl font-bold">Documentation</h1><p className="mt-2 text-slate-500">Everything needed to build, integrate, and scale on Powerchain.</p><div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">{["Overview","Analytics","Operations","Security","Integrations","Resources"].map(x=><div className="rounded-2xl border bg-white p-6" key={x}><h2 className="font-bold">{x}</h2><p className="mt-2 text-sm text-slate-500">Production-ready tools and role-based workflows.</p></div>)}</div></div>}

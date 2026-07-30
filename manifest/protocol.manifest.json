@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "release": "1.0.0-beta.34",
+  "programs": ["token", "swap", "bridge", "checkout", "payments", "escrow", "crowdfunding"],
+  "assets": {"solana": "PWRC", "sui": "wPWRC", "collateralization": "1:1"},
+  "networks": ["solana-devnet", "solana-mainnet", "sui-devnet", "sui-mainnet"],
+  "programIds": {"localnet": null, "devnet": null, "mainnet": null},
+  "security": {"replayProtection": true, "checkedArithmetic": true, "productionIdsRequired": true}
+}

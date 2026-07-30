@@ -1,0 +1,3 @@
+
+import {AccessGuard} from "@/components/access/access-guard";
+export default function Page(){return <AccessGuard permission="energy.read"><div><p className="text-xs font-black uppercase tracking-wider text-emerald-700">Energy operations</p><h1 className="mt-2 text-4xl font-semibold">Grid and market operations</h1><div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">{[["Generation","2.48 GW"],["Demand","2.14 GW"],["Market price","$0.126/kWh"],["Grid health","99.98%"]].map(([l,v])=><article className="rounded-2xl border bg-white p-5" key={l}><small className="text-slate-500">{l}</small><strong className="mt-2 block text-2xl">{v}</strong></article>)}</div></div></AccessGuard>}

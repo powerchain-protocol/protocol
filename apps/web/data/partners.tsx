@@ -1,0 +1,2 @@
+import {SiAmazonwebservices,SiGooglecloud,SiMicrosoftazure,SiSolana,SiChainlink,SiSiemens,SiSchneiderelectric} from "react-icons/si";
+export const partners=[{name:"Google Cloud",Icon:SiGooglecloud},{name:"AWS",Icon:SiAmazonwebservices},{name:"Microsoft Azure",Icon:SiMicrosoftazure},{name:"Solana",Icon:SiSolana},{name:"Chainlink",Icon:SiChainlink},{name:"Siemens",Icon:SiSiemens},{name:"Schneider Electric",Icon:SiSchneiderelectric}];

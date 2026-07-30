@@ -1,0 +1,53 @@
+{
+  "name": "@powerchain/web3.js",
+  "version": "1.0.0-beta.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./solana": "./src/solana.ts",
+    "./pyth": "./src/pyth.ts",
+    "./jupiter": "./src/jupiter.ts",
+    "./helius": "./src/helius.ts",
+    "./raydium": "./src/raydium.ts",
+    "./birdeye": "./src/birdeye.ts",
+    "./tokens": "./src/tokens.ts",
+    "./assets": "./src/assets/index.ts",
+    "./currencies": "./src/currencies/index.ts",
+    "./public/*": "./public/*",
+    "./pwrc": "./src/pwrc/index.ts",
+    "./providers": "./src/providers/index.ts",
+    "./sui": "./src/sui.ts",
+    "./cetus": "./src/cetus.ts",
+    "./client": "./src/client/index.ts"
+  },
+  "description": "Powerchain Web3 SDK clients for Solana, market data, swaps, and infrastructure integrations.",
+  "dependencies": {
+    "@solana/spl-token": "latest",
+    "@metaplex-foundation/mpl-token-metadata": "latest",
+    "@metaplex-foundation/umi": "latest",
+    "@metaplex-foundation/umi-bundle-defaults": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerchain-protocol/powerchain.git",
+    "directory": "packages/web3"
+  },
+  "homepage": "https://github.com/powerchain-protocol/powerchain/tree/main/packages/web3#readme",
+  "bugs": {
+    "url": "https://github.com/powerchain-protocol/powerchain/issues"
+  },
+  "files": [
+    "src",
+    "public",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "vitest": "latest"
+  }
+}

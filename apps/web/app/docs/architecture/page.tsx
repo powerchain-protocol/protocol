@@ -1,0 +1,1 @@
+import {Architecture} from "@/components/docs/architecture";export default function Page(){return <><h1 className="text-4xl font-semibold">Architecture</h1><div className="mt-8"><Architecture/></div></>}

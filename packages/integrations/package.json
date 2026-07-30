@@ -1,0 +1,22 @@
+{
+  "name": "@powerchain/integrations",
+  "version": "1.0.0-beta.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "description": "Enterprise, payments, DEX, oracle, market-data, and blockchain integration clients.",
+  "dependencies": {
+    "@powerchain/solana-infrastructure": "workspace:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerchain-protocol/powerchain.git",
+    "directory": "packages/integrations"
+  },
+  "homepage": "https://github.com/powerchain-protocol/powerchain/tree/main/packages/integrations#readme",
+  "bugs": {
+    "url": "https://github.com/powerchain-protocol/powerchain/issues"
+  }
+}

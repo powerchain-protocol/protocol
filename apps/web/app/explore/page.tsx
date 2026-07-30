@@ -1,0 +1,3 @@
+
+import {Header} from "@/components/layout/header";import {Footer} from "@/components/layout/footer";import {ExploreSection} from "@/components/home/explore-section";import Link from "next/link";
+export default function Page(){return <><Header/><main><section className="mx-auto max-w-[1500px] px-5 py-20"><p className="text-xs font-black uppercase tracking-[.16em] text-emerald-700">Explore Powerchain</p><h1 className="mt-3 max-w-4xl text-6xl font-semibold">Discover renewable infrastructure, markets, networks, and enterprise services.</h1><div className="mt-8"><Link href="/renewables" className="rounded-xl bg-emerald-800 px-6 py-3 font-bold text-white">Explore renewables</Link></div></section><ExploreSection/></main><Footer/></>}

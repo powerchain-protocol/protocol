@@ -1,0 +1,1 @@
+export class AppError extends Error{constructor(message:string,public code="APP_ERROR"){super(message);this.name="AppError"}} export function getErrorMessage(error:unknown){return error instanceof Error?error.message:"Something went wrong"}

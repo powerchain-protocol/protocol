@@ -1,0 +1,4 @@
+
+import {AccessGuard} from "@/components/access/access-guard";
+const rows=[["Oulu Solar Household","18.4 MWh","12.6 MWh","5.8 MWh"],["Espoo Battery Home","9.8 MWh","11.1 MWh","-1.3 MWh"],["Turku Wind Cooperative","84.2 MWh","42.8 MWh","41.4 MWh"]];
+export default function Page(){return <AccessGuard permission="prosumers.read"><div><p className="text-xs font-black uppercase tracking-wider text-emerald-700">Distributed energy</p><h1 className="mt-2 text-4xl font-semibold">Prosumer management</h1><div className="mt-8 overflow-hidden rounded-3xl border bg-white"><table className="w-full min-w-[760px] text-left"><thead className="bg-slate-50"><tr>{["Prosumer","Generation","Consumption","Net export"].map(x=><th className="px-5 py-3 text-xs uppercase text-slate-500" key={x}>{x}</th>)}</tr></thead><tbody>{rows.map(r=><tr className="border-t" key={r[0]}>{r.map(c=><td className="px-5 py-4" key={c}>{c}</td>)}</tr>)}</tbody></table></div></div></AccessGuard>}

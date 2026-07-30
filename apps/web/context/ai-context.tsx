@@ -1,0 +1,5 @@
+
+"use client";import {createContext,useContext,useEffect,useMemo,useState} from "react";import {DEFAULT_AI_SETTINGS} from "@/constants/ai";import type {AiMemoryItem,AiSettings,ChatMessage} from "@/types/ai";
+const C=createContext<any>(null);
+export function AiProvider({children}:{children:React.ReactNode}){const [messages,setMessages]=useState<ChatMessage[]>([]);const [settings,setSettings]=useState<AiSettings>(DEFAULT_AI_SETTINGS);const [memory,setMemory]=useState<AiMemoryItem[]>([]);useEffect(()=>{const raw=localStorage.getItem("powerchain_ai");if(raw){try{const v=JSON.parse(raw);setSettings(v.settings??DEFAULT_AI_SETTINGS);setMemory(v.memory??[])}catch{}}},[]);useEffect(()=>localStorage.setItem("powerchain_ai",JSON.stringify({settings,memory})),[settings,memory]);return <C.Provider value={useMemo(()=>({messages,setMessages,settings,setSettings,memory,setMemory}),[messages,settings,memory])}>{children}</C.Provider>}
+export const useAi=()=>{const v=useContext(C);if(!v)throw new Error("AiProvider missing");return v};

@@ -1,0 +1,5 @@
+
+.marketplace-layout { min-height: 100%; }
+@media (max-width: 767px) {
+  .carbon-impact-grid { grid-template-columns: 1fr; }
+}

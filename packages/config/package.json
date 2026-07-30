@@ -1,0 +1,19 @@
+{
+  "name": "@powerchain/config",
+  "version": "1.0.0-beta.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "description": "Shared Powerchain runtime, platform, and feature configuration.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerchain-protocol/powerchain.git",
+    "directory": "packages/config"
+  },
+  "homepage": "https://github.com/powerchain-protocol/powerchain/tree/main/packages/config#readme",
+  "bugs": {
+    "url": "https://github.com/powerchain-protocol/powerchain/issues"
+  }
+}

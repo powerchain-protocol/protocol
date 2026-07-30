@@ -1,0 +1,1 @@
+export const formatGbp=(v:number)=>new Intl.NumberFormat("fi-FI",{style:"currency",currency:"GBP"}).format(v);

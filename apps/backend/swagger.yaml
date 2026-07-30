@@ -1,0 +1,187 @@
+openapi: 3.1.0
+info:
+  title: Powerchain API
+  version: 1.0.0-beta.26
+  description: Enterprise API for wallets, balances, payments, renewable assets, webhooks and settlement.
+servers:
+  - url: https://api.powerchain.energy
+security:
+  - bearerAuth: []
+tags:
+  - name: System
+  - name: Wallets
+  - name: Exchanges
+  - name: Webhooks
+paths:
+  /api/v2/health:
+    get:
+      tags: [System]
+      summary: API v2 health
+      security: []
+      responses:
+        '200':
+          description: Healthy
+  /api/v2/wallets/{address}/balances:
+    get:
+      tags: [Wallets]
+      summary: Get verified native wallet balances
+      parameters:
+        - in: path
+          name: address
+          required: true
+          schema: { type: string }
+        - in: query
+          name: network
+          schema: { type: string, enum: [solana, sui], default: solana }
+        - in: query
+          name: environment
+          schema: { type: string, enum: [mock, devnet, mainnet], default: mainnet }
+      responses:
+        '200': { description: Verified balance response }
+        '503': { description: All configured providers unavailable }
+  /api/v1/wallet/signatures/challenge:
+    post:
+      tags: [Wallets]
+      summary: Create a replay-protected sign-in challenge
+      security: []
+      responses:
+        '201': { description: Challenge created }
+  /api/v1/wallet/signatures/verify:
+    post:
+      tags: [Wallets]
+      summary: Verify a wallet signature and consume its nonce
+      security: []
+      responses:
+        '200': { description: Signature verified }
+        '401': { description: Invalid signature or expired challenge }
+  /api/v1/webhooks/subscriptions:
+    post:
+      tags: [Webhooks]
+      summary: Create an outgoing webhook subscription
+      responses:
+        '201': { description: Subscription created; secret returned once }
+  /api/v1/webhooks/incoming/{provider}:
+    post:
+      tags: [Webhooks]
+      summary: Receive a signed provider webhook
+      security: []
+      parameters:
+        - in: path
+          name: provider
+          required: true
+          schema: { type: string, enum: [circle, stripe, helius, jupiter, github, custom] }
+      responses:
+        '202': { description: Event accepted }
+        '401': { description: Invalid signature }
+
+  /api/v2/exchanges:
+    get:
+      tags: [Exchanges]
+      summary: List configured exchange providers
+      responses:
+        '200': { description: Exchange provider registry }
+  /api/v2/exchanges/status:
+    get:
+      tags: [Exchanges]
+      summary: Check exchange provider availability over validated HTTPS
+      responses:
+        '200': { description: Provider health and latency }
+  /api/v2/exchanges/{id}:
+    get:
+      tags: [Exchanges]
+      summary: Get exchange provider metadata
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string, enum: [jupiter, raydium, orca, cetus, aftermath] }
+      responses:
+        '200': { description: Exchange provider }
+        '400': { description: Invalid exchange identifier }
+        '404': { description: Exchange not found }
+  /api/v2/exchanges/quote:
+    post:
+      tags: [Exchanges]
+      summary: Get the best verified quote with provider fallbacks
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/ExchangeQuoteRequest' }
+      responses:
+        '200': { description: Best quote and alternatives }
+        '400': { description: Validation error }
+        '503': { description: No provider returned a verified quote }
+  /api/v2/exchanges/routes:
+    post:
+      tags: [Exchanges]
+      summary: Rank all valid routes by output amount
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/ExchangeQuoteRequest' }
+      responses:
+        '200': { description: Ranked routes }
+        '503': { description: Routes unavailable }
+  /api/v2/exchanges/simulate:
+    post:
+      tags: [Exchanges]
+      summary: Simulate quote economics without signing or broadcasting
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/ExchangeQuoteRequest' }
+      responses:
+        '200': { description: Simulation result }
+        '503': { description: Simulation unavailable }
+  /api/v2/exchanges/fees:
+    post:
+      tags: [Exchanges]
+      summary: Estimate fee metadata and slippage reserve
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/ExchangeQuoteRequest' }
+      responses:
+        '200': { description: Fee estimate }
+        '503': { description: Fee estimate unavailable }
+  /api/v2/exchanges/swap:
+    post:
+      tags: [Exchanges]
+      summary: Create an unsigned, unbroadcast swap transaction
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              allOf:
+                - $ref: '#/components/schemas/ExchangeQuoteRequest'
+                - type: object
+                  required: [exchange, userPublicKey, idempotencyKey]
+                  properties:
+                    userPublicKey: { type: string }
+                    idempotencyKey: { type: string, minLength: 16 }
+      responses:
+        '201': { description: Unsigned transaction created }
+        '400': { description: Validation error }
+        '503': { description: Swap transaction unavailable }
+components:
+  schemas:
+    ExchangeQuoteRequest:
+      type: object
+      required: [inputMint, outputMint, amount]
+      properties:
+        inputMint: { type: string }
+        outputMint: { type: string }
+        amount: { type: string, pattern: "^[1-9][0-9]*$" }
+        slippageBps: { type: integer, minimum: 1, maximum: 500, default: 50 }
+        exchange: { type: string, enum: [jupiter, raydium, orca, cetus, aftermath] }
+        network: { type: string, enum: [solana, sui] }
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

@@ -1,0 +1,112 @@
+{
+  "version": "1.0.0-beta.18",
+  "domains": {
+    "website": "https://powerchain.energy",
+    "api": "https://api.powerchain.energy",
+    "dashboard": "https://dashboard.powerchain.energy",
+    "checkout": "https://checkout.powerchain.energy",
+    "docs": "https://docs.powerchain.energy"
+  },
+  "redirects": [
+    {
+      "source": "/dashboard",
+      "destination": "https://dashboard.powerchain.energy",
+      "permanent": false
+    },
+    {
+      "source": "/portal",
+      "destination": "https://dashboard.powerchain.energy",
+      "permanent": false
+    },
+    {
+      "source": "/checkout",
+      "destination": "https://checkout.powerchain.energy",
+      "permanent": false
+    },
+    {
+      "source": "/docs",
+      "destination": "https://docs.powerchain.energy",
+      "permanent": false
+    },
+    {
+      "source": "/documentation",
+      "destination": "https://docs.powerchain.energy",
+      "permanent": true
+    },
+    {
+      "source": "/swagger",
+      "destination": "https://api.powerchain.energy/api-docs",
+      "permanent": false
+    },
+    {
+      "source": "/openapi.json",
+      "destination": "https://api.powerchain.energy/openapi.json",
+      "permanent": false
+    },
+    {
+      "source": "/swagger.yaml",
+      "destination": "https://api.powerchain.energy/swagger.yaml",
+      "permanent": false
+    },
+    {
+      "source": "/hardware",
+      "destination": "/hardwares",
+      "permanent": false
+    },
+    {
+      "source": "/devices",
+      "destination": "/iot",
+      "permanent": false
+    },
+    {
+      "source": "/invest",
+      "destination": "/crowdfunding",
+      "permanent": false
+    },
+    {
+      "source": "/carbon-market",
+      "destination": "/marketplace?category=carbon",
+      "permanent": false
+    },
+    {
+      "source": "/wallets",
+      "destination": "/wallet",
+      "permanent": false
+    },
+    {
+      "source": "/transactions",
+      "destination": "/wallet/transactions",
+      "permanent": false
+    },
+    {
+      "source": "/demo",
+      "destination": "/auth/signin?demo=1",
+      "permanent": false
+    },
+    {
+      "source": "/login",
+      "destination": "/auth/signin",
+      "permanent": false
+    },
+    {
+      "source": "/signin",
+      "destination": "/auth/signin",
+      "permanent": false
+    },
+    {
+      "source": "/signup",
+      "destination": "/auth/signup",
+      "permanent": false
+    },
+    {
+      "source": "/prices",
+      "destination": "/pricing",
+      "permanent": false
+    },
+    {
+      "source": "/electricity-prices",
+      "destination": "/rates",
+      "permanent": false
+    }
+  ]
+}

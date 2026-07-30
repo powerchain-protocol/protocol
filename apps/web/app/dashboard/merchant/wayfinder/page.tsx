@@ -1,0 +1,2 @@
+import { WayfinderPlanner } from "@/components/energy/wayfinder-planner";
+export default function Page(){return <section><p className="text-sm font-medium text-emerald-300">Wayfinder</p><h1 className="mt-2 text-3xl font-semibold">Find the best local energy route</h1><p className="mt-2 max-w-3xl text-slate-400">Match demand with nearby renewable supply using price, distance, availability and carbon intensity.</p><div className="mt-8"><WayfinderPlanner/></div></section>}

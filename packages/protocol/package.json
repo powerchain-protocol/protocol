@@ -1,0 +1,22 @@
+{
+  "name": "@powerchain/protocol",
+  "version": "1.0.0-beta.1",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./networks": "./src/networks.ts",
+    "./zk-snark": "./src/zk-snark/index.ts",
+    "./znark": "./src/znark/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}

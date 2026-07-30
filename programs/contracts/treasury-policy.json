@@ -1,0 +1,8 @@
+
+{
+  "version": 1,
+  "platformFeeBasisPoints": 200,
+  "maximumFeeBasisPoints": 500,
+  "requiresConfiguredTreasury": true,
+  "supportedAssets": ["SOL", "PWRC", "USDC", "USDT"]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@powerchain/data",
+  "version": "1.0.0-beta.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "description": "Shared Powerchain device, energy, market, and trading data contracts.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerchain-protocol/powerchain.git",
+    "directory": "packages/data"
+  },
+  "homepage": "https://github.com/powerchain-protocol/powerchain/tree/main/packages/data#readme",
+  "bugs": {
+    "url": "https://github.com/powerchain-protocol/powerchain/issues"
+  }
+}

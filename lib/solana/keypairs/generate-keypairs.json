@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Powerchain encrypted Solana keypair vault",
+  "version": 1,
+  "security": {
+    "storage": "client-encrypted",
+    "cipher": "AES-GCM-256",
+    "keyDerivation": "PBKDF2-SHA-256",
+    "privateKeyOnServer": false
+  },
+  "defaults": {
+    "network": "devnet",
+    "derivationIterations": 310000,
+    "maximumKeypairsPerVault": 25
+  },
+  "record": {
+    "id": "uuid",
+    "publicKey": "base58",
+    "label": "string",
+    "createdAt": "ISO-8601",
+    "encryptedSecretKey": "base64",
+    "iv": "base64",
+    "salt": "base64"
+  }
+}

@@ -1,0 +1,3 @@
+
+import {DashboardHeader} from "./dashboard-header";import {DashboardFooter} from "./dashboard-footer";import {LeftSidebar} from "./left-sidebar";import {RightSidebar} from "./right-sidebar";
+export function DashboardShell({children}:{children:React.ReactNode}){return <div className="min-h-screen bg-[#f5f8f5] text-slate-950 lg:grid lg:grid-cols-[270px_minmax(0,1fr)]"><LeftSidebar/><div className="flex min-h-screen min-w-0 flex-col"><DashboardHeader/><div className="flex min-h-0 flex-1"><main className="min-w-0 flex-1 overflow-x-hidden p-4 md:p-6">{children}</main><RightSidebar/></div><DashboardFooter/></div></div>}

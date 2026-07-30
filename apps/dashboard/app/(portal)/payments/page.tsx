@@ -1,0 +1,3 @@
+
+import {AccessGuard} from "@/components/access/access-guard";
+export default function Page(){return <AccessGuard permission="billing.read"><div><p className="text-xs font-black uppercase tracking-wider text-emerald-700">Billing and settlement</p><h1 className="mt-2 text-4xl font-semibold">Payments</h1><div className="mt-8 grid gap-4 sm:grid-cols-3">{[["Gross volume","$12.49M"],["Successful payments","28,643"],["Active subscriptions","6,782"]].map(([l,v])=><article className="rounded-2xl border bg-white p-5" key={l}><small className="text-slate-500">{l}</small><strong className="mt-2 block text-2xl">{v}</strong></article>)}</div></div></AccessGuard>}

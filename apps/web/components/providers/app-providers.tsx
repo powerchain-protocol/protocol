@@ -1,0 +1,2 @@
+"use client"; import {ThemeProvider} from "./theme-provider"; import {WalletProvider} from "@/context/wallet-context"; import {Toaster} from "@/components/ui/toaster";
+import {SolanaWalletProvider} from "./solana-wallet-provider"; import {PlatformServicesProvider} from "@/context/platform-services-context"; export function AppProviders({children}:{children:React.ReactNode}){return <ThemeProvider><SolanaWalletProvider><WalletProvider>{children}<Toaster/></WalletProvider></SolanaWalletProvider></ThemeProvider>}

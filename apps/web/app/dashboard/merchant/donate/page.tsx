@@ -1,0 +1,2 @@
+import { FundingGrid } from "@/components/energy/funding-grid";
+export default function Page(){return <section><p className="text-sm font-medium text-emerald-300">Donate</p><h1 className="mt-2 text-3xl font-semibold">Fund community energy access</h1><p className="mt-2 text-slate-400">Support verified public-benefit renewable and resilience projects.</p><div className="mt-8"><FundingGrid mode="donation"/></div></section>}

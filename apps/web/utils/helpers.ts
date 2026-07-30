@@ -1,0 +1,1 @@
+export const slugify=(value:string)=>value.toLowerCase().trim().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,""); export const range=(n:number)=>Array.from({length:n},(_,i)=>i);

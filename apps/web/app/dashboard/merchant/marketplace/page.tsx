@@ -1,0 +1,2 @@
+import { EnergyMarketplace } from "@/components/energy/energy-marketplace";
+export default function Page(){return <section><p className="text-sm font-medium text-emerald-300">Renewable marketplace</p><h1 className="mt-2 text-3xl font-semibold">Discover and trade local clean energy</h1><p className="mt-2 max-w-3xl text-slate-400">Browse verified producers, smart-meter availability and transparent peer-to-peer pricing.</p><div className="mt-8"><EnergyMarketplace/></div></section>}

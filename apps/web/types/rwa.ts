@@ -1,0 +1,5 @@
+export type RwaKind = "renewable-project" | "energy-certificate" | "carbon-credit" | "smart-meter" | "infrastructure";
+export type RwaStatus = "draft" | "verified" | "listed" | "retired" | "suspended";
+export interface RwaAsset { id:string; mint:string; owner:string; name:string; symbol:string; kind:RwaKind; status:RwaStatus; image?:string; metadataUri?:string; projectId?:string; certificateId?:string; location?:{lat:number;lng:number;country?:string}; capacityKw?:number; generationKwh?:number; carbonAvoidedKg?:number; valuationUsd?:number; attributes:Record<string,string|number|boolean>; }
+export interface EnergyCertificate { id:string; mint:string; issuer:string; beneficiary:string; source:"solar"|"wind"|"hydro"|"geothermal"|"biomass"; periodStart:string; periodEnd:string; energyMwh:number; meterId:string; registry?:string; status:"active"|"transferred"|"retired"; metadataUri:string; }
+export interface RwaPortfolio { owner:string; fungibleValueUsd:number; nonFungibleValueUsd:number; totalValueUsd:number; assets:RwaAsset[]; certificates:EnergyCertificate[]; }

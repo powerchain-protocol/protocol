@@ -1,0 +1,2 @@
+
+export function SimpleChart({data}:{data:{label:string;value:number}[]}){const max=Math.max(...data.map(d=>d.value),1);return <div className="flex h-64 items-end gap-3 rounded-3xl bg-slate-50 p-5">{data.map(d=><div className="group flex h-full flex-1 items-end" key={d.label}><div className="relative w-full rounded-t-xl bg-gradient-to-t from-emerald-800 to-emerald-400" style={{height:`${d.value/max*100}%`}}><span className="absolute -top-7 left-1/2 -translate-x-1/2 text-[10px] text-slate-500">{d.label}</span></div></div>)}</div>}

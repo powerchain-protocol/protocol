@@ -1,0 +1,1 @@
+import{SYSTEM_SERVICES}from"@/constants/system";export async function GET(){const healthy=SYSTEM_SERVICES.filter(x=>x.status==="operational").length;return Response.json({data:{services:SYSTEM_SERVICES,healthyPercent:Math.round(healthy/SYSTEM_SERVICES.length*100),incidentCount:SYSTEM_SERVICES.length-healthy}})}

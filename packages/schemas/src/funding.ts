@@ -1,0 +1,5 @@
+import { z } from "zod";
+import { idSchema } from "./common.js";
+export const campaignSchema = z.object({ id: idSchema, title: z.string().min(3), description: z.string(), category: z.enum(["solar", "wind", "storage", "grid", "community", "carbon"]), goalEur: z.number().positive(), raisedEur: z.number().nonnegative(), status: z.enum(["draft", "open", "funded", "closed", "cancelled"]), ownerId: idSchema, endsAt: z.string().datetime({ offset: true }).optional() });
+export const createContributionSchema = z.object({ campaignId: idSchema, contributorId: idSchema.optional(), amountEur: z.number().positive(), paymentMethod: z.enum(["wallet", "card", "bank", "pwrc", "wpwrc"]), anonymous: z.boolean().default(false), message: z.string().max(500).optional() });
+export const donationSchema = z.object({ projectId: idSchema, donorId: idSchema.optional(), amountEur: z.number().positive(), paymentMethod: z.enum(["wallet", "card", "bank", "pwrc", "wpwrc"]), recurring: z.boolean().default(false), anonymous: z.boolean().default(false) });

@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { DocsSidebar } from "@/components/docs/docs-sidebar";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
+export default function DocsLayout({children}:{children:React.ReactNode}){return <div className="min-h-screen bg-background text-foreground"><header className="sticky top-0 z-40 flex h-16 items-center justify-between border-b bg-background/90 px-5 backdrop-blur"><Link href="/docs" className="font-semibold tracking-tight">POWERCHAIN <span className="text-emerald-600">DOCS</span></Link><div className="flex items-center gap-4 text-sm"><Link href="/saas">SaaS</Link><Link href="/dashboard">Dashboard</Link><ThemeToggle/></div></header><div className="grid lg:grid-cols-[260px_minmax(0,1fr)]"><DocsSidebar/><div><main className="min-h-[760px] px-5 py-10 lg:px-10">{children}</main><footer className="border-t p-6 text-xs text-muted-foreground">© 2026 PowerChain · Platform 1.0.0-beta.1</footer></div></div></div>}

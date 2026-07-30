@@ -1,0 +1,67 @@
+{
+  "name": "powerchain-renewable-pool",
+  "version": "1.0.0-beta.25",
+  "instructions": [
+    {
+      "name": "create_pool",
+      "accounts": [
+        "authority",
+        "pool",
+        "treasury"
+      ],
+      "args": [
+        "target_amount",
+        "yield_bps",
+        "asset_reference"
+      ]
+    },
+    {
+      "name": "contribute",
+      "accounts": [
+        "contributor",
+        "pool",
+        "treasury",
+        "token_program"
+      ],
+      "args": [
+        "amount"
+      ]
+    },
+    {
+      "name": "activate_pool",
+      "accounts": [
+        "authority",
+        "pool"
+      ],
+      "args": []
+    },
+    {
+      "name": "distribute_yield",
+      "accounts": [
+        "authority",
+        "pool",
+        "treasury",
+        "recipient"
+      ],
+      "args": [
+        "amount"
+      ]
+    },
+    {
+      "name": "close_pool",
+      "accounts": [
+        "authority",
+        "pool",
+        "treasury"
+      ],
+      "args": []
+    }
+  ],
+  "safety": [
+    "checked arithmetic",
+    "authority checks",
+    "token mint checks",
+    "pool state checks",
+    "mainnet deployment review required"
+  ]
+}

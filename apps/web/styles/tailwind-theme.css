@@ -1,0 +1,12 @@
+
+@theme {
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+  --color-power-50: #effcf4;
+  --color-power-100: #d9f8e4;
+  --color-power-400: #4ade80;
+  --color-power-600: #0f8a49;
+  --color-power-800: #086334;
+  --color-power-950: #032b18;
+  --radius-panel: 1.5rem;
+  --shadow-panel: 0 18px 60px rgba(15, 23, 42, .07);
+}

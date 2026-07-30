@@ -1,0 +1,2 @@
+
+import {can,type Role} from "@powerchain/shared";import type {FastifyReply,FastifyRequest} from "fastify";export function requirePermission(permission:string){return async(req:FastifyRequest,reply:FastifyReply)=>{const role=(req.headers["x-powerchain-role"]??"viewer") as Role;if(!can(role,permission))return reply.code(403).send({error:{code:"FORBIDDEN",message:`Missing permission: ${permission}`}})}}

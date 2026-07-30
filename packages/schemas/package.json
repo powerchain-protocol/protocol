@@ -1,0 +1,11 @@
+{
+  "name": "@powerchain/schemas",
+  "version": "1.0.0-beta.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "scripts": { "build": "tsc -p tsconfig.json", "typecheck": "tsc --noEmit", "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"" },
+  "dependencies": { "zod": "latest" },
+  "devDependencies": { "typescript": "7.0.2" }
+}

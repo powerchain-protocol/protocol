@@ -1,0 +1,566 @@
+
+openapi: 3.1.0
+info:
+  title: Powerchain API
+  version: 1.2.0
+  summary: Enterprise APIs for renewable energy, digital assets, payments, devices, analytics, and blockchain settlement.
+  description: |
+    The Powerchain API provides versioned endpoints for energy markets, portfolios,
+    devices, smart meters, DePIN nodes, trusted tokens, AI agents, crowdfunding,
+    rewards, payments, Solana operations, analytics, uploads, and user access.
+
+    Production base URL: `https://api.powerchain.energy/api/v1`
+  termsOfService: https://powerchain.energy/legal/terms
+  contact:
+    name: Powerchain Developer Support
+    url: https://docs.powerchain.energy
+  license:
+    name: Proprietary
+    url: https://powerchain.energy/legal/terms
+servers:
+  - url: https://api.powerchain.energy/api/v1
+    description: Production
+  - url: http://localhost:4000/api/v1
+    description: Local development
+externalDocs:
+  description: Powerchain developer documentation
+  url: https://docs.powerchain.energy
+tags:
+  - name: System
+  - name: Portfolio
+  - name: Markets
+  - name: Energy
+  - name: Trading
+  - name: Devices
+  - name: DePIN
+  - name: Tokens
+  - name: Payments
+  - name: Solana
+  - name: Analytics
+  - name: AI
+  - name: Crowdfunding
+  - name: Rewards
+  - name: Users
+  - name: Uploads
+  - name: Newsletter
+security:
+  - bearerAuth: []
+paths:
+  /health:
+    get:
+      tags: [System]
+      summary: API health
+      security: []
+      operationId: getApiHealth
+      responses:
+        "200":
+          description: API is healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthResponse"
+  /portfolio:
+    get:
+      tags: [Portfolio]
+      summary: Get portfolio overview
+      operationId: getPortfolio
+      responses:
+        "200":
+          description: Portfolio overview
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PortfolioResponse"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+  /markets:
+    get:
+      tags: [Markets]
+      summary: Get market quotes
+      operationId: getMarkets
+      security: []
+      responses:
+        "200":
+          description: Current market data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MarketListResponse"
+  /energy/markets:
+    get:
+      tags: [Energy]
+      summary: List energy markets
+      operationId: listEnergyMarkets
+      security: []
+      responses:
+        "200":
+          description: Energy markets
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EnergyMarketListResponse"
+  /energy/actors:
+    get:
+      tags: [Energy]
+      summary: List consumers, prosumers, and operators
+      operationId: listEnergyActors
+      responses:
+        "200":
+          description: Energy actors
+  /trade/orders:
+    get:
+      tags: [Trading]
+      summary: List energy orders
+      operationId: listTradeOrders
+      responses:
+        "200":
+          description: Energy orders
+    post:
+      tags: [Trading]
+      summary: Create an energy order
+      operationId: createTradeOrder
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateTradeOrder"
+      responses:
+        "201":
+          description: Energy order created
+        "400":
+          $ref: "#/components/responses/ValidationError"
+  /iot/devices:
+    get:
+      tags: [Devices]
+      summary: List connected IoT devices
+      operationId: listDevices
+      responses:
+        "200":
+          description: Connected devices
+  /iot/devices/{id}:
+    get:
+      tags: [Devices]
+      summary: Get a connected device
+      operationId: getDevice
+      parameters:
+        - $ref: "#/components/parameters/ResourceId"
+      responses:
+        "200":
+          description: Device
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /iot/smart-meters:
+    get:
+      tags: [Devices]
+      summary: List smart meters
+      operationId: listSmartMeters
+      responses:
+        "200":
+          description: Smart meters
+  /depin/nodes:
+    get:
+      tags: [DePIN]
+      summary: List DePIN nodes
+      operationId: listDepinNodes
+      responses:
+        "200":
+          description: DePIN nodes
+  /tokens/trusted:
+    get:
+      tags: [Tokens]
+      summary: List trusted tokens
+      operationId: listTrustedTokens
+      security: []
+      responses:
+        "200":
+          description: Trusted tokens
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TrustedTokenListResponse"
+  /tokens/trusted/{chain}/{address}:
+    get:
+      tags: [Tokens]
+      summary: Verify a token against the trusted list
+      operationId: verifyTrustedToken
+      security: []
+      parameters:
+        - name: chain
+          in: path
+          required: true
+          schema: { type: string }
+        - name: address
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: Trusted token
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /payments/x402/config:
+    get:
+      tags: [Payments]
+      summary: Get x402 payment configuration
+      operationId: getX402Configuration
+      security: []
+      responses:
+        "200":
+          description: x402 configuration
+  /solana/tokenize:
+    post:
+      tags: [Solana]
+      summary: Build a tokenization operation
+      operationId: tokenizeSolanaAsset
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [walletAddress, assetId]
+              properties:
+                walletAddress: { type: string }
+                assetId: { type: string }
+      responses:
+        "200":
+          description: Unsigned tokenization operation
+  /solana/stake:
+    post:
+      tags: [Solana]
+      summary: Build a staking operation
+      operationId: buildSolanaStake
+      responses:
+        "200":
+          description: Unsigned staking operation
+  /analytics/overview:
+    get:
+      tags: [Analytics]
+      summary: Get platform analytics
+      operationId: getAnalyticsOverview
+      responses:
+        "200":
+          description: Platform analytics
+  /ai/chat:
+    post:
+      tags: [AI]
+      summary: Submit an AI conversation turn
+      operationId: createAiChatTurn
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AiChatRequest"
+      responses:
+        "200":
+          description: AI response
+  /ai/models:
+    get:
+      tags: [AI]
+      summary: List available AI models
+      operationId: listAiModels
+      responses:
+        "200":
+          description: AI models
+  /ai/agents:
+    get:
+      tags: [AI]
+      summary: List available AI agents
+      operationId: listAiAgents
+      responses:
+        "200":
+          description: AI agents
+  /crowdfunding/campaigns:
+    get:
+      tags: [Crowdfunding]
+      summary: List renewable crowdfunding campaigns
+      operationId: listCrowdfundingCampaigns
+      security: []
+      responses:
+        "200":
+          description: Campaigns
+  /crowdfunding/investments:
+    post:
+      tags: [Crowdfunding]
+      summary: Create a crowdfunding investment
+      operationId: createCrowdfundingInvestment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateInvestment"
+      responses:
+        "201":
+          description: Investment created
+        "400":
+          $ref: "#/components/responses/ValidationError"
+  /rewards/leaderboard:
+    get:
+      tags: [Rewards]
+      summary: Get rewards leaderboard
+      operationId: getRewardsLeaderboard
+      security: []
+      responses:
+        "200":
+          description: Rewards leaderboard
+  /users/{id}:
+    get:
+      tags: [Users]
+      summary: Get a user and access information
+      operationId: getUser
+      parameters:
+        - $ref: "#/components/parameters/ResourceId"
+      responses:
+        "200":
+          description: User
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /uploads:
+    post:
+      tags: [Uploads]
+      summary: Upload an asset
+      operationId: uploadAsset
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        "201":
+          description: Asset uploaded
+        "413":
+          description: File exceeds the upload limit
+  /newsletter:
+    post:
+      tags: [Newsletter]
+      summary: Subscribe to updates
+      operationId: subscribeNewsletter
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email]
+              properties:
+                email:
+                  type: string
+                  format: email
+      responses:
+        "200":
+          description: Subscription created
+        "400":
+          $ref: "#/components/responses/ValidationError"
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    walletSignature:
+      type: apiKey
+      in: header
+      name: x-wallet-signature
+  parameters:
+    ResourceId:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    Unauthorized:
+      description: Authentication is required
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+    NotFound:
+      description: Resource was not found
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+    ValidationError:
+      description: Request validation failed
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+  schemas:
+    ApiMeta:
+      type: object
+      required: [requestId, timestamp, version]
+      properties:
+        requestId: { type: string, example: req_99b8f033 }
+        timestamp: { type: string, format: date-time }
+        version: { type: string, example: v1 }
+    ErrorResponse:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message]
+          properties:
+            code: { type: string }
+            message: { type: string }
+            details: {}
+        meta:
+          $ref: "#/components/schemas/ApiMeta"
+    HealthResponse:
+      type: object
+      required: [data]
+      properties:
+        data:
+          type: object
+          required: [status, version, timestamp]
+          properties:
+            status: { type: string, example: ok }
+            version: { type: string, example: v1 }
+            timestamp: { type: string, format: date-time }
+    PortfolioAsset:
+      type: object
+      required: [symbol, name, valueEur, change24h, allocation]
+      properties:
+        symbol: { type: string, example: PWRC }
+        name: { type: string, example: Powerchain }
+        valueEur: { type: number, example: 2480000 }
+        change24h: { type: number, example: 8.71 }
+        allocation: { type: number, example: 42.5 }
+    PortfolioResponse:
+      type: object
+      required: [data]
+      properties:
+        data:
+          type: object
+          required: [totalValueEur, change24h, assets]
+          properties:
+            totalValueEur: { type: number, example: 48700000 }
+            change24h: { type: number, example: 8.71 }
+            assets:
+              type: array
+              items:
+                $ref: "#/components/schemas/PortfolioAsset"
+    MarketQuote:
+      type: object
+      required: [symbol, priceEur, change24h]
+      properties:
+        symbol: { type: string }
+        priceEur: { type: number }
+        change24h: { type: number }
+    MarketListResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/MarketQuote"
+    EnergyMarket:
+      type: object
+      properties:
+        id: { type: string }
+        region: { type: string, example: FI-North }
+        pricePerKwhEur: { type: number, example: 0.1228 }
+        availableKwh: { type: number }
+    EnergyMarketListResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/EnergyMarket"
+    TrustedToken:
+      type: object
+      required: [id, chain, symbol, address, decimals]
+      properties:
+        id: { type: string }
+        chain: { type: string, example: solana }
+        symbol: { type: string, example: PWRC }
+        address: { type: string }
+        decimals: { type: integer }
+    TrustedTokenListResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/TrustedToken"
+    CreateTradeOrder:
+      type: object
+      required: [side, amountKwh, pricePerKwhEur, walletAddress, region]
+      properties:
+        side:
+          type: string
+          enum: [buy, sell]
+        amountKwh: { type: number, exclusiveMinimum: 0 }
+        pricePerKwhEur: { type: number, exclusiveMinimum: 0 }
+        walletAddress: { type: string }
+        region: { type: string }
+    CreateInvestment:
+      type: object
+      required: [campaignId, amountEur, paymentMethod]
+      properties:
+        campaignId: { type: string }
+        amountEur: { type: number, exclusiveMinimum: 0 }
+        paymentMethod:
+          type: string
+          enum: [card, solana-pay, usdc, pwrc, onramp]
+    AiChatRequest:
+      type: object
+      required: [conversationId, messages, settings]
+      properties:
+        conversationId: { type: string }
+        messages:
+          type: array
+          items:
+            type: object
+            required: [role, content]
+            properties:
+              role:
+                type: string
+                enum: [system, user, assistant, tool]
+              content: { type: string }
+        settings:
+          type: object
+          properties:
+            model: { type: string, example: gridllm-large }
+            temperature: { type: number, minimum: 0, maximum: 1 }
+            maxOutputTokens: { type: integer, minimum: 1, maximum: 8192 }
+
+  /checkout/sessions:
+    post:
+      tags: [Payments]
+      summary: Create a hosted checkout session
+      responses:
+        "201":
+          description: Checkout session created
+  /checkout/sessions/{id}:
+    get:
+      tags: [Payments]
+      summary: Get a hosted checkout session
+      responses:
+        "200":
+          description: Checkout session
+  /checkout/callbacks:
+    post:
+      tags: [Payments]
+      summary: Receive a signed checkout callback
+      parameters:
+        - name: x-powerchain-signature
+          in: header
+          required: true
+          schema: { type: string }
+      responses:
+        "202":
+          description: Callback accepted

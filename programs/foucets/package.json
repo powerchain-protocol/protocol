@@ -1,0 +1,24 @@
+{
+  "name": "@powerchain/foucets-program",
+  "version": "1.0.0-beta.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.4.14",
+    "@solana/web3.js": "^1.98.4",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.0",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,3 @@
+
+import {Header} from "@/components/layout/header";import {Footer} from "@/components/layout/footer";import {SYSTEM_SERVICES} from "@/constants/system";
+export default function Page(){return <><Header/><main className="pc-shell min-h-[720px] px-5 py-14"><div className="mx-auto max-w-5xl"><h1 className="text-5xl font-semibold">System status</h1><div className="mt-8 space-y-3">{SYSTEM_SERVICES.map(s=><article className="flex items-center justify-between rounded-2xl border bg-white p-5" key={s.id}><div><b>{s.name}</b><p className="text-xs text-slate-500">{s.category}{s.latencyMs?` · ${s.latencyMs} ms`:""}</p></div><span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">{s.status}</span></article>)}</div></div></main><Footer/></>}

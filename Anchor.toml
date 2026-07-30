@@ -1,0 +1,41 @@
+[features]
+seeds = true
+skip-lint = false
+
+[programs.localnet]
+powerchain = "11111111111111111111111111111111"
+
+[programs.devnet]
+powerchain = "11111111111111111111111111111111"
+
+[programs.mainnet]
+powerchain = "11111111111111111111111111111111"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[test]
+startup_wait = 15000
+shutdown_wait = 3000
+upgradeable = true
+
+[scripts]
+test = "pnpm exec tsx scripts/test-anchor.ts"
+sync = "pnpm exec tsx scripts/sync-program-id.ts"
+verify = "pnpm exec tsx scripts/verify-program-manifests.ts"
+build = "anchor build"
+deploy-devnet = "anchor deploy --provider.cluster devnet"
+deploy-mainnet = "anchor deploy --provider.cluster mainnet"
+
+[workspace]
+members = ["programs/powerchain"]
+types = "target/types"
+
+[toolchain]
+anchor_version = "1.0.2"
+solana_version = "3.1.10"
+package_manager = "pnpm"

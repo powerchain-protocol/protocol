@@ -1,0 +1,2 @@
+
+import type{FastifyInstance}from"fastify";export async function aiOperationRoutes(app:FastifyInstance){app.post("/ai/operations",async(req)=>({data:{id:`ai_${crypto.randomUUID().slice(0,8)}`,request:req.body,status:"completed",recommendations:["Review generation variance","Confirm settlement liquidity","Check open device alarms"]}}))}

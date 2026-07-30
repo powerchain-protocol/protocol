@@ -1,0 +1,39 @@
+{
+  "name": "@powerchain/test-kit",
+  "version": "1.0.0-beta.1",
+  "description": "Shared test fixtures, factories, and assertion helpers for Powerchain packages.",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "tag": "beta"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "tsx": "latest",
+    "typescript": "7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerchain-protocol/powerchain.git",
+    "directory": "packages/test-kit"
+  },
+  "homepage": "https://github.com/powerchain-protocol/powerchain/tree/main/packages/test-kit#readme",
+  "bugs": {
+    "url": "https://github.com/powerchain-protocol/powerchain/issues"
+  }
+}

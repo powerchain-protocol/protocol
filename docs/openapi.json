@@ -1,0 +1,173 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Powerchain API",
+    "version": "1.2.0",
+    "description": "Enterprise APIs for renewable energy, digital assets, payments, devices, analytics, and blockchain settlement."
+  },
+  "servers": [
+    {
+      "url": "https://api.powerchain.energy/api/v1",
+      "description": "Production"
+    },
+    {
+      "url": "http://localhost:4000/api/v1",
+      "description": "Local development"
+    }
+  ],
+  "externalDocs": {
+    "url": "https://docs.powerchain.energy"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "API health",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Healthy"
+          }
+        }
+      }
+    },
+    "/portfolio": {
+      "get": {
+        "summary": "Portfolio overview",
+        "responses": {
+          "200": {
+            "description": "Portfolio"
+          }
+        }
+      }
+    },
+    "/markets": {
+      "get": {
+        "summary": "Market quotes",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Markets"
+          }
+        }
+      }
+    },
+    "/energy/markets": {
+      "get": {
+        "summary": "Energy markets",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Energy markets"
+          }
+        }
+      }
+    },
+    "/iot/devices": {
+      "get": {
+        "summary": "IoT devices",
+        "responses": {
+          "200": {
+            "description": "Devices"
+          }
+        }
+      }
+    },
+    "/tokens/trusted": {
+      "get": {
+        "summary": "Trusted tokens",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Tokens"
+          }
+        }
+      }
+    },
+    "/analytics/overview": {
+      "get": {
+        "summary": "Analytics",
+        "responses": {
+          "200": {
+            "description": "Analytics"
+          }
+        }
+      }
+    },
+    "/crowdfunding/campaigns": {
+      "get": {
+        "summary": "Campaigns",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Campaigns"
+          }
+        }
+      }
+    },
+    "/rewards/leaderboard": {
+      "get": {
+        "summary": "Leaderboard",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Leaderboard"
+          }
+        }
+      }
+    },
+    "/checkout/sessions": {
+      "post": {
+        "summary": "Create hosted checkout session",
+        "responses": {
+          "201": {
+            "description": "Checkout session created"
+          }
+        }
+      }
+    },
+    "/checkout/sessions/{id}": {
+      "get": {
+        "summary": "Get hosted checkout session",
+        "responses": {
+          "200": {
+            "description": "Checkout session"
+          }
+        }
+      }
+    },
+    "/checkout/callbacks": {
+      "post": {
+        "summary": "Receive signed checkout callback",
+        "parameters": [
+          {
+            "name": "x-powerchain-signature",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Callback accepted"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      },
+      "walletSignature": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-wallet-signature"
+      }
+    }
+  }
+}

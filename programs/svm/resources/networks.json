@@ -1,0 +1,6 @@
+{
+  "version": "1.0.0-beta.1",
+  "localnet": { "programId": null },
+  "devnet": { "programId": null },
+  "mainnet-beta": { "programId": null }
+}

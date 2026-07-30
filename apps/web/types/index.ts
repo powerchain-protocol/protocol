@@ -1,0 +1,1 @@
+import type {LucideIcon} from "lucide-react"; export type NavItem={label:string;href:string;icon?:LucideIcon;description?:string}; export type Product={slug:string;name:string;eyebrow:string;title:string;description:string;stats:{label:string;value:string}[];features:string[]}; export type Wallet={id:string;name:string;description:string};

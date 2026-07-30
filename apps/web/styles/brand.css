@@ -1,0 +1,60 @@
+
+:root {
+  --pc-canvas: #f7faf8;
+  --pc-surface: #ffffff;
+  --pc-ink: #071611;
+  --pc-muted: #68766d;
+  --pc-green: #087a3b;
+  --pc-green-dark: #064e2b;
+  --pc-mint: #eaf8ef;
+  --pc-border: #dde8e0;
+  --pc-card-shadow: 0 14px 50px rgba(9,54,29,.09);
+  --pc-modal-shadow: 0 30px 100px rgba(3,24,14,.28);
+}
+
+.pc-glass {
+  border: 1px solid color-mix(in srgb, var(--pc-border) 80%, transparent);
+  background: color-mix(in srgb, var(--pc-surface) 88%, transparent);
+  box-shadow: var(--pc-card-shadow);
+  backdrop-filter: blur(18px);
+}
+
+.pc-noise {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(25,166,87,.08), transparent 38%),
+    radial-gradient(circle at 80% 70%, rgba(9,98,50,.08), transparent 34%);
+}
+
+.pc-grid {
+  background-image:
+    linear-gradient(rgba(8,122,59,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8,122,59,.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.pc-hover-lift {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+.pc-hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--pc-card-shadow);
+  border-color: rgba(8,122,59,.3);
+}
+
+.pc-shell {
+  background:
+    radial-gradient(circle at 15% -5%, rgba(16,185,129,.12), transparent 32rem),
+    radial-gradient(circle at 95% 5%, rgba(14,116,144,.08), transparent 30rem),
+    #f7faf8;
+}
+.pc-panel {
+  border: 1px solid rgba(203,213,225,.7);
+  background: rgba(255,255,255,.9);
+  box-shadow: 0 18px 60px rgba(15,23,42,.06);
+  backdrop-filter: blur(18px);
+}
+.pc-gradient-text {
+  background: linear-gradient(110deg,#062b1d 10%,#087a3b 52%,#0f766e 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}

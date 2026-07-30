@@ -1,0 +1,2 @@
+import type {HeliusNft} from "@/types/helius/non-fungible-tokens";
+export function NftCard({asset}:{asset:HeliusNft}){return <article className="rounded-xl border p-4">{asset.content?.links?.image&&<img src={asset.content.links.image} alt="" className="aspect-square w-full rounded-lg object-cover"/>}<h3>{asset.content?.metadata?.name??asset.id}</h3><p>{asset.content?.metadata?.symbol}</p></article>}

@@ -1,0 +1,21 @@
+
+CREATE TABLE IF NOT EXISTS "RenewablePool"(
+ "id" TEXT PRIMARY KEY,"name" TEXT NOT NULL,"targetUsd" DECIMAL(24,8) NOT NULL,
+ "committedUsd" DECIMAL(24,8) NOT NULL DEFAULT 0,"annualYieldPercent" DECIMAL(10,4) NOT NULL,
+ "status" TEXT NOT NULL DEFAULT 'DRAFT',"assetIds" JSONB NOT NULL,
+ "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,"updatedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS "SolarPanelRental"(
+ "id" TEXT PRIMARY KEY,"userId" TEXT NOT NULL,"assetId" TEXT NOT NULL,
+ "panelCount" INTEGER NOT NULL,"months" INTEGER NOT NULL,"monthlyPanelPriceUsd" DECIMAL(24,8) NOT NULL,
+ "totalUsd" DECIMAL(24,8) NOT NULL,"status" TEXT NOT NULL DEFAULT 'RESERVED',
+ "startAt" TIMESTAMP(3) NOT NULL,"endAt" TIMESTAMP(3) NOT NULL,
+ "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX IF NOT EXISTS "SolarPanelRental_userId_status_idx" ON "SolarPanelRental"("userId","status");
+CREATE TABLE IF NOT EXISTS "TokenUseCaseEvent"(
+ "id" TEXT PRIMARY KEY,"userId" TEXT,"useCase" TEXT NOT NULL,"environment" TEXT NOT NULL,
+ "amount" DECIMAL(38,18),"asset" TEXT,"metadata" JSONB,
+ "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX IF NOT EXISTS "TokenUseCaseEvent_useCase_createdAt_idx" ON "TokenUseCaseEvent"("useCase","createdAt");

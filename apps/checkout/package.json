@@ -1,0 +1,36 @@
+{
+  "name": "@powerchain/checkout-app",
+  "version": "1.0.0-beta.1",
+  "private": true,
+  "description": "Powerchain checkout application.",
+  "scripts": {
+    "dev": "pnpm exec next dev --port 3002",
+    "build": "pnpm exec next build",
+    "start": "pnpm exec next start --port 3002",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@powerchain/checkout": "workspace:*",
+    "next": "16.2.12",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "latest",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "latest",
+    "tailwindcss": "4.3.3",
+    "typescript": "7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerchain-protocol/powerchain.git",
+    "directory": "apps/checkout"
+  },
+  "homepage": "https://github.com/powerchain-protocol/powerchain/tree/main/apps/checkout#readme",
+  "bugs": {
+    "url": "https://github.com/powerchain-protocol/powerchain/issues"
+  }
+}

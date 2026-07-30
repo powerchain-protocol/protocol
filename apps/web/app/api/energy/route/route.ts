@@ -1,0 +1,2 @@
+import { NextResponse } from "next/server";import { z } from "zod";import { ENERGY_MARKETS } from "@/constants/energy-market";import { buildWayfinderRoute } from "@/lib/energy/marketplace";
+const schema=z.object({requestedKwh:z.coerce.number().positive().max(1000000)});export async function POST(request:Request){const parsed=schema.safeParse(await request.json().catch(()=>null));if(!parsed.success)return NextResponse.json({error:"Invalid requestedKwh"},{status:400});return NextResponse.json(buildWayfinderRoute(ENERGY_MARKETS,parsed.data.requestedKwh))}

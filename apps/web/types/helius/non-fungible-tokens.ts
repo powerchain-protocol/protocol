@@ -1,0 +1,3 @@
+export interface HeliusCreator { address:string; share:number; verified:boolean }
+export interface HeliusNft { id:string; interface:string; content?:{json_uri?:string;metadata?:{name?:string;symbol?:string;description?:string};links?:{image?:string};files?:Array<{uri?:string;mime?:string}>}; authorities?:Array<{address:string;scopes:string[]}>; creators?:HeliusCreator[]; ownership?:{owner:string;delegate?:string;frozen?:boolean}; compression?:{compressed:boolean;tree?:string;leaf_id?:number}; grouping?:Array<{group_key:string;group_value:string}>; mutable?:boolean; burnt?:boolean; }
+export interface HeliusAssetsPage<T=HeliusNft>{ total:number; limit:number; page:number; items:T[] }

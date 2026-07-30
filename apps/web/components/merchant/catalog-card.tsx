@@ -1,0 +1,2 @@
+import Link from"next/link";
+export function CatalogCard({title,description,href,metric}:{title:string;description:string;href:string;metric:string}){return <Link href={href} className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10"><p className="text-xs uppercase tracking-[.18em] text-emerald-300">{metric}</p><h2 className="mt-2 text-xl font-semibold">{title}</h2><p className="mt-2 text-sm text-slate-400">{description}</p></Link>}

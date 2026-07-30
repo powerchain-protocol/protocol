@@ -1,1 +1,0 @@
-# PowerChain Coin Design

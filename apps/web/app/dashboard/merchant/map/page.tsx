@@ -1,0 +1,2 @@
+import { LocalEnergyMap } from "@/components/energy/local-energy-map";import { ENERGY_MARKETS } from "@/constants/energy-market";
+export default function Page(){return <section><p className="text-sm font-medium text-emerald-300">Local energy map</p><h1 className="mt-2 text-3xl font-semibold">Community generation and flexibility</h1><p className="mt-2 text-slate-400">A privacy-preserving operational view of verified local energy nodes.</p><div className="mt-8"><LocalEnergyMap markets={ENERGY_MARKETS}/></div></section>}

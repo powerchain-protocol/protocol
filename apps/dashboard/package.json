@@ -1,0 +1,65 @@
+{
+  "name": "@powerchain/dashboard",
+  "version": "1.0.0-beta.1",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm exec next dev --port 3001",
+    "build": "pnpm exec next build",
+    "start": "pnpm exec next start --port 3001",
+    "typecheck": "tsc --noEmit",
+    "clean": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\""
+  },
+  "dependencies": {
+    "@powerchain/config": "workspace:*",
+    "@powerchain/types": "workspace:*",
+    "@powerchain/utils": "workspace:*",
+    "@web3icons/react": "4.1.17",
+    "lucide-react": "latest",
+    "next": "16.2.12",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "@powerchain/shared": "workspace:*",
+    "@powerchain/store": "workspace:*",
+    "@powerchain/storage": "workspace:*",
+    "@radix-ui/react-dialog": "latest",
+    "@radix-ui/react-tabs": "latest",
+    "zod": "latest",
+    "sonner": "latest",
+    "@solana/connector": "0.2.6",
+    "@solana/web3.js": "1.98.4",
+    "@solana/wallet-adapter-base": "0.9.27",
+    "@solana/wallet-adapter-react": "0.15.39",
+    "@solana/wallet-adapter-react-ui": "0.9.39",
+    "@solana/wallet-adapter-walletconnect": "0.1.21",
+    "@powerchain/integrations": "workspace:*",
+    "@powerchain/data": "workspace:*",
+    "@powerchain/marketplace": "workspace:*",
+    "@powerchain/renewables": "workspace:*",
+    "@powerchain/payments": "workspace:*",
+    "@powerchain/wallet": "workspace:*",
+    "@powerchain/ai": "workspace:*",
+    "@powerchain/blockchain": "workspace:*",
+    "@solana/spl-token": "latest",
+    "@metaplex-foundation/mpl-token-metadata": "latest",
+    "@metaplex-foundation/umi": "latest",
+    "@metaplex-foundation/umi-bundle-defaults": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "latest",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "latest",
+    "tailwindcss": "4.3.3",
+    "typescript": "7.0.2"
+  },
+  "description": "Powerchain enterprise operations dashboard for portfolios, grids, devices, settlements, and AI.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerchain-protocol/powerchain.git",
+    "directory": "apps/dashboard"
+  },
+  "homepage": "https://github.com/powerchain-protocol/powerchain/tree/main/apps/dashboard#readme",
+  "bugs": {
+    "url": "https://github.com/powerchain-protocol/powerchain/issues"
+  }
+}

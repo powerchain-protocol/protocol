@@ -1,0 +1,1 @@
+import {readFile,writeFile} from "node:fs/promises";const s=JSON.parse(await readFile("../../docs/openapi.json","utf8"));await writeFile("src/generated.json",JSON.stringify({version:s.info.version,paths:Object.keys(s.paths||{})},null,2)+"\n");

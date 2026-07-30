@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "status": "deployment-required",
+  "network": "solana",
+  "standard": "Token-2022",
+  "name": "PowerChain",
+  "symbol": "PWRC",
+  "decimals": 9,
+  "maximumSupplyTokens": "18446000000",
+  "maximumSupplyBaseUnits": "18446000000000000000",
+  "supplyModel": "fixed",
+  "initialReferencePriceUsd": "0.000001",
+  "transferFeeBasisPoints": 200,
+  "feeDistribution": {
+    "treasuryBasisPoints": 7000,
+    "stakingBasisPoints": 3000
+  },
+  "quarterlyBurnBasisPoints": 200,
+  "extensions": [
+    "TransferFeeConfig",
+    "MetadataPointer",
+    "TokenMetadata",
+    "PermanentDelegate",
+    "MintCloseAuthority"
+  ],
+  "addresses": {
+    "mint": null,
+    "metadata": null,
+    "treasuryVault": null,
+    "stakingVault": null,
+    "permanentDelegate": null,
+    "mintCloseAuthority": null
+  },
+  "safety": {
+    "multisigRequired": true,
+    "timelockRequired": true,
+    "replayProtectionRequired": true,
+    "mainnetAddressesMustBeVerified": true
+  }
+}

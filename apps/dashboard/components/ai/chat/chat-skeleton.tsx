@@ -1,0 +1,1 @@
+export function ChatSkeleton(){return <div className="animate-pulse space-y-4"><div className="ml-auto h-16 w-2/3 rounded-2xl bg-emerald-100"/><div className="h-80 rounded-2xl bg-slate-100"/><div className="h-16 rounded-2xl bg-slate-100"/></div>}

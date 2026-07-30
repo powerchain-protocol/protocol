@@ -1,0 +1,12 @@
+
+{
+  "version": "1.0.0-beta.16",
+  "upgradeAuthority": "multisig-required",
+  "treasuryAuthority": "separate-multisig",
+  "pauseAuthority": "security-council",
+  "maximumPlatformFeeBps": 500,
+  "defaultPlatformFeeBps": 200,
+  "requireSimulation": true,
+  "requireManifestVerification": true,
+  "forbidden": ["repository-private-keys", "unchecked-production-mints", "single-signer-mainnet-upgrades"]
+}

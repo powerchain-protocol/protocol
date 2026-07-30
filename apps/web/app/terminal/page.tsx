@@ -1,0 +1,2 @@
+import { Terminal } from "@/components/terminal";
+export default function TerminalPage(){return <main className="mx-auto min-h-screen max-w-5xl px-6 py-16"><p className="mb-2 text-sm uppercase tracking-[0.2em] text-emerald-500">Developer tools</p><h1 className="mb-3 text-4xl font-semibold">Network terminal</h1><p className="mb-8 max-w-2xl text-muted-foreground">Inspect Powerchain network configuration, RPC health and connected wallet state from one safe console.</p><Terminal/></main>}

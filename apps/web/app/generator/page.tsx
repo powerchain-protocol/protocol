@@ -1,0 +1,4 @@
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
+import { GenerateTool } from "@/components/tools/keypairs/generate-tool";
+export default function GeneratorPage(){return <><Header/><main className="pc-shell min-h-screen px-5 py-14"><div className="mx-auto max-w-6xl"><p className="text-xs font-black uppercase tracking-[.18em] text-emerald-700">Powerchain wallet tools</p><h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-6xl">Generate encrypted Solana keypairs.</h1><p className="mt-5 max-w-3xl text-lg text-slate-600">Create client-side wallets for devnet testing, rewards, and faucet claims. Secrets are encrypted in your browser before optional backup.</p><div className="mt-10"><GenerateTool/></div></div></main><Footer/></>}

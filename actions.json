@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "actions": [
+    {
+      "id": "portfolio.refresh",
+      "description": "Refresh portfolio balances and valuations",
+      "permission": "portfolio.read"
+    },
+    {
+      "id": "payment.create",
+      "description": "Create a payment intent",
+      "permission": "billing.manage",
+      "confirmationRequired": true
+    },
+    {
+      "id": "swap.quote",
+      "description": "Request a Jupiter swap quote",
+      "permission": "assets.read"
+    },
+    {
+      "id": "ai.chat",
+      "description": "Ask Powerchain AI",
+      "permission": "ai.use"
+    }
+  ]
+}

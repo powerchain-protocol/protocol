@@ -1,0 +1,32 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+  - "packages/examples/*/*"
+  - "programs/*"
+
+allowBuilds:
+  "@prisma/engines": true
+  bigint-buffer: true
+  bufferutil: true
+  esbuild: true
+  prisma: true
+  sharp: true
+  utf-8-validate: true
+
+autoInstallPeers: true
+
+onlyBuiltDependencies:
+  - "@prisma/client"
+  - "@prisma/engines"
+  - esbuild
+  - prisma
+  - sharp
+
+peerDependencyRules:
+  allowedVersions:
+    react: "19.2.8"
+    react-dom: "19.2.8"
+
+strictDepBuilds: false
+strictPeerDependencies: false
+verifyDepsBeforeRun: false
