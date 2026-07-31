@@ -7,7 +7,9 @@
     "build": "pnpm exec next build",
     "start": "pnpm exec next start --port 3001",
     "typecheck": "tsc --noEmit",
-    "clean": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\""
+    "clean": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\"",
+    "test": "node ../../scripts/workspace-lifecycle.mjs test .",
+    "lint": "node ../../scripts/workspace-lifecycle.mjs lint ."
   },
   "dependencies": {
     "@powerchain/config": "workspace:*",

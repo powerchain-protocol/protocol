@@ -20,7 +20,10 @@
     "@powerchain/energy-iot": "workspace:*"
   },
   "scripts": {
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "node ../../scripts/workspace-lifecycle.mjs build .",
+    "test": "node ../../scripts/workspace-lifecycle.mjs test .",
+    "lint": "node ../../scripts/workspace-lifecycle.mjs lint ."
   },
   "devDependencies": {
     "typescript": "7.0.2"

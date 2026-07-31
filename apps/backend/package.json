@@ -15,7 +15,9 @@
     "db:studio": "prisma studio",
     "migrate:status": "prisma migrate status",
     "routes:list": "tsx scripts/list-routes.ts",
-    "db:validate": "prisma validate"
+    "db:validate": "prisma validate",
+    "test": "node ../../scripts/workspace-lifecycle.mjs test .",
+    "lint": "node ../../scripts/workspace-lifecycle.mjs lint ."
   },
   "dependencies": {
     "@fastify/cors": "11.3.0",

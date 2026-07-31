@@ -3,14 +3,16 @@
   "version": "1.0.0-beta.1",
   "private": true,
   "scripts": {
-    "dev": "pnpm exec next dev --port 3000",
-    "build": "pnpm exec next build",
+    "dev": "NEXT_TELEMETRY_DISABLED=1 pnpm exec next dev --port 3000",
+    "build": "NEXT_TELEMETRY_DISABLED=1 pnpm exec next build",
     "start": "pnpm exec next start --port 3000",
     "typecheck": "tsc --noEmit",
     "clean": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\"",
     "anchor:check": "tsx ../../scripts/test-anchor.ts",
     "anchor:sync": "tsx ../../scripts/sync-program-id.ts",
-    "assets:optimize": "node ../../scripts/optimize-assets.mjs apps/web/public apps/web/public/optimized"
+    "assets:optimize": "node ../../scripts/optimize-assets.mjs apps/web/public apps/web/public/optimized",
+    "test": "node ../../scripts/workspace-lifecycle.mjs test .",
+    "lint": "node ../../scripts/workspace-lifecycle.mjs lint ."
   },
   "dependencies": {
     "@coral-xyz/anchor": "0.32.1",

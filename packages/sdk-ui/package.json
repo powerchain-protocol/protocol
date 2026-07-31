@@ -16,7 +16,10 @@
     "./donate": "./src/donate/index.tsx"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build": "node ../../scripts/workspace-lifecycle.mjs build .",
+    "test": "node ../../scripts/workspace-lifecycle.mjs test .",
+    "lint": "node ../../scripts/workspace-lifecycle.mjs lint ."
   },
   "peerDependencies": {
     "react": "^19.0.0"

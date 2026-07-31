@@ -2,7 +2,7 @@
   "name": "powerchain-monorepo",
   "version": "1.0.0-beta.1",
   "private": true,
-  "packageManager": "pnpm@11.0.0",
+  "packageManager": "pnpm@11.18.0",
   "engines": {
     "node": ">=22.12.0 <25",
     "pnpm": ">=11.0.0"
@@ -35,7 +35,7 @@
     "backend:routes": "pnpm --filter @powerchain/backend routes:list",
     "predev:web": "node scripts/ensure-dependencies.mjs --repair",
     "postinstall": "node scripts/generate-prisma.mjs",
-    "verify": "pnpm deps:doctor && pnpm sdk:surface:check && pnpm api:doctor && pnpm routes:manifest && pnpm routes:web:check && pnpm typecheck",
+    "verify": "pnpm generate && pnpm typecheck && pnpm lint && pnpm test && pnpm build",
     "env:check": "node scripts/validate-env.mjs",
     "package:create": "node scripts/create-package.mjs",
     "package:test": "pnpm -r --if-present test",
@@ -58,7 +58,7 @@
     "github:migration:plan": "node scripts/github-migrate-organization.mjs --plan",
     "github:migration:apply": "node scripts/github-migrate-organization.mjs --apply",
     "github:references:check": "node scripts/check-github-references.mjs",
-    "bootstrap": "node scripts/ensure-dependencies.mjs --repair",
+    "bootstrap": "pnpm install:workspace && pnpm env:init && pnpm env:check && pnpm generate",
     "doctor": "node scripts/deps-doctor.mjs",
     "routes:manifest": "node scripts/generate-route-manifest.mjs",
     "api:doctor": "node scripts/api-doctor.mjs",
@@ -108,7 +108,15 @@
     "programs:validate": "pnpm svm:check && pnpm programs:doctor",
     "docs:check": "node scripts/check-documentation.mjs",
     "readme:check": "node scripts/check-root-readme.mjs",
-    "docs:verify": "pnpm readme:check && pnpm docs:check"
+    "docs:verify": "pnpm readme:check && pnpm docs:check",
+    "env:init": "node scripts/env-init.mjs",
+    "generate": "node scripts/generate.mjs",
+    "test": "pnpm -r --if-present test",
+    "package": "node scripts/package-release.mjs",
+    "security:secrets": "node scripts/scan-secrets.mjs",
+    "security:dependencies": "pnpm audit --audit-level high",
+    "security:check": "pnpm security:secrets && pnpm security:dependencies",
+    "release:verify": "pnpm bootstrap && pnpm verify && pnpm package"
   },
   "devDependencies": {
     "typescript": "6.0.2",

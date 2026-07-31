@@ -3,9 +3,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ChevronDown, Menu, X, ArrowUpRight } from "lucide-react";
+import { ChevronDown, Menu, X, ArrowUpRight, PackageOpen } from "lucide-react";
 import * as Dropdown from "@radix-ui/react-dropdown-menu";
-import { productMenu } from "@/data/products";
+import { products } from "@/data/products";
 import { services } from "@/data/services";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
@@ -13,6 +13,13 @@ import { CurrencySelector } from "@/components/layout/currency-selector";
 import { WalletConnectModal } from "@/components/wallet/wallet-connect-modal";
 import { NetworkSelector } from "@/components/network/network-selector";
 import { useWallet } from "@/context/wallet-context";
+
+const productMenu = products.map((product) => ({
+  label: product.name,
+  href: `/marketplace?product=${encodeURIComponent(product.slug)}`,
+  description: `${product.category.replaceAll("-", " ")} · €${product.priceEur.toLocaleString()} · ${product.inventory} available`,
+  icon: PackageOpen
+}));
 
 function MenuDrop({
   label,

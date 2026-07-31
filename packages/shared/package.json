@@ -15,5 +15,11 @@
   "homepage": "https://github.com/powerchain-protocol/powerchain/tree/main/packages/shared#readme",
   "bugs": {
     "url": "https://github.com/powerchain-protocol/powerchain/issues"
+  },
+  "scripts": {
+    "build": "node ../../scripts/workspace-lifecycle.mjs build .",
+    "test": "node ../../scripts/workspace-lifecycle.mjs test .",
+    "lint": "node ../../scripts/workspace-lifecycle.mjs lint .",
+    "typecheck": "node ../../scripts/workspace-lifecycle.mjs typecheck ."
   }
 }

@@ -7,7 +7,9 @@
     "dev": "pnpm exec next dev --port 3004",
     "build": "pnpm exec next build",
     "start": "pnpm exec next start --port 3004",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node ../../scripts/workspace-lifecycle.mjs test .",
+    "lint": "node ../../scripts/workspace-lifecycle.mjs lint ."
   },
   "dependencies": {
     "next": "16.2.12",

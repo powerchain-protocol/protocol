@@ -1,5 +1,8 @@
 # PowerChain™
 
+> **Developer onboarding:** Start with [`DEVELOPMENT.md`](./DEVELOPMENT.md), the canonical guide for setup, environment configuration, verification, and releases.
+
+
 > **Programmable infrastructure for renewable energy, digital assets, and enterprise applications.**
 
 <p align="center">
